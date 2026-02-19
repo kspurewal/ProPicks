@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810386-5041939",
+    "type": "player_performance",
+    "timestamp": 1767924000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cooper Flagg",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png",
+      "teamAbbreviation": "DAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 26,
+        "FG": 10,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 10,
+        "AST": 8,
+        "TO": 3,
+        "STL": 3,
+        "BLK": 1,
+        "OREB": 4,
+        "DREB": 6,
+        "PF": 4,
+        "+/-": 3
+      },
+      "headline": "26 PTS | 10 REB | 8 AST | 3 STL",
+      "gameId": "401810386",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-01-09",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810386-4066336",
+    "type": "player_performance",
+    "timestamp": 1767924000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Lauri Markkanen",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 33,
+        "FG": 14,
+        "3PT": 2,
+        "FT": 3,
+        "REB": 7,
+        "AST": 4,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 3,
+        "DREB": 4,
+        "PF": 2,
+        "+/-": 7
+      },
+      "headline": "33 PTS | 7 REB | 4 AST",
+      "gameId": "401810386",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-01-09",
+      "isWin": true
+    }
+  }
+]

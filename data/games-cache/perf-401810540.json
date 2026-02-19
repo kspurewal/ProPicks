@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810540-3155526",
+    "type": "player_performance",
+    "timestamp": 1769738400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Dillon Brooks",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3155526.png",
+      "teamAbbreviation": "PHX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 40,
+        "FG": 13,
+        "3PT": 4,
+        "FT": 10,
+        "REB": 8,
+        "AST": 4,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": 14
+      },
+      "headline": "40 PTS | 8 REB | 4 AST",
+      "gameId": "401810540",
+      "opponentAbbreviation": "DET",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  }
+]

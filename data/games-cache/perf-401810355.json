@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810355-3032977",
+    "type": "player_performance",
+    "timestamp": 1767578400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Giannis Antetokounmpo",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3032977.png",
+      "teamAbbreviation": "MIL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 37,
+        "FG": 13,
+        "3PT": 0,
+        "FT": 11,
+        "REB": 11,
+        "AST": 1,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 8,
+        "PF": 2,
+        "+/-": 17
+      },
+      "headline": "37 PTS | 11 REB | 1 AST",
+      "gameId": "401810355",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-05",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810355-4397140",
+    "type": "player_performance",
+    "timestamp": 1767578400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kevin Porter Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4397140.png",
+      "teamAbbreviation": "MIL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 25,
+        "FG": 8,
+        "3PT": 1,
+        "FT": 8,
+        "REB": 4,
+        "AST": 10,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 1,
+        "+/-": 16
+      },
+      "headline": "25 PTS | 4 REB | 10 AST",
+      "gameId": "401810355",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-05",
+      "isWin": true
+    }
+  }
+]

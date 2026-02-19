@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810352-2595516",
+    "type": "player_performance",
+    "timestamp": 1767567600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Norman Powell",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/2595516.png",
+      "teamAbbreviation": "MIA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 29,
+        "PTS": 34,
+        "FG": 11,
+        "3PT": 9,
+        "FT": 3,
+        "REB": 3,
+        "AST": 3,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": 23
+      },
+      "headline": "34 PTS | 3 REB | 3 AST",
+      "gameId": "401810352",
+      "opponentAbbreviation": "NO",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

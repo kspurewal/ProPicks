@@ -1,0 +1,52 @@
+[
+  {
+    "id": "401772979",
+    "sport": "nfl",
+    "date": "2026-01-10",
+    "homeTeam": {
+      "id": "29",
+      "name": "Panthers",
+      "displayName": "Carolina Panthers",
+      "abbreviation": "CAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "record": "8-9"
+    },
+    "awayTeam": {
+      "id": "14",
+      "name": "Rams",
+      "displayName": "Los Angeles Rams",
+      "abbreviation": "LAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "record": "12-5"
+    },
+    "homeScore": 31,
+    "awayScore": 34,
+    "status": "final",
+    "startTime": "2026-01-10T21:30Z"
+  },
+  {
+    "id": "401772981",
+    "sport": "nfl",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "3",
+      "name": "Bears",
+      "displayName": "Chicago Bears",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "record": "11-6"
+    },
+    "awayTeam": {
+      "id": "9",
+      "name": "Packers",
+      "displayName": "Green Bay Packers",
+      "abbreviation": "GB",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "record": "9-7-1"
+    },
+    "homeScore": 31,
+    "awayScore": 27,
+    "status": "final",
+    "startTime": "2026-01-11T01:00Z"
+  }
+]

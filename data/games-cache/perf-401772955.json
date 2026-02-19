@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772955-12483",
+    "type": "player_performance",
+    "timestamp": 1767561900000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Matthew Stafford",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/12483.png",
+      "teamAbbreviation": "LAR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 25,
+        "YDS": 259,
+        "AVG": 6.5,
+        "TD": 4,
+        "INT": 0,
+        "SACKS": 1,
+        "QBR": 85.5,
+        "RTG": 114.5
+      },
+      "headline": "259 YDS | 4 TD",
+      "gameId": "401772955",
+      "opponentAbbreviation": "ARI",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

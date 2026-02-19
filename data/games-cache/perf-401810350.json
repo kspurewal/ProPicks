@@ -1,0 +1,138 @@
+[
+  {
+    "id": "perf-401810350-3149673",
+    "type": "player_performance",
+    "timestamp": 1767556800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Pascal Siakam",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png",
+      "teamAbbreviation": "IND",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 34,
+        "FG": 14,
+        "3PT": 2,
+        "FT": 4,
+        "REB": 7,
+        "AST": 5,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 6,
+        "PF": 3,
+        "+/-": -12
+      },
+      "headline": "34 PTS | 7 REB | 5 AST",
+      "gameId": "401810350",
+      "opponentAbbreviation": "ORL",
+      "gameDate": "2026-01-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810350-4432573",
+    "type": "player_performance",
+    "timestamp": 1767556800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Paolo Banchero",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+      "teamAbbreviation": "ORL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 28,
+        "FG": 9,
+        "3PT": 3,
+        "FT": 7,
+        "REB": 12,
+        "AST": 5,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 12,
+        "PF": 1,
+        "+/-": 0
+      },
+      "headline": "28 PTS | 12 REB | 5 AST",
+      "gameId": "401810350",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810350-4066320",
+    "type": "player_performance",
+    "timestamp": 1767556800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Desmond Bane",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066320.png",
+      "teamAbbreviation": "ORL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 4,
+        "REB": 6,
+        "AST": 6,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 5,
+        "PF": 4,
+        "+/-": 10
+      },
+      "headline": "31 PTS | 6 REB | 6 AST",
+      "gameId": "401810350",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810350-4712849",
+    "type": "player_performance",
+    "timestamp": 1767556800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Anthony Black",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4712849.png",
+      "teamAbbreviation": "ORL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 27,
+        "FG": 8,
+        "3PT": 3,
+        "FT": 8,
+        "REB": 3,
+        "AST": 10,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 4,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 4,
+        "+/-": -3
+      },
+      "headline": "27 PTS | 3 REB | 10 AST | 4 BLK",
+      "gameId": "401810350",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

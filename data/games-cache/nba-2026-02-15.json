@@ -1,0 +1,102 @@
+[
+  {
+    "id": "401838140",
+    "sport": "nba",
+    "date": "2026-02-15",
+    "homeTeam": {
+      "id": "132374",
+      "name": "Team Stars",
+      "displayName": "Team Stars",
+      "abbreviation": "STARS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stars.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "111386",
+      "name": "World",
+      "displayName": "World",
+      "abbreviation": "WORLD",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/world.png",
+      "record": "0-0"
+    },
+    "homeScore": 37,
+    "awayScore": 35,
+    "status": "final",
+    "startTime": "2026-02-15T22:00Z"
+  },
+  {
+    "id": "401838141",
+    "sport": "nba",
+    "date": "2026-02-15",
+    "homeTeam": {
+      "id": "132375",
+      "name": "Team Stripes",
+      "displayName": "Team Stripes",
+      "abbreviation": "STRIPES",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stripes.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "132374",
+      "name": "Team Stars",
+      "displayName": "Team Stars",
+      "abbreviation": "STARS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stars.png",
+      "record": "0-0"
+    },
+    "homeScore": 42,
+    "awayScore": 40,
+    "status": "final",
+    "startTime": "2026-02-15T22:55Z"
+  },
+  {
+    "id": "401838142",
+    "sport": "nba",
+    "date": "2026-02-15",
+    "homeTeam": {
+      "id": "132375",
+      "name": "Team Stripes",
+      "displayName": "Team Stripes",
+      "abbreviation": "STRIPES",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stripes.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "111386",
+      "name": "World",
+      "displayName": "World",
+      "abbreviation": "WORLD",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/world.png",
+      "record": "0-0"
+    },
+    "homeScore": 48,
+    "awayScore": 45,
+    "status": "final",
+    "startTime": "2026-02-15T23:25Z"
+  },
+  {
+    "id": "401838143",
+    "sport": "nba",
+    "date": "2026-02-16",
+    "homeTeam": {
+      "id": "132375",
+      "name": "Team Stripes",
+      "displayName": "Team Stripes",
+      "abbreviation": "STRIPES",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stripes.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "132374",
+      "name": "Team Stars",
+      "displayName": "Team Stars",
+      "abbreviation": "STARS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stars.png",
+      "record": "0-0"
+    },
+    "homeScore": 21,
+    "awayScore": 47,
+    "status": "final",
+    "startTime": "2026-02-16T00:10Z"
+  }
+]

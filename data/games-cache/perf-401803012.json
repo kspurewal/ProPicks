@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803012-3042056",
+    "type": "player_performance",
+    "timestamp": 1767571200000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Tyler Bertuzzi",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/3042056.png",
+      "teamAbbreviation": "CHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 1,
+        "HT": 0,
+        "TK": 0,
+        "+/-": 3,
+        "TOI": 19,
+        "PPTOI": 2,
+        "SHTOI": 0,
+        "ESTOI": 16,
+        "SHFT": 23,
+        "G": 3,
+        "YTDG": 22,
+        "A": 0,
+        "S": 5,
+        "SM": 2,
+        "SOG": 0,
+        "FW": 0,
+        "FL": 2,
+        "FO%": 0,
+        "GV": 2,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803012",
+      "opponentAbbreviation": "VGK",
+      "gameDate": "2026-01-05",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810393-3136193",
+    "type": "player_performance",
+    "timestamp": 1768010400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Devin Booker",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png",
+      "teamAbbreviation": "PHX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 31,
+        "FG": 10,
+        "3PT": 4,
+        "FT": 7,
+        "REB": 3,
+        "AST": 8,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 2,
+        "PF": 3,
+        "+/-": 11
+      },
+      "headline": "31 PTS | 3 REB | 8 AST",
+      "gameId": "401810393",
+      "opponentAbbreviation": "NY",
+      "gameDate": "2026-01-10",
+      "isWin": true
+    }
+  }
+]

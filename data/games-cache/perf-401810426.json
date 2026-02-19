@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810426-3913176",
+    "type": "player_performance",
+    "timestamp": 1768435200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Brandon Ingram",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3913176.png",
+      "teamAbbreviation": "TOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 30,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 7,
+        "AST": 4,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": 0
+      },
+      "headline": "30 PTS | 7 REB | 4 AST",
+      "gameId": "401810426",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-15",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810426-4433134",
+    "type": "player_performance",
+    "timestamp": 1768435200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Scottie Barnes",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433134.png",
+      "teamAbbreviation": "TOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 26,
+        "FG": 10,
+        "3PT": 1,
+        "FT": 5,
+        "REB": 7,
+        "AST": 13,
+        "TO": 3,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 7,
+        "PF": 2,
+        "+/-": 14
+      },
+      "headline": "26 PTS | 7 REB | 13 AST",
+      "gameId": "401810426",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-15",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810426-3149673",
+    "type": "player_performance",
+    "timestamp": 1768435200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Pascal Siakam",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png",
+      "teamAbbreviation": "IND",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 26,
+        "FG": 10,
+        "3PT": 4,
+        "FT": 2,
+        "REB": 10,
+        "AST": 4,
+        "TO": 4,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 4,
+        "DREB": 6,
+        "PF": 5,
+        "+/-": -4
+      },
+      "headline": "26 PTS | 10 REB | 4 AST",
+      "gameId": "401810426",
+      "opponentAbbreviation": "TOR",
+      "gameDate": "2026-01-15",
+      "isWin": false
+    }
+  }
+]

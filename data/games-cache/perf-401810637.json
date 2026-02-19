@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810637-6450",
+    "type": "player_performance",
+    "timestamp": 1770858000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kawhi Leonard",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png",
+      "teamAbbreviation": "LAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 27,
+        "FG": 9,
+        "3PT": 1,
+        "FT": 8,
+        "REB": 12,
+        "AST": 4,
+        "TO": 4,
+        "STL": 4,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 9,
+        "PF": 2,
+        "+/-": 3
+      },
+      "headline": "27 PTS | 12 REB | 4 AST | 4 STL",
+      "gameId": "401810637",
+      "opponentAbbreviation": "HOU",
+      "gameDate": "2026-02-12",
+      "isWin": true
+    }
+  }
+]

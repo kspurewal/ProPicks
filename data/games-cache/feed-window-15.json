@@ -1,0 +1,1009 @@
+[
+  {
+    "id": "biggame-401810571",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810571",
+      "homeTeam": {
+        "id": "8",
+        "name": "Pistons",
+        "displayName": "Detroit Pistons",
+        "abbreviation": "DET",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "record": "37-12"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Nuggets",
+        "displayName": "Denver Nuggets",
+        "abbreviation": "DEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "record": "33-18"
+      },
+      "startTime": "2026-02-04T00:00Z",
+      "gameDate": "2026-02-04",
+      "sport": "nba",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 124,
+      "awayScore": 121,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803241",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803241",
+      "homeTeam": {
+        "id": "7",
+        "name": "Hurricanes",
+        "displayName": "Carolina Hurricanes",
+        "abbreviation": "CAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
+        "record": "35-15-6"
+      },
+      "awayTeam": {
+        "id": "14",
+        "name": "Senators",
+        "displayName": "Ottawa Senators",
+        "abbreviation": "OTT",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+        "record": "27-22-7"
+      },
+      "startTime": "2026-02-04T00:00Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 4,
+      "awayScore": 3,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803237",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803237",
+      "homeTeam": {
+        "id": "20",
+        "name": "Lightning",
+        "displayName": "Tampa Bay Lightning",
+        "abbreviation": "TB",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+        "record": "36-14-4"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Sabres",
+        "displayName": "Buffalo Sabres",
+        "abbreviation": "BUF",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+        "record": "32-18-6"
+      },
+      "startTime": "2026-02-04T00:30Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 4,
+      "awayScore": 3,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803230",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803230",
+      "homeTeam": {
+        "id": "30",
+        "name": "Wild",
+        "displayName": "Minnesota Wild",
+        "abbreviation": "MIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+        "record": "33-14-10"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Canadiens",
+        "displayName": "Montreal Canadiens",
+        "abbreviation": "MTL",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+        "record": "31-17-8"
+      },
+      "startTime": "2026-02-03T00:30Z",
+      "gameDate": "2026-02-03",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 4,
+      "awayScore": 3,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803224",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803224",
+      "homeTeam": {
+        "id": "20",
+        "name": "Lightning",
+        "displayName": "Tampa Bay Lightning",
+        "abbreviation": "TB",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+        "record": "35-14-4"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Bruins",
+        "displayName": "Boston Bruins",
+        "abbreviation": "BOS",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+        "record": "32-20-4"
+      },
+      "startTime": "2026-02-01T23:30Z",
+      "gameDate": "2026-02-01",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 6,
+      "awayScore": 5,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803216",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803216",
+      "homeTeam": {
+        "id": "2",
+        "name": "Sabres",
+        "displayName": "Buffalo Sabres",
+        "abbreviation": "BUF",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+        "record": "31-18-5"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Canadiens",
+        "displayName": "Montreal Canadiens",
+        "abbreviation": "MTL",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+        "record": "31-17-7"
+      },
+      "startTime": "2026-02-01T00:00Z",
+      "gameDate": "2026-02-01",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 2,
+      "awayScore": 4,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803238",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803238",
+      "homeTeam": {
+        "id": "11",
+        "name": "Devils",
+        "displayName": "New Jersey Devils",
+        "abbreviation": "NJ",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+        "record": "28-26-2"
+      },
+      "awayTeam": {
+        "id": "29",
+        "name": "Blue Jackets",
+        "displayName": "Columbus Blue Jackets",
+        "abbreviation": "CBJ",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+        "record": "28-20-7"
+      },
+      "startTime": "2026-02-04T00:00Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 0,
+      "awayScore": 3,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803240",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803240",
+      "homeTeam": {
+        "id": "15",
+        "name": "Flyers",
+        "displayName": "Philadelphia Flyers",
+        "abbreviation": "PHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+        "record": "25-20-10"
+      },
+      "awayTeam": {
+        "id": "23",
+        "name": "Capitals",
+        "displayName": "Washington Capitals",
+        "abbreviation": "WSH",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
+        "record": "28-23-7"
+      },
+      "startTime": "2026-02-04T00:00Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 4,
+      "awayScore": 2,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803239",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803239",
+      "homeTeam": {
+        "id": "12",
+        "name": "Islanders",
+        "displayName": "New York Islanders",
+        "abbreviation": "NYI",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+        "record": "31-21-5"
+      },
+      "awayTeam": {
+        "id": "16",
+        "name": "Penguins",
+        "displayName": "Pittsburgh Penguins",
+        "abbreviation": "PIT",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+        "record": "28-15-12"
+      },
+      "startTime": "2026-02-04T00:30Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 5,
+      "awayScore": 4,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401803242",
+    "type": "big_game",
+    "timestamp": 1771453560154,
+    "sport": "nhl",
+    "data": {
+      "gameId": "401803242",
+      "homeTeam": {
+        "id": "6",
+        "name": "Oilers",
+        "displayName": "Edmonton Oilers",
+        "abbreviation": "EDM",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+        "record": "28-21-8"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Maple Leafs",
+        "displayName": "Toronto Maple Leafs",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+        "record": "27-21-9"
+      },
+      "startTime": "2026-02-04T01:30Z",
+      "gameDate": "2026-02-04",
+      "sport": "nhl",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 2,
+      "awayScore": 5,
+      "status": "final"
+    }
+  },
+  {
+    "id": "perf-401810580-4278585",
+    "type": "player_performance",
+    "timestamp": 1770177600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Collin Gillespie",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278585.png",
+      "teamAbbreviation": "PHX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 30,
+        "FG": 10,
+        "3PT": 8,
+        "FT": 2,
+        "REB": 4,
+        "AST": 10,
+        "TO": 1,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 2,
+        "+/-": 5
+      },
+      "headline": "30 PTS | 4 REB | 10 AST | 3 STL",
+      "gameId": "401810580",
+      "opponentAbbreviation": "POR",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810580-5105565",
+    "type": "player_performance",
+    "timestamp": 1770177600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 27,
+        "PTS": 14,
+        "FG": 4,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 15,
+        "AST": 3,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 6,
+        "DREB": 9,
+        "PF": 0,
+        "+/-": 5
+      },
+      "headline": "14 PTS | 15 REB | 3 AST",
+      "gameId": "401810580",
+      "opponentAbbreviation": "PHX",
+      "gameDate": "2026-02-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810576-3917376",
+    "type": "player_performance",
+    "timestamp": 1770166800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaylen Brown",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png",
+      "teamAbbreviation": "BOS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 33,
+        "FG": 15,
+        "3PT": 2,
+        "FT": 1,
+        "REB": 11,
+        "AST": 3,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 10,
+        "PF": 4,
+        "+/-": -1
+      },
+      "headline": "33 PTS | 11 REB | 3 AST",
+      "gameId": "401810576",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810576-5041939",
+    "type": "player_performance",
+    "timestamp": 1770166800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cooper Flagg",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png",
+      "teamAbbreviation": "DAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 36,
+        "FG": 12,
+        "3PT": 2,
+        "FT": 10,
+        "REB": 9,
+        "AST": 6,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 1,
+        "DREB": 8,
+        "PF": 1,
+        "+/-": -2
+      },
+      "headline": "36 PTS | 9 REB | 6 AST",
+      "gameId": "401810576",
+      "opponentAbbreviation": "BOS",
+      "gameDate": "2026-02-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810577-3134907",
+    "type": "player_performance",
+    "timestamp": 1770166800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kyle Kuzma",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3134907.png",
+      "teamAbbreviation": "MIL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 4,
+        "REB": 10,
+        "AST": 6,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 7,
+        "PF": 1,
+        "+/-": 18
+      },
+      "headline": "31 PTS | 10 REB | 6 AST",
+      "gameId": "401810577",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810575-4701230",
+    "type": "player_performance",
+    "timestamp": 1770165000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Johnson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png",
+      "teamAbbreviation": "ATL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 29,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 2,
+        "REB": 11,
+        "AST": 11,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 11,
+        "PF": 4,
+        "+/-": 8
+      },
+      "headline": "29 PTS | 11 REB | 11 AST",
+      "gameId": "401810575",
+      "opponentAbbreviation": "MIA",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810571-3112335",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nikola Jokic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 24,
+        "FG": 9,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 15,
+        "AST": 4,
+        "TO": 5,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 4,
+        "DREB": 11,
+        "PF": 3,
+        "+/-": -9
+      },
+      "headline": "24 PTS | 15 REB | 4 AST",
+      "gameId": "401810571",
+      "opponentAbbreviation": "DET",
+      "gameDate": "2026-02-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810571-3936299",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jamal Murray",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 32,
+        "FG": 8,
+        "3PT": 4,
+        "FT": 12,
+        "REB": 1,
+        "AST": 8,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 0,
+        "DREB": 1,
+        "PF": 0,
+        "+/-": 5
+      },
+      "headline": "32 PTS | 1 REB | 8 AST",
+      "gameId": "401810571",
+      "opponentAbbreviation": "DET",
+      "gameDate": "2026-02-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810571-4432166",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cade Cunningham",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png",
+      "teamAbbreviation": "DET",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 29,
+        "FG": 9,
+        "3PT": 2,
+        "FT": 9,
+        "REB": 2,
+        "AST": 10,
+        "TO": 5,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 2,
+        "PF": 5,
+        "+/-": 11
+      },
+      "headline": "29 PTS | 2 REB | 10 AST",
+      "gameId": "401810571",
+      "opponentAbbreviation": "DEN",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810572-4684793",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kyle Filipowski",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4684793.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 16,
+        "FG": 6,
+        "3PT": 1,
+        "FT": 3,
+        "REB": 16,
+        "AST": 5,
+        "TO": 4,
+        "STL": 3,
+        "BLK": 1,
+        "OREB": 2,
+        "DREB": 14,
+        "PF": 5,
+        "+/-": 3
+      },
+      "headline": "16 PTS | 16 REB | 5 AST | 3 STL",
+      "gameId": "401810572",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810572-4683766",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Isaiah Collier",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 48,
+        "PTS": 17,
+        "FG": 6,
+        "3PT": 0,
+        "FT": 5,
+        "REB": 5,
+        "AST": 22,
+        "TO": 2,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 4,
+        "+/-": 9
+      },
+      "headline": "17 PTS | 5 REB | 22 AST | 3 STL",
+      "gameId": "401810572",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810573-3136195",
+    "type": "player_performance",
+    "timestamp": 1770163200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Karl-Anthony Towns",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png",
+      "teamAbbreviation": "NY",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 26,
+        "PTS": 19,
+        "FG": 7,
+        "3PT": 1,
+        "FT": 4,
+        "REB": 15,
+        "AST": 3,
+        "TO": 1,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 2,
+        "DREB": 13,
+        "PF": 1,
+        "+/-": 30
+      },
+      "headline": "19 PTS | 15 REB | 3 AST",
+      "gameId": "401810573",
+      "opponentAbbreviation": "WSH",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810570-4870562",
+    "type": "player_performance",
+    "timestamp": 1770087600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Dominick Barlow",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4870562.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 26,
+        "FG": 10,
+        "3PT": 1,
+        "FT": 5,
+        "REB": 16,
+        "AST": 2,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 10,
+        "DREB": 6,
+        "PF": 3,
+        "+/-": 7
+      },
+      "headline": "26 PTS | 16 REB | 2 AST",
+      "gameId": "401810570",
+      "opponentAbbreviation": "LAC",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401803235-3114770",
+    "type": "player_performance",
+    "timestamp": 1770085800000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Nick Schmaltz",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/3114770.png",
+      "teamAbbreviation": "UTA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 2,
+        "HT": 0,
+        "TK": 0,
+        "+/-": 4,
+        "TOI": 19,
+        "PPTOI": 1,
+        "SHTOI": 3,
+        "ESTOI": 14,
+        "SHFT": 26,
+        "G": 3,
+        "YTDG": 22,
+        "A": 1,
+        "S": 3,
+        "SM": 1,
+        "SOG": 0,
+        "FW": 3,
+        "FL": 5,
+        "FO%": 37.5,
+        "GV": 1,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G | 1 A",
+      "gameId": "401803235",
+      "opponentAbbreviation": "VAN",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810569-4594268",
+    "type": "player_performance",
+    "timestamp": 1770078600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Anthony Edwards",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4594268.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 39,
+        "FG": 13,
+        "3PT": 3,
+        "FT": 10,
+        "REB": 7,
+        "AST": 3,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 6,
+        "PF": 2,
+        "+/-": 2
+      },
+      "headline": "39 PTS | 7 REB | 3 AST",
+      "gameId": "401810569",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-02-03",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810569-4277961",
+    "type": "player_performance",
+    "timestamp": 1770078600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaren Jackson Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4277961.png",
+      "teamAbbreviation": "MEM",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 30,
+        "FG": 8,
+        "3PT": 3,
+        "FT": 11,
+        "REB": 6,
+        "AST": 2,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 5,
+        "PF": 3,
+        "+/-": 7
+      },
+      "headline": "30 PTS | 6 REB | 2 AST",
+      "gameId": "401810569",
+      "opponentAbbreviation": "MIN",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810568-4871144",
+    "type": "player_performance",
+    "timestamp": 1770076800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Alperen Sengun",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4871144.png",
+      "teamAbbreviation": "HOU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 39,
+        "FG": 13,
+        "3PT": 0,
+        "FT": 13,
+        "REB": 16,
+        "AST": 5,
+        "TO": 5,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 7,
+        "DREB": 9,
+        "PF": 2,
+        "+/-": 4
+      },
+      "headline": "39 PTS | 16 REB | 5 AST",
+      "gameId": "401810568",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810559-4432166",
+    "type": "player_performance",
+    "timestamp": 1769986800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cade Cunningham",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png",
+      "teamAbbreviation": "DET",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 26,
+        "PTS": 18,
+        "FG": 7,
+        "3PT": 1,
+        "FT": 3,
+        "REB": 4,
+        "AST": 12,
+        "TO": 2,
+        "STL": 4,
+        "BLK": 3,
+        "OREB": 1,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": 34
+      },
+      "headline": "18 PTS | 4 REB | 12 AST | 4 STL | 3 BLK",
+      "gameId": "401810559",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-02-01",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810561-4066336",
+    "type": "player_performance",
+    "timestamp": 1769986800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Lauri Markkanen",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 27,
+        "FG": 9,
+        "3PT": 2,
+        "FT": 7,
+        "REB": 11,
+        "AST": 2,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 4,
+        "DREB": 7,
+        "PF": 0,
+        "+/-": -5
+      },
+      "headline": "27 PTS | 11 REB | 2 AST",
+      "gameId": "401810561",
+      "opponentAbbreviation": "TOR",
+      "gameDate": "2026-02-01",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810557-3917376",
+    "type": "player_performance",
+    "timestamp": 1769977800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaylen Brown",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png",
+      "teamAbbreviation": "BOS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 29,
+        "PTS": 30,
+        "FG": 12,
+        "3PT": 4,
+        "FT": 2,
+        "REB": 13,
+        "AST": 2,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 12,
+        "PF": 1,
+        "+/-": 16
+      },
+      "headline": "30 PTS | 13 REB | 2 AST",
+      "gameId": "401810557",
+      "opponentAbbreviation": "MIL",
+      "gameDate": "2026-02-01",
+      "isWin": true
+    }
+  }
+]

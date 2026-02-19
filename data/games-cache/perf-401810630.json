@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810630-4433287",
+    "type": "player_performance",
+    "timestamp": 1770854400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Brandon Miller",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png",
+      "teamAbbreviation": "CHA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 31,
+        "FG": 10,
+        "3PT": 5,
+        "FT": 6,
+        "REB": 9,
+        "AST": 2,
+        "TO": 5,
+        "STL": 1,
+        "BLK": 2,
+        "OREB": 1,
+        "DREB": 8,
+        "PF": 4,
+        "+/-": 3
+      },
+      "headline": "31 PTS | 9 REB | 2 AST",
+      "gameId": "401810630",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-02-12",
+      "isWin": true
+    }
+  }
+]

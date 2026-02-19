@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810614-4433134",
+    "type": "player_performance",
+    "timestamp": 1770580800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Scottie Barnes",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433134.png",
+      "teamAbbreviation": "TOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 25,
+        "FG": 12,
+        "3PT": 0,
+        "FT": 1,
+        "REB": 14,
+        "AST": 6,
+        "TO": 1,
+        "STL": 2,
+        "BLK": 4,
+        "OREB": 2,
+        "DREB": 12,
+        "PF": 3,
+        "+/-": 22
+      },
+      "headline": "25 PTS | 14 REB | 6 AST | 4 BLK",
+      "gameId": "401810614",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  }
+]

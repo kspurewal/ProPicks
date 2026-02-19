@@ -1,0 +1,127 @@
+[
+  {
+    "id": "401802545",
+    "sport": "nhl",
+    "date": "2025-11-02",
+    "homeTeam": {
+      "id": "129764",
+      "name": "Mammoth",
+      "displayName": "Utah Mammoth",
+      "abbreviation": "UTA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+      "record": "8-4-0"
+    },
+    "awayTeam": {
+      "id": "20",
+      "name": "Lightning",
+      "displayName": "Tampa Bay Lightning",
+      "abbreviation": "TB",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+      "record": "6-4-2"
+    },
+    "homeScore": 2,
+    "awayScore": 4,
+    "status": "final",
+    "startTime": "2025-11-02T20:30Z"
+  },
+  {
+    "id": "401802546",
+    "sport": "nhl",
+    "date": "2025-11-02",
+    "homeTeam": {
+      "id": "12",
+      "name": "Islanders",
+      "displayName": "New York Islanders",
+      "abbreviation": "NYI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "record": "6-5-1"
+    },
+    "awayTeam": {
+      "id": "29",
+      "name": "Blue Jackets",
+      "displayName": "Columbus Blue Jackets",
+      "abbreviation": "CBJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+      "record": "7-5-0"
+    },
+    "homeScore": 3,
+    "awayScore": 2,
+    "status": "final",
+    "startTime": "2025-11-02T22:00Z"
+  },
+  {
+    "id": "401802547",
+    "sport": "nhl",
+    "date": "2025-11-03",
+    "homeTeam": {
+      "id": "15",
+      "name": "Flyers",
+      "displayName": "Philadelphia Flyers",
+      "abbreviation": "PHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+      "record": "6-5-1"
+    },
+    "awayTeam": {
+      "id": "3",
+      "name": "Flames",
+      "displayName": "Calgary Flames",
+      "abbreviation": "CGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+      "record": "3-9-2"
+    },
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "final",
+    "startTime": "2025-11-03T00:00Z"
+  },
+  {
+    "id": "401802548",
+    "sport": "nhl",
+    "date": "2025-11-03",
+    "homeTeam": {
+      "id": "25",
+      "name": "Ducks",
+      "displayName": "Anaheim Ducks",
+      "abbreviation": "ANA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+      "record": "7-3-1"
+    },
+    "awayTeam": {
+      "id": "11",
+      "name": "Devils",
+      "displayName": "New Jersey Devils",
+      "abbreviation": "NJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+      "record": "9-4-0"
+    },
+    "homeScore": 4,
+    "awayScore": 1,
+    "status": "final",
+    "startTime": "2025-11-03T01:00Z"
+  },
+  {
+    "id": "401802549",
+    "sport": "nhl",
+    "date": "2025-11-03",
+    "homeTeam": {
+      "id": "18",
+      "name": "Sharks",
+      "displayName": "San Jose Sharks",
+      "abbreviation": "SJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+      "record": "4-6-3"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Red Wings",
+      "displayName": "Detroit Red Wings",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+      "record": "9-4-0"
+    },
+    "homeScore": 2,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2025-11-03T01:00Z"
+  }
+]

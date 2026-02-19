@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810601-6450",
+    "type": "player_performance",
+    "timestamp": 1770433200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kawhi Leonard",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png",
+      "teamAbbreviation": "LAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 31,
+        "FG": 9,
+        "3PT": 1,
+        "FT": 12,
+        "REB": 9,
+        "AST": 7,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 9,
+        "PF": 1,
+        "+/-": 19
+      },
+      "headline": "31 PTS | 9 REB | 7 AST",
+      "gameId": "401810601",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-02-07",
+      "isWin": true
+    }
+  }
+]

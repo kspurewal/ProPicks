@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810390-3992",
+    "type": "player_performance",
+    "timestamp": 1768005000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "James Harden",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png",
+      "teamAbbreviation": "LAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 31,
+        "FG": 10,
+        "3PT": 3,
+        "FT": 8,
+        "REB": 4,
+        "AST": 6,
+        "TO": 6,
+        "STL": 1,
+        "BLK": 2,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 1,
+        "+/-": 9
+      },
+      "headline": "31 PTS | 4 REB | 6 AST",
+      "gameId": "401810390",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-01-10",
+      "isWin": true
+    }
+  }
+]

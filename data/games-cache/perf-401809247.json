@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401809247-3032977",
+    "type": "player_performance",
+    "timestamp": 1768845600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Giannis Antetokounmpo",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3032977.png",
+      "teamAbbreviation": "MIL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 30,
+        "PTS": 21,
+        "FG": 7,
+        "3PT": 0,
+        "FT": 7,
+        "REB": 17,
+        "AST": 6,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 3,
+        "DREB": 14,
+        "PF": 3,
+        "+/-": -8
+      },
+      "headline": "21 PTS | 17 REB | 6 AST",
+      "gameId": "401809247",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-19",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401809247-4701230",
+    "type": "player_performance",
+    "timestamp": 1768845600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Johnson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png",
+      "teamAbbreviation": "ATL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 28,
+        "FG": 11,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 16,
+        "AST": 6,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 5,
+        "DREB": 11,
+        "PF": 2,
+        "+/-": 16
+      },
+      "headline": "28 PTS | 16 REB | 6 AST",
+      "gameId": "401809247",
+      "opponentAbbreviation": "MIL",
+      "gameDate": "2026-01-19",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401809247-4278039",
+    "type": "player_performance",
+    "timestamp": 1768845600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nickeil Alexander-Walker",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278039.png",
+      "teamAbbreviation": "ATL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 32,
+        "FG": 9,
+        "3PT": 7,
+        "FT": 7,
+        "REB": 6,
+        "AST": 6,
+        "TO": 0,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 6,
+        "PF": 1,
+        "+/-": -1
+      },
+      "headline": "32 PTS | 6 REB | 6 AST",
+      "gameId": "401809247",
+      "opponentAbbreviation": "MIL",
+      "gameDate": "2026-01-19",
+      "isWin": false
+    }
+  }
+]

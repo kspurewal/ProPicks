@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810504-4066261",
+    "type": "player_performance",
+    "timestamp": 1769308200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Bam Adebayo",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066261.png",
+      "teamAbbreviation": "MIA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 26,
+        "FG": 8,
+        "3PT": 4,
+        "FT": 6,
+        "REB": 15,
+        "AST": 2,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 7,
+        "DREB": 8,
+        "PF": 1,
+        "+/-": 19
+      },
+      "headline": "26 PTS | 15 REB | 2 AST",
+      "gameId": "401810504",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-01-25",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810504-3102530",
+    "type": "player_performance",
+    "timestamp": 1769308200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jusuf Nurkic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3102530.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 17,
+        "FG": 8,
+        "3PT": 1,
+        "FT": 0,
+        "REB": 10,
+        "AST": 12,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 2,
+        "DREB": 8,
+        "PF": 5,
+        "+/-": -30
+      },
+      "headline": "17 PTS | 10 REB | 12 AST",
+      "gameId": "401810504",
+      "opponentAbbreviation": "MIA",
+      "gameDate": "2026-01-25",
+      "isWin": false
+    }
+  }
+]

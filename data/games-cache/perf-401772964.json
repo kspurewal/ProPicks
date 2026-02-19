@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772964-3915511",
+    "type": "player_performance",
+    "timestamp": 1767549600000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Joe Burrow",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3915511.png",
+      "teamAbbreviation": "CIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 29,
+        "YDS": 236,
+        "AVG": 6.1,
+        "TD": 3,
+        "INT": 1,
+        "SACKS": 2,
+        "QBR": 67.8,
+        "RTG": 104.2
+      },
+      "headline": "236 YDS | 3 TD",
+      "gameId": "401772964",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-04",
+      "isWin": false
+    }
+  }
+]

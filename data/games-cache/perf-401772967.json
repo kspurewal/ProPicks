@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772967-3039707",
+    "type": "player_performance",
+    "timestamp": 1767561900000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Mitchell Trubisky",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3039707.png",
+      "teamAbbreviation": "BUF",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 22,
+        "YDS": 259,
+        "AVG": 8.9,
+        "TD": 4,
+        "INT": 0,
+        "SACKS": 0,
+        "QBR": 90.7,
+        "RTG": 142.1
+      },
+      "headline": "259 YDS | 4 TD",
+      "gameId": "401772967",
+      "opponentAbbreviation": "NYJ",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

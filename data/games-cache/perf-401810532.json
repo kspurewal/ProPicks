@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810532-3064514",
+    "type": "player_performance",
+    "timestamp": 1769650200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Julius Randle",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 0,
+        "FT": 7,
+        "REB": 5,
+        "AST": 4,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 2,
+        "PF": 3,
+        "+/-": 2
+      },
+      "headline": "31 PTS | 5 REB | 4 AST",
+      "gameId": "401810532",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-01-29",
+      "isWin": true
+    }
+  }
+]

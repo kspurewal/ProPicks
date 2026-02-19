@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810371-5093267",
+    "type": "player_performance",
+    "timestamp": 1767830400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Collin Murray-Boyles",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png",
+      "teamAbbreviation": "TOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 4,
+        "FG": 1,
+        "3PT": 0,
+        "FT": 2,
+        "REB": 15,
+        "AST": 3,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 6,
+        "DREB": 9,
+        "PF": 1,
+        "+/-": 2
+      },
+      "headline": "4 PTS | 15 REB | 3 AST",
+      "gameId": "401810371",
+      "opponentAbbreviation": "CHA",
+      "gameDate": "2026-01-08",
+      "isWin": true
+    }
+  }
+]

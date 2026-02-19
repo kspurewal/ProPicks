@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810535-3059318",
+    "type": "player_performance",
+    "timestamp": 1769731200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Joel Embiid",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 37,
+        "FG": 13,
+        "3PT": 1,
+        "FT": 10,
+        "REB": 5,
+        "AST": 8,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 3,
+        "+/-": 9
+      },
+      "headline": "37 PTS | 5 REB | 8 AST",
+      "gameId": "401810535",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810535-4431678",
+    "type": "player_performance",
+    "timestamp": 1769731200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Tyrese Maxey",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 41,
+        "PTS": 40,
+        "FG": 12,
+        "3PT": 4,
+        "FT": 12,
+        "REB": 4,
+        "AST": 8,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 3,
+        "+/-": 8
+      },
+      "headline": "40 PTS | 4 REB | 8 AST",
+      "gameId": "401810535",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  }
+]

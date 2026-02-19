@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810493-3155942",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Domantas Sabonis",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3155942.png",
+      "teamAbbreviation": "SAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 24,
+        "FG": 9,
+        "3PT": 1,
+        "FT": 5,
+        "REB": 16,
+        "AST": 6,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 4,
+        "DREB": 12,
+        "PF": 5,
+        "+/-": 16
+      },
+      "headline": "24 PTS | 16 REB | 6 AST",
+      "gameId": "401810493",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-24",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810493-4432158",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Evan Mobley",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432158.png",
+      "teamAbbreviation": "CLE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 29,
+        "FG": 13,
+        "3PT": 0,
+        "FT": 3,
+        "REB": 13,
+        "AST": 7,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 4,
+        "OREB": 3,
+        "DREB": 10,
+        "PF": 0,
+        "+/-": 17
+      },
+      "headline": "29 PTS | 13 REB | 7 AST | 4 BLK",
+      "gameId": "401810493",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810493-3908809",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Mitchell",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png",
+      "teamAbbreviation": "CLE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 33,
+        "FG": 11,
+        "3PT": 5,
+        "FT": 6,
+        "REB": 5,
+        "AST": 8,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 3,
+        "+/-": 5
+      },
+      "headline": "33 PTS | 5 REB | 8 AST",
+      "gameId": "401810493",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  }
+]

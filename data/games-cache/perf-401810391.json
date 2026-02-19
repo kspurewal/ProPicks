@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810391-4593803",
+    "type": "player_performance",
+    "timestamp": 1768006800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Williams",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4593803.png",
+      "teamAbbreviation": "OKC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 26,
+        "FG": 9,
+        "3PT": 0,
+        "FT": 8,
+        "REB": 5,
+        "AST": 10,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 4,
+        "+/-": 2
+      },
+      "headline": "26 PTS | 5 REB | 10 AST",
+      "gameId": "401810391",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-01-10",
+      "isWin": true
+    }
+  }
+]

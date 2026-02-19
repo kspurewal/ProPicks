@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810394-3975",
+    "type": "player_performance",
+    "timestamp": 1768014000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Stephen Curry",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3975.png",
+      "teamAbbreviation": "GS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 27,
+        "FG": 10,
+        "3PT": 6,
+        "FT": 1,
+        "REB": 0,
+        "AST": 10,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 2,
+        "OREB": 0,
+        "DREB": 0,
+        "PF": 0,
+        "+/-": 14
+      },
+      "headline": "27 PTS | 10 AST",
+      "gameId": "401810394",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-01-10",
+      "isWin": true
+    }
+  }
+]

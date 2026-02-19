@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810600-5105565",
+    "type": "player_performance",
+    "timestamp": 1770433200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 25,
+        "PTS": 13,
+        "FG": 6,
+        "3PT": 0,
+        "FT": 1,
+        "REB": 17,
+        "AST": 0,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 7,
+        "DREB": 10,
+        "PF": 3,
+        "+/-": 12
+      },
+      "headline": "13 PTS | 17 REB",
+      "gameId": "401810600",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-02-07",
+      "isWin": true
+    }
+  }
+]

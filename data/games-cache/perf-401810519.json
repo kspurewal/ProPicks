@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810519-5105565",
+    "type": "player_performance",
+    "timestamp": 1769558400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 30,
+        "PTS": 14,
+        "FG": 6,
+        "3PT": 0,
+        "FT": 2,
+        "REB": 20,
+        "AST": 2,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 13,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": -17
+      },
+      "headline": "14 PTS | 20 REB | 2 AST",
+      "gameId": "401810519",
+      "opponentAbbreviation": "WSH",
+      "gameDate": "2026-01-28",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810519-4914336",
+    "type": "player_performance",
+    "timestamp": 1769558400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Shaedon Sharpe",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4914336.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 5,
+        "FT": 4,
+        "REB": 4,
+        "AST": 2,
+        "TO": 3,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 3,
+        "+/-": -10
+      },
+      "headline": "31 PTS | 4 REB | 2 AST",
+      "gameId": "401810519",
+      "opponentAbbreviation": "WSH",
+      "gameDate": "2026-01-28",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810519-5160992",
+    "type": "player_performance",
+    "timestamp": 1769558400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Alex Sarr",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5160992.png",
+      "teamAbbreviation": "WSH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 29,
+        "FG": 11,
+        "3PT": 3,
+        "FT": 4,
+        "REB": 12,
+        "AST": 3,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 6,
+        "OREB": 6,
+        "DREB": 6,
+        "PF": 1,
+        "+/-": 16
+      },
+      "headline": "29 PTS | 12 REB | 3 AST | 6 BLK",
+      "gameId": "401810519",
+      "opponentAbbreviation": "POR",
+      "gameDate": "2026-01-28",
+      "isWin": true
+    }
+  }
+]

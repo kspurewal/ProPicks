@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772960-3916387",
+    "type": "player_performance",
+    "timestamp": 1767576000000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Lamar Jackson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3916387.png",
+      "teamAbbreviation": "BAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 11,
+        "YDS": 238,
+        "AVG": 13.2,
+        "TD": 3,
+        "INT": 1,
+        "SACKS": 3,
+        "QBR": 53.2,
+        "RTG": 121.5
+      },
+      "headline": "238 YDS | 3 TD",
+      "gameId": "401772960",
+      "opponentAbbreviation": "PIT",
+      "gameDate": "2026-01-05",
+      "isWin": false
+    }
+  }
+]

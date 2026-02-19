@@ -1,0 +1,202 @@
+[
+  {
+    "id": "401803145",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "1",
+      "name": "Bruins",
+      "displayName": "Boston Bruins",
+      "abbreviation": "BOS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+      "record": "29-20-2"
+    },
+    "awayTeam": {
+      "id": "37",
+      "name": "Golden Knights",
+      "displayName": "Vegas Golden Knights",
+      "abbreviation": "VGK",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+      "record": "24-13-12"
+    },
+    "homeScore": 4,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-23T00:00Z"
+  },
+  {
+    "id": "401803146",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "10",
+      "name": "Canadiens",
+      "displayName": "Montreal Canadiens",
+      "abbreviation": "MTL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+      "record": "28-16-7"
+    },
+    "awayTeam": {
+      "id": "2",
+      "name": "Sabres",
+      "displayName": "Buffalo Sabres",
+      "abbreviation": "BUF",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+      "record": "28-17-5"
+    },
+    "homeScore": 2,
+    "awayScore": 4,
+    "status": "final",
+    "startTime": "2026-01-23T00:00Z"
+  },
+  {
+    "id": "401803147",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "7",
+      "name": "Hurricanes",
+      "displayName": "Carolina Hurricanes",
+      "abbreviation": "CAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
+      "record": "31-15-5"
+    },
+    "awayTeam": {
+      "id": "4",
+      "name": "Blackhawks",
+      "displayName": "Chicago Blackhawks",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+      "record": "21-22-7"
+    },
+    "homeScore": 3,
+    "awayScore": 4,
+    "status": "final",
+    "startTime": "2026-01-23T00:00Z"
+  },
+  {
+    "id": "401803148",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "29",
+      "name": "Blue Jackets",
+      "displayName": "Columbus Blue Jackets",
+      "abbreviation": "CBJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+      "record": "23-20-7"
+    },
+    "awayTeam": {
+      "id": "9",
+      "name": "Stars",
+      "displayName": "Dallas Stars",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+      "record": "28-14-9"
+    },
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "final",
+    "startTime": "2026-01-23T00:00Z"
+  },
+  {
+    "id": "401803149",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "27",
+      "name": "Predators",
+      "displayName": "Nashville Predators",
+      "abbreviation": "NSH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+      "record": "24-22-4"
+    },
+    "awayTeam": {
+      "id": "14",
+      "name": "Senators",
+      "displayName": "Ottawa Senators",
+      "abbreviation": "OTT",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+      "record": "23-20-7"
+    },
+    "homeScore": 5,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-23T01:00Z"
+  },
+  {
+    "id": "401803150",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "28",
+      "name": "Jets",
+      "displayName": "Winnipeg Jets",
+      "abbreviation": "WPG",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+      "record": "20-23-7"
+    },
+    "awayTeam": {
+      "id": "26",
+      "name": "Panthers",
+      "displayName": "Florida Panthers",
+      "abbreviation": "FLA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+      "record": "26-20-3"
+    },
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "final",
+    "startTime": "2026-01-23T01:00Z"
+  },
+  {
+    "id": "401803151",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "6",
+      "name": "Oilers",
+      "displayName": "Edmonton Oilers",
+      "abbreviation": "EDM",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+      "record": "25-19-8"
+    },
+    "awayTeam": {
+      "id": "16",
+      "name": "Penguins",
+      "displayName": "Pittsburgh Penguins",
+      "abbreviation": "PIT",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+      "record": "25-14-11"
+    },
+    "homeScore": 2,
+    "awayScore": 6,
+    "status": "final",
+    "startTime": "2026-01-23T02:00Z"
+  },
+  {
+    "id": "401803152",
+    "sport": "nhl",
+    "date": "2026-01-23",
+    "homeTeam": {
+      "id": "30",
+      "name": "Wild",
+      "displayName": "Minnesota Wild",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+      "record": "29-14-9"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Red Wings",
+      "displayName": "Detroit Red Wings",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+      "record": "31-16-5"
+    },
+    "homeScore": 4,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-23T02:30Z"
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810606-4433249",
+    "type": "player_performance",
+    "timestamp": 1770510600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Moussa Diabate",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433249.png",
+      "teamAbbreviation": "CHA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 11,
+        "FG": 4,
+        "3PT": 0,
+        "FT": 3,
+        "REB": 15,
+        "AST": 2,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 5,
+        "DREB": 10,
+        "PF": 0,
+        "+/-": 2
+      },
+      "headline": "11 PTS | 15 REB | 2 AST",
+      "gameId": "401810606",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810606-4701230",
+    "type": "player_performance",
+    "timestamp": 1770510600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Johnson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png",
+      "teamAbbreviation": "ATL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 31,
+        "FG": 10,
+        "3PT": 2,
+        "FT": 9,
+        "REB": 9,
+        "AST": 8,
+        "TO": 2,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 9,
+        "PF": 4,
+        "+/-": 3
+      },
+      "headline": "31 PTS | 9 REB | 8 AST | 3 STL",
+      "gameId": "401810606",
+      "opponentAbbreviation": "CHA",
+      "gameDate": "2026-02-08",
+      "isWin": false
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803195-3114766",
+    "type": "player_performance",
+    "timestamp": 1769731200000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Alex Tuch",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/3114766.png",
+      "teamAbbreviation": "BUF",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 0,
+        "HT": 0,
+        "TK": 1,
+        "+/-": 2,
+        "TOI": 17,
+        "PPTOI": 1,
+        "SHTOI": 1,
+        "ESTOI": 14,
+        "SHFT": 24,
+        "G": 3,
+        "YTDG": 22,
+        "A": 0,
+        "S": 7,
+        "SM": 0,
+        "SOG": 0,
+        "FW": 0,
+        "FL": 1,
+        "FO%": 0,
+        "GV": 1,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803195",
+      "opponentAbbreviation": "LA",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  }
+]

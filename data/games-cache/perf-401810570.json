@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810570-4870562",
+    "type": "player_performance",
+    "timestamp": 1770087600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Dominick Barlow",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4870562.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 26,
+        "FG": 10,
+        "3PT": 1,
+        "FT": 5,
+        "REB": 16,
+        "AST": 2,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 10,
+        "DREB": 6,
+        "PF": 3,
+        "+/-": 7
+      },
+      "headline": "26 PTS | 16 REB | 2 AST",
+      "gameId": "401810570",
+      "opponentAbbreviation": "LAC",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  }
+]

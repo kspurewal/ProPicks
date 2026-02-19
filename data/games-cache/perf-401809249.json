@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401809249-3136195",
+    "type": "player_performance",
+    "timestamp": 1768860000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Karl-Anthony Towns",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png",
+      "teamAbbreviation": "NY",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 30,
+        "PTS": 22,
+        "FG": 9,
+        "3PT": 2,
+        "FT": 2,
+        "REB": 18,
+        "AST": 4,
+        "TO": 5,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 5,
+        "DREB": 13,
+        "PF": 5,
+        "+/-": -15
+      },
+      "headline": "22 PTS | 18 REB | 4 AST",
+      "gameId": "401809249",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-01-19",
+      "isWin": false
+    }
+  }
+]

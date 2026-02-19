@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772983-4431452",
+    "type": "player_performance",
+    "timestamp": 1768766400000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Drake Maye",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431452.png",
+      "teamAbbreviation": "NE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 16,
+        "YDS": 179,
+        "AVG": 6.6,
+        "TD": 3,
+        "INT": 1,
+        "SACKS": 5,
+        "QBR": 20.7,
+        "RTG": 100.7
+      },
+      "headline": "179 YDS | 3 TD",
+      "gameId": "401772983",
+      "opponentAbbreviation": "HOU",
+      "gameDate": "2026-01-18",
+      "isWin": true
+    }
+  }
+]

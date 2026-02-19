@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810387-4395724",
+    "type": "player_performance",
+    "timestamp": 1768003200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Immanuel Quickley",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4395724.png",
+      "teamAbbreviation": "TOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 17,
+        "FG": 6,
+        "3PT": 4,
+        "FT": 1,
+        "REB": 2,
+        "AST": 13,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 2,
+        "PF": 2,
+        "+/-": -20
+      },
+      "headline": "17 PTS | 2 REB | 13 AST",
+      "gameId": "401810387",
+      "opponentAbbreviation": "BOS",
+      "gameDate": "2026-01-10",
+      "isWin": false
+    }
+  }
+]

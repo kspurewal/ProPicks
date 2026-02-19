@@ -1,0 +1,52 @@
+[
+  {
+    "id": "401809835",
+    "sport": "nba",
+    "date": "2025-12-11",
+    "homeTeam": {
+      "id": "25",
+      "name": "Thunder",
+      "displayName": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+      "record": "24-1"
+    },
+    "awayTeam": {
+      "id": "21",
+      "name": "Suns",
+      "displayName": "Phoenix Suns",
+      "abbreviation": "PHX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "record": "14-11"
+    },
+    "homeScore": 138,
+    "awayScore": 89,
+    "status": "final",
+    "startTime": "2025-12-11T00:30Z"
+  },
+  {
+    "id": "401809836",
+    "sport": "nba",
+    "date": "2025-12-11",
+    "homeTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "17-7"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "17-7"
+    },
+    "homeScore": 119,
+    "awayScore": 132,
+    "status": "final",
+    "startTime": "2025-12-11T03:00Z"
+  }
+]

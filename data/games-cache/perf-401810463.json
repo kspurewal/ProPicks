@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810463-3992",
+    "type": "player_performance",
+    "timestamp": 1768852800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "James Harden",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png",
+      "teamAbbreviation": "LAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 36,
+        "FG": 9,
+        "3PT": 0,
+        "FT": 18,
+        "REB": 7,
+        "AST": 9,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 6,
+        "PF": 2,
+        "+/-": -3
+      },
+      "headline": "36 PTS | 7 REB | 9 AST",
+      "gameId": "401810463",
+      "opponentAbbreviation": "WSH",
+      "gameDate": "2026-01-19",
+      "isWin": true
+    }
+  }
+]

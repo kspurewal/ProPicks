@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810462-4278129",
+    "type": "player_performance",
+    "timestamp": 1768789800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Deandre Ayton",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278129.png",
+      "teamAbbreviation": "LAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 25,
+        "FG": 10,
+        "3PT": 0,
+        "FT": 5,
+        "REB": 13,
+        "AST": 1,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 12,
+        "PF": 2,
+        "+/-": 20
+      },
+      "headline": "25 PTS | 13 REB | 1 AST",
+      "gameId": "401810462",
+      "opponentAbbreviation": "TOR",
+      "gameDate": "2026-01-19",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810466-4433627",
+    "type": "player_performance",
+    "timestamp": 1768860000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Keyonte George",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 30,
+        "FG": 7,
+        "3PT": 4,
+        "FT": 12,
+        "REB": 3,
+        "AST": 6,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 2,
+        "+/-": -14
+      },
+      "headline": "30 PTS | 3 REB | 6 AST",
+      "gameId": "401810466",
+      "opponentAbbreviation": "SA",
+      "gameDate": "2026-01-19",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810466-5104157",
+    "type": "player_performance",
+    "timestamp": 1768860000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Victor Wembanyama",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5104157.png",
+      "teamAbbreviation": "SA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 26,
+        "PTS": 33,
+        "FG": 10,
+        "3PT": 7,
+        "FT": 6,
+        "REB": 10,
+        "AST": 1,
+        "TO": 1,
+        "STL": 2,
+        "BLK": 2,
+        "OREB": 1,
+        "DREB": 9,
+        "PF": 3,
+        "+/-": 8
+      },
+      "headline": "33 PTS | 10 REB | 1 AST",
+      "gameId": "401810466",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-01-19",
+      "isWin": true
+    }
+  }
+]

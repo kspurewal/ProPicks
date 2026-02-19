@@ -1,0 +1,43 @@
+[
+  {
+    "username": "Krish_Purewal2",
+    "createdAt": 1771463787593,
+    "totalPoints": 0,
+    "weeklyPoints": 0,
+    "currentStreak": 0,
+    "longestStreak": 0,
+    "totalPicks": 0,
+    "correctPicks": 0,
+    "badges": [],
+    "followedLeagues": [
+      "nba",
+      "mlb"
+    ],
+    "followedTeams": [
+      "17"
+    ]
+  },
+  {
+    "username": "Krish_Purewal",
+    "createdAt": 1771514400792,
+    "totalPoints": 0,
+    "weeklyPoints": 0,
+    "currentStreak": 0,
+    "longestStreak": 0,
+    "totalPicks": 0,
+    "correctPicks": 0,
+    "badges": [],
+    "followedLeagues": [
+      "nba",
+      "mlb",
+      "nhl",
+      "nfl"
+    ],
+    "followedTeams": [
+      "17",
+      "21",
+      "19",
+      "13"
+    ]
+  }
+]

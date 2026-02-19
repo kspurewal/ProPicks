@@ -1,0 +1,27 @@
+[
+  {
+    "id": "401810037",
+    "sport": "nba",
+    "date": "2025-11-07",
+    "homeTeam": {
+      "id": "21",
+      "name": "Suns",
+      "displayName": "Phoenix Suns",
+      "abbreviation": "PHX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "record": "4-5"
+    },
+    "awayTeam": {
+      "id": "12",
+      "name": "Clippers",
+      "displayName": "LA Clippers",
+      "abbreviation": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "record": "3-5"
+    },
+    "homeScore": 115,
+    "awayScore": 102,
+    "status": "final",
+    "startTime": "2025-11-07T02:00Z"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810422-3936299",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jamal Murray",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 35,
+        "FG": 11,
+        "3PT": 5,
+        "FT": 8,
+        "REB": 2,
+        "AST": 9,
+        "TO": 3,
+        "STL": 3,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 2,
+        "PF": 2,
+        "+/-": 8
+      },
+      "headline": "35 PTS | 2 REB | 9 AST | 3 STL",
+      "gameId": "401810422",
+      "opponentAbbreviation": "NO",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810422-4576087",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Peyton Watson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4576087.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 1,
+        "FT": 8,
+        "REB": 7,
+        "AST": 5,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": 15
+      },
+      "headline": "31 PTS | 7 REB | 5 AST",
+      "gameId": "401810422",
+      "opponentAbbreviation": "NO",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810422-4397688",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Trey Murphy III",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png",
+      "teamAbbreviation": "NO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 4,
+        "FT": 5,
+        "REB": 5,
+        "AST": 2,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 5,
+        "+/-": -8
+      },
+      "headline": "31 PTS | 5 REB | 2 AST",
+      "gameId": "401810422",
+      "opponentAbbreviation": "DEN",
+      "gameDate": "2026-01-14",
+      "isWin": false
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810569-4594268",
+    "type": "player_performance",
+    "timestamp": 1770078600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Anthony Edwards",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4594268.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 39,
+        "FG": 13,
+        "3PT": 3,
+        "FT": 10,
+        "REB": 7,
+        "AST": 3,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 6,
+        "PF": 2,
+        "+/-": 2
+      },
+      "headline": "39 PTS | 7 REB | 3 AST",
+      "gameId": "401810569",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-02-03",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810569-4277961",
+    "type": "player_performance",
+    "timestamp": 1770078600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaren Jackson Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4277961.png",
+      "teamAbbreviation": "MEM",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 30,
+        "FG": 8,
+        "3PT": 3,
+        "FT": 11,
+        "REB": 6,
+        "AST": 2,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 5,
+        "PF": 3,
+        "+/-": 7
+      },
+      "headline": "30 PTS | 6 REB | 2 AST",
+      "gameId": "401810569",
+      "opponentAbbreviation": "MIN",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  }
+]

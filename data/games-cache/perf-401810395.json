@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810395-3202",
+    "type": "player_performance",
+    "timestamp": 1768014000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kevin Durant",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
+      "teamAbbreviation": "HOU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 30,
+        "FG": 11,
+        "3PT": 4,
+        "FT": 4,
+        "REB": 12,
+        "AST": 4,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 2,
+        "DREB": 10,
+        "PF": 0,
+        "+/-": 5
+      },
+      "headline": "30 PTS | 12 REB | 4 AST",
+      "gameId": "401810395",
+      "opponentAbbreviation": "POR",
+      "gameDate": "2026-01-10",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810395-5105565",
+    "type": "player_performance",
+    "timestamp": 1768014000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 8,
+        "FG": 3,
+        "3PT": 0,
+        "FT": 2,
+        "REB": 15,
+        "AST": 6,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 5,
+        "DREB": 10,
+        "PF": 2,
+        "+/-": 8
+      },
+      "headline": "8 PTS | 15 REB | 6 AST",
+      "gameId": "401810395",
+      "opponentAbbreviation": "HOU",
+      "gameDate": "2026-01-10",
+      "isWin": true
+    }
+  }
+]

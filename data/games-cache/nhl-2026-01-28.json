@@ -1,0 +1,77 @@
+[
+  {
+    "id": "401803193",
+    "sport": "nhl",
+    "date": "2026-01-29",
+    "homeTeam": {
+      "id": "12",
+      "name": "Islanders",
+      "displayName": "New York Islanders",
+      "abbreviation": "NYI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "record": "29-19-5"
+    },
+    "awayTeam": {
+      "id": "13",
+      "name": "Rangers",
+      "displayName": "New York Rangers",
+      "abbreviation": "NYR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+      "record": "22-26-6"
+    },
+    "homeScore": 5,
+    "awayScore": 2,
+    "status": "final",
+    "startTime": "2026-01-29T00:00Z"
+  },
+  {
+    "id": "401803191",
+    "sport": "nhl",
+    "date": "2026-01-29",
+    "homeTeam": {
+      "id": "29",
+      "name": "Blue Jackets",
+      "displayName": "Columbus Blue Jackets",
+      "abbreviation": "CBJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+      "record": "25-20-7"
+    },
+    "awayTeam": {
+      "id": "15",
+      "name": "Flyers",
+      "displayName": "Philadelphia Flyers",
+      "abbreviation": "PHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+      "record": "24-19-9"
+    },
+    "homeScore": 5,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-29T00:30Z"
+  },
+  {
+    "id": "401803192",
+    "sport": "nhl",
+    "date": "2026-01-29",
+    "homeTeam": {
+      "id": "14",
+      "name": "Senators",
+      "displayName": "Ottawa Senators",
+      "abbreviation": "OTT",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+      "record": "25-21-7"
+    },
+    "awayTeam": {
+      "id": "17",
+      "name": "Avalanche",
+      "displayName": "Colorado Avalanche",
+      "abbreviation": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+      "record": "35-7-9"
+    },
+    "homeScore": 5,
+    "awayScore": 2,
+    "status": "final",
+    "startTime": "2026-01-29T00:30Z"
+  }
+]

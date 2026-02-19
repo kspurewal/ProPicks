@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810498-3934672",
+    "type": "player_performance",
+    "timestamp": 1769284800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Brunson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png",
+      "teamAbbreviation": "NY",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 6,
+        "FT": 3,
+        "REB": 5,
+        "AST": 6,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 4,
+        "PF": 3,
+        "+/-": 7
+      },
+      "headline": "31 PTS | 5 REB | 6 AST",
+      "gameId": "401810498",
+      "opponentAbbreviation": "PHI",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810498-3059318",
+    "type": "player_performance",
+    "timestamp": 1769284800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Joel Embiid",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 38,
+        "FG": 13,
+        "3PT": 3,
+        "FT": 9,
+        "REB": 11,
+        "AST": 5,
+        "TO": 4,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 3,
+        "DREB": 8,
+        "PF": 2,
+        "+/-": -3
+      },
+      "headline": "38 PTS | 11 REB | 5 AST",
+      "gameId": "401810498",
+      "opponentAbbreviation": "NY",
+      "gameDate": "2026-01-24",
+      "isWin": false
+    }
+  }
+]

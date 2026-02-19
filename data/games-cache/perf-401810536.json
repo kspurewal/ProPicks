@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810536-5160992",
+    "type": "player_performance",
+    "timestamp": 1769731200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Alex Sarr",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5160992.png",
+      "teamAbbreviation": "WSH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 16,
+        "FG": 6,
+        "3PT": 1,
+        "FT": 3,
+        "REB": 17,
+        "AST": 2,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 2,
+        "OREB": 7,
+        "DREB": 10,
+        "PF": 2,
+        "+/-": 3
+      },
+      "headline": "16 PTS | 17 REB | 2 AST",
+      "gameId": "401810536",
+      "opponentAbbreviation": "MIL",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "401810616",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "30",
+      "name": "Hornets",
+      "displayName": "Charlotte Hornets",
+      "abbreviation": "CHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+      "record": "25-28"
+    },
+    "awayTeam": {
+      "id": "8",
+      "name": "Pistons",
+      "displayName": "Detroit Pistons",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+      "record": "38-13"
+    },
+    "homeScore": 82,
+    "awayScore": 91,
+    "status": "in_progress",
+    "startTime": "2026-02-10T00:00Z"
+  },
+  {
+    "id": "401810617",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "17",
+      "name": "Nets",
+      "displayName": "Brooklyn Nets",
+      "abbreviation": "BKN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+      "record": "14-37"
+    },
+    "awayTeam": {
+      "id": "4",
+      "name": "Bulls",
+      "displayName": "Chicago Bulls",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "record": "24-29"
+    },
+    "homeScore": 81,
+    "awayScore": 69,
+    "status": "in_progress",
+    "startTime": "2026-02-10T00:30Z"
+  },
+  {
+    "id": "401810618",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "14",
+      "name": "Heat",
+      "displayName": "Miami Heat",
+      "abbreviation": "MIA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "record": "28-26"
+    },
+    "awayTeam": {
+      "id": "26",
+      "name": "Jazz",
+      "displayName": "Utah Jazz",
+      "abbreviation": "UTAH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "record": "16-37"
+    },
+    "homeScore": 64,
+    "awayScore": 72,
+    "status": "in_progress",
+    "startTime": "2026-02-10T00:30Z"
+  },
+  {
+    "id": "401810619",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "19",
+      "name": "Magic",
+      "displayName": "Orlando Magic",
+      "abbreviation": "ORL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "record": "27-24"
+    },
+    "awayTeam": {
+      "id": "15",
+      "name": "Bucks",
+      "displayName": "Milwaukee Bucks",
+      "abbreviation": "MIL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+      "record": "21-29"
+    },
+    "homeScore": 64,
+    "awayScore": 59,
+    "status": "in_progress",
+    "startTime": "2026-02-10T00:30Z"
+  },
+  {
+    "id": "401810620",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "16",
+      "name": "Timberwolves",
+      "displayName": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "record": "32-22"
+    },
+    "awayTeam": {
+      "id": "1",
+      "name": "Hawks",
+      "displayName": "Atlanta Hawks",
+      "abbreviation": "ATL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+      "record": "26-28"
+    },
+    "homeScore": 81,
+    "awayScore": 56,
+    "status": "scheduled",
+    "startTime": "2026-02-10T01:00Z"
+  },
+  {
+    "id": "401810621",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "3",
+      "name": "Pelicans",
+      "displayName": "New Orleans Pelicans",
+      "abbreviation": "NO",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "record": "14-40"
+    },
+    "awayTeam": {
+      "id": "23",
+      "name": "Kings",
+      "displayName": "Sacramento Kings",
+      "abbreviation": "SAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "record": "12-42"
+    },
+    "homeScore": 61,
+    "awayScore": 46,
+    "status": "scheduled",
+    "startTime": "2026-02-10T01:00Z"
+  },
+  {
+    "id": "401810622",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "7",
+      "name": "Nuggets",
+      "displayName": "Denver Nuggets",
+      "abbreviation": "DEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "record": "34-19"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Cavaliers",
+      "displayName": "Cleveland Cavaliers",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "record": "32-21"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-10T02:00Z"
+  },
+  {
+    "id": "401810623",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "9",
+      "name": "Warriors",
+      "displayName": "Golden State Warriors",
+      "abbreviation": "GS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+      "record": "28-25"
+    },
+    "awayTeam": {
+      "id": "29",
+      "name": "Grizzlies",
+      "displayName": "Memphis Grizzlies",
+      "abbreviation": "MEM",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "record": "20-31"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-10T03:00Z"
+  },
+  {
+    "id": "401810624",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "32-19"
+    },
+    "awayTeam": {
+      "id": "25",
+      "name": "Thunder",
+      "displayName": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+      "record": "40-13"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-10T03:00Z"
+  },
+  {
+    "id": "401810625",
+    "date": "2026-02-10",
+    "homeTeam": {
+      "id": "22",
+      "name": "Trail Blazers",
+      "displayName": "Portland Trail Blazers",
+      "abbreviation": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "record": "25-28"
+    },
+    "awayTeam": {
+      "id": "20",
+      "name": "76ers",
+      "displayName": "Philadelphia 76ers",
+      "abbreviation": "PHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+      "record": "30-22"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-10T03:00Z"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810635-4431678",
+    "type": "player_performance",
+    "timestamp": 1770856200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Tyrese Maxey",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 32,
+        "FG": 9,
+        "3PT": 3,
+        "FT": 11,
+        "REB": 2,
+        "AST": 2,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 2,
+        "PF": 4,
+        "+/-": -26
+      },
+      "headline": "32 PTS | 2 REB | 2 AST",
+      "gameId": "401810635",
+      "opponentAbbreviation": "NY",
+      "gameDate": "2026-02-12",
+      "isWin": false
+    }
+  }
+]

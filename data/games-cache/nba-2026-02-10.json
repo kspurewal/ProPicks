@@ -1,0 +1,102 @@
+[
+  {
+    "id": "401810626",
+    "sport": "nba",
+    "date": "2026-02-11",
+    "homeTeam": {
+      "id": "18",
+      "name": "Knicks",
+      "displayName": "New York Knicks",
+      "abbreviation": "NY",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "record": "34-20"
+    },
+    "awayTeam": {
+      "id": "11",
+      "name": "Pacers",
+      "displayName": "Indiana Pacers",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "record": "14-40"
+    },
+    "homeScore": 134,
+    "awayScore": 137,
+    "status": "final",
+    "startTime": "2026-02-11T00:30Z"
+  },
+  {
+    "id": "401810627",
+    "sport": "nba",
+    "date": "2026-02-11",
+    "homeTeam": {
+      "id": "10",
+      "name": "Rockets",
+      "displayName": "Houston Rockets",
+      "abbreviation": "HOU",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "record": "33-19"
+    },
+    "awayTeam": {
+      "id": "12",
+      "name": "Clippers",
+      "displayName": "LA Clippers",
+      "abbreviation": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "record": "25-28"
+    },
+    "homeScore": 102,
+    "awayScore": 95,
+    "status": "final",
+    "startTime": "2026-02-11T01:00Z"
+  },
+  {
+    "id": "401810628",
+    "sport": "nba",
+    "date": "2026-02-11",
+    "homeTeam": {
+      "id": "21",
+      "name": "Suns",
+      "displayName": "Phoenix Suns",
+      "abbreviation": "PHX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "record": "32-22"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Mavericks",
+      "displayName": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "record": "19-34"
+    },
+    "homeScore": 120,
+    "awayScore": 111,
+    "status": "final",
+    "startTime": "2026-02-11T02:00Z"
+  },
+  {
+    "id": "401810629",
+    "sport": "nba",
+    "date": "2026-02-11",
+    "homeTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "32-21"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "37-16"
+    },
+    "homeScore": 108,
+    "awayScore": 136,
+    "status": "final",
+    "startTime": "2026-02-11T03:30Z"
+  }
+]

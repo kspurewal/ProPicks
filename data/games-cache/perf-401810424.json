@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810424-1966",
+    "type": "player_performance",
+    "timestamp": 1768361400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "LeBron James",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
+      "teamAbbreviation": "LAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 2,
+        "FT": 5,
+        "REB": 9,
+        "AST": 10,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 8,
+        "PF": 1,
+        "+/-": 17
+      },
+      "headline": "31 PTS | 9 REB | 10 AST",
+      "gameId": "401810424",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810424-4278129",
+    "type": "player_performance",
+    "timestamp": 1768361400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Deandre Ayton",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278129.png",
+      "teamAbbreviation": "LAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 17,
+        "FG": 7,
+        "3PT": 0,
+        "FT": 3,
+        "REB": 18,
+        "AST": 1,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 15,
+        "PF": 3,
+        "+/-": 31
+      },
+      "headline": "17 PTS | 18 REB | 1 AST",
+      "gameId": "401810424",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810424-3945274",
+    "type": "player_performance",
+    "timestamp": 1768361400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Luka Doncic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3945274.png",
+      "teamAbbreviation": "LAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 27,
+        "FG": 7,
+        "3PT": 5,
+        "FT": 8,
+        "REB": 5,
+        "AST": 12,
+        "TO": 7,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 2,
+        "DREB": 3,
+        "PF": 4,
+        "+/-": 27
+      },
+      "headline": "27 PTS | 5 REB | 12 AST",
+      "gameId": "401810424",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  }
+]

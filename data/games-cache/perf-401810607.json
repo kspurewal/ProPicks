@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810607-3112335",
+    "type": "player_performance",
+    "timestamp": 1770512400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nikola Jokic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 22,
+        "FG": 7,
+        "3PT": 2,
+        "FT": 6,
+        "REB": 14,
+        "AST": 17,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 4,
+        "OREB": 3,
+        "DREB": 11,
+        "PF": 2,
+        "+/-": 36
+      },
+      "headline": "22 PTS | 14 REB | 17 AST | 4 BLK",
+      "gameId": "401810607",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810607-3936299",
+    "type": "player_performance",
+    "timestamp": 1770512400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jamal Murray",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 28,
+        "FG": 11,
+        "3PT": 4,
+        "FT": 2,
+        "REB": 3,
+        "AST": 11,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 1,
+        "+/-": 0
+      },
+      "headline": "28 PTS | 3 REB | 11 AST",
+      "gameId": "401810607",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810491-3136193",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Devin Booker",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png",
+      "teamAbbreviation": "PHX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 28,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 5,
+        "FT": 2,
+        "REB": 4,
+        "AST": 3,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 1,
+        "+/-": 5
+      },
+      "headline": "31 PTS | 4 REB | 3 AST",
+      "gameId": "401810491",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-24",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810491-4701230",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jalen Johnson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png",
+      "teamAbbreviation": "ATL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 23,
+        "FG": 10,
+        "3PT": 1,
+        "FT": 2,
+        "REB": 18,
+        "AST": 9,
+        "TO": 5,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 15,
+        "PF": 2,
+        "+/-": 15
+      },
+      "headline": "23 PTS | 18 REB | 9 AST",
+      "gameId": "401810491",
+      "opponentAbbreviation": "PHX",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  }
+]

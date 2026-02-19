@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810423-4278073",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Shai Gilgeous-Alexander",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278073.png",
+      "teamAbbreviation": "OKC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 34,
+        "FG": 11,
+        "3PT": 1,
+        "FT": 11,
+        "REB": 5,
+        "AST": 5,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 4,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 2,
+        "+/-": 29
+      },
+      "headline": "34 PTS | 5 REB | 5 AST | 4 BLK",
+      "gameId": "401810423",
+      "opponentAbbreviation": "SA",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  }
+]

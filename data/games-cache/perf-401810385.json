@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810385-3908809",
+    "type": "player_performance",
+    "timestamp": 1767920400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Mitchell",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png",
+      "teamAbbreviation": "CLE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 30,
+        "FG": 10,
+        "3PT": 2,
+        "FT": 8,
+        "REB": 7,
+        "AST": 8,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 6,
+        "PF": 4,
+        "+/-": 4
+      },
+      "headline": "30 PTS | 7 REB | 8 AST",
+      "gameId": "401810385",
+      "opponentAbbreviation": "MIN",
+      "gameDate": "2026-01-09",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810385-3064514",
+    "type": "player_performance",
+    "timestamp": 1767920400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Julius Randle",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 28,
+        "FG": 10,
+        "3PT": 3,
+        "FT": 5,
+        "REB": 11,
+        "AST": 8,
+        "TO": 4,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 8,
+        "PF": 3,
+        "+/-": 31
+      },
+      "headline": "28 PTS | 11 REB | 8 AST",
+      "gameId": "401810385",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-09",
+      "isWin": true
+    }
+  }
+]

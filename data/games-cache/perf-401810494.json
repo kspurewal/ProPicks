@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810494-4397688",
+    "type": "player_performance",
+    "timestamp": 1769216400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Trey Murphy III",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png",
+      "teamAbbreviation": "NO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 32,
+        "FG": 9,
+        "3PT": 2,
+        "FT": 12,
+        "REB": 3,
+        "AST": 3,
+        "TO": 1,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 1,
+        "+/-": 6
+      },
+      "headline": "32 PTS | 3 REB | 3 AST | 3 STL",
+      "gameId": "401810494",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810494-4397136",
+    "type": "player_performance",
+    "timestamp": 1769216400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Saddiq Bey",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4397136.png",
+      "teamAbbreviation": "NO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 36,
+        "FG": 13,
+        "3PT": 6,
+        "FT": 4,
+        "REB": 4,
+        "AST": 4,
+        "TO": 0,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 1,
+        "PF": 2,
+        "+/-": 5
+      },
+      "headline": "36 PTS | 4 REB | 4 AST",
+      "gameId": "401810494",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810494-4277961",
+    "type": "player_performance",
+    "timestamp": 1769216400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaren Jackson Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4277961.png",
+      "teamAbbreviation": "MEM",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 26,
+        "FG": 7,
+        "3PT": 2,
+        "FT": 10,
+        "REB": 12,
+        "AST": 3,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 4,
+        "OREB": 2,
+        "DREB": 10,
+        "PF": 4,
+        "+/-": 1
+      },
+      "headline": "26 PTS | 12 REB | 3 AST | 4 BLK",
+      "gameId": "401810494",
+      "opponentAbbreviation": "NO",
+      "gameDate": "2026-01-24",
+      "isWin": false
+    }
+  }
+]

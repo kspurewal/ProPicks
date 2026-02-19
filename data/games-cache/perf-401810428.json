@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810428-5105839",
+    "type": "player_performance",
+    "timestamp": 1768438800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Brice Sensabaugh",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105839.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 43,
+        "FG": 15,
+        "3PT": 5,
+        "FT": 8,
+        "REB": 5,
+        "AST": 2,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 2,
+        "DREB": 3,
+        "PF": 2,
+        "+/-": -2
+      },
+      "headline": "43 PTS | 5 REB | 2 AST",
+      "gameId": "401810428",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-01-15",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810428-6478",
+    "type": "player_performance",
+    "timestamp": 1768438800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nikola Vucevic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/6478.png",
+      "teamAbbreviation": "CHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 35,
+        "FG": 14,
+        "3PT": 2,
+        "FT": 5,
+        "REB": 7,
+        "AST": 5,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 4,
+        "DREB": 3,
+        "PF": 1,
+        "+/-": 0
+      },
+      "headline": "35 PTS | 7 REB | 5 AST",
+      "gameId": "401810428",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-01-15",
+      "isWin": true
+    }
+  }
+]

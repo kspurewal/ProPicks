@@ -1,0 +1,127 @@
+[
+  {
+    "id": "401832869",
+    "sport": "mlb",
+    "date": "2026-02-20",
+    "homeTeam": {
+      "id": "1",
+      "name": "Orioles",
+      "displayName": "Baltimore Orioles",
+      "abbreviation": "BAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/bal.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "10",
+      "name": "Yankees",
+      "displayName": "New York Yankees",
+      "abbreviation": "NYY",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nyy.png",
+      "record": "0-0"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-20T18:05Z"
+  },
+  {
+    "id": "401832870",
+    "sport": "mlb",
+    "date": "2026-02-20",
+    "homeTeam": {
+      "id": "16",
+      "name": "Cubs",
+      "displayName": "Chicago Cubs",
+      "abbreviation": "CHC",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "4",
+      "name": "White Sox",
+      "displayName": "Chicago White Sox",
+      "abbreviation": "CHW",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chw.png",
+      "record": "0-0"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-20T20:05Z"
+  },
+  {
+    "id": "401832873",
+    "sport": "mlb",
+    "date": "2026-02-20",
+    "homeTeam": {
+      "id": "13",
+      "name": "Rangers",
+      "displayName": "Texas Rangers",
+      "abbreviation": "TEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tex.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "7",
+      "name": "Royals",
+      "displayName": "Kansas City Royals",
+      "abbreviation": "KC",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/kc.png",
+      "record": "0-0"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-20T20:05Z"
+  },
+  {
+    "id": "401832871",
+    "sport": "mlb",
+    "date": "2026-02-20",
+    "homeTeam": {
+      "id": "27",
+      "name": "Rockies",
+      "displayName": "Colorado Rockies",
+      "abbreviation": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/col.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "29",
+      "name": "Diamondbacks",
+      "displayName": "Arizona Diamondbacks",
+      "abbreviation": "ARI",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/ari.png",
+      "record": "0-0"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-20T20:10Z"
+  },
+  {
+    "id": "401832872",
+    "sport": "mlb",
+    "date": "2026-02-20",
+    "homeTeam": {
+      "id": "12",
+      "name": "Mariners",
+      "displayName": "Seattle Mariners",
+      "abbreviation": "SEA",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sea.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "25",
+      "name": "Padres",
+      "displayName": "San Diego Padres",
+      "abbreviation": "SD",
+      "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sd.png",
+      "record": "0-0"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "scheduled",
+    "startTime": "2026-02-20T20:10Z"
+  }
+]

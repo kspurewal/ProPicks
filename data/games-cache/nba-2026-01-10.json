@@ -1,0 +1,152 @@
+[
+  {
+    "id": "401810397",
+    "sport": "nba",
+    "date": "2026-01-10",
+    "homeTeam": {
+      "id": "5",
+      "name": "Cavaliers",
+      "displayName": "Cleveland Cavaliers",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "record": "22-18"
+    },
+    "awayTeam": {
+      "id": "16",
+      "name": "Timberwolves",
+      "displayName": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "record": "25-14"
+    },
+    "homeScore": 146,
+    "awayScore": 134,
+    "status": "final",
+    "startTime": "2026-01-10T18:00Z"
+  },
+  {
+    "id": "401810398",
+    "sport": "nba",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "11",
+      "name": "Pacers",
+      "displayName": "Indiana Pacers",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "record": "8-31"
+    },
+    "awayTeam": {
+      "id": "14",
+      "name": "Heat",
+      "displayName": "Miami Heat",
+      "abbreviation": "MIA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "record": "20-18"
+    },
+    "homeScore": 123,
+    "awayScore": 99,
+    "status": "final",
+    "startTime": "2026-01-11T00:00Z"
+  },
+  {
+    "id": "401810399",
+    "sport": "nba",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "8",
+      "name": "Pistons",
+      "displayName": "Detroit Pistons",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+      "record": "28-10"
+    },
+    "awayTeam": {
+      "id": "12",
+      "name": "Clippers",
+      "displayName": "LA Clippers",
+      "abbreviation": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "record": "15-23"
+    },
+    "homeScore": 92,
+    "awayScore": 98,
+    "status": "final",
+    "startTime": "2026-01-11T00:30Z"
+  },
+  {
+    "id": "401810400",
+    "sport": "nba",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "2",
+      "name": "Celtics",
+      "displayName": "Boston Celtics",
+      "abbreviation": "BOS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+      "record": "24-14"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "27-11"
+    },
+    "homeScore": 95,
+    "awayScore": 100,
+    "status": "final",
+    "startTime": "2026-01-11T01:00Z"
+  },
+  {
+    "id": "401810401",
+    "sport": "nba",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "4",
+      "name": "Bulls",
+      "displayName": "Chicago Bulls",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+      "record": "18-20"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Mavericks",
+      "displayName": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "record": "14-25"
+    },
+    "homeScore": 125,
+    "awayScore": 107,
+    "status": "final",
+    "startTime": "2026-01-11T01:00Z"
+  },
+  {
+    "id": "401810402",
+    "sport": "nba",
+    "date": "2026-01-11",
+    "homeTeam": {
+      "id": "26",
+      "name": "Jazz",
+      "displayName": "Utah Jazz",
+      "abbreviation": "UTAH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "record": "13-25"
+    },
+    "awayTeam": {
+      "id": "30",
+      "name": "Hornets",
+      "displayName": "Charlotte Hornets",
+      "abbreviation": "CHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+      "record": "14-25"
+    },
+    "homeScore": 95,
+    "awayScore": 150,
+    "status": "final",
+    "startTime": "2026-01-11T02:30Z"
+  }
+]

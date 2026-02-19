@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810537-3202",
+    "type": "player_performance",
+    "timestamp": 1769734800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kevin Durant",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
+      "teamAbbreviation": "HOU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 4,
+        "REB": 5,
+        "AST": 4,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 4,
+        "PF": 2,
+        "+/-": 12
+      },
+      "headline": "31 PTS | 5 REB | 4 AST",
+      "gameId": "401810537",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  }
+]

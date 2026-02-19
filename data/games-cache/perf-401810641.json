@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810641-4683766",
+    "type": "player_performance",
+    "timestamp": 1770861600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Isaiah Collier",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 27,
+        "PTS": 12,
+        "FG": 5,
+        "3PT": 2,
+        "FT": 0,
+        "REB": 1,
+        "AST": 14,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 1,
+        "PF": 1,
+        "+/-": 25
+      },
+      "headline": "12 PTS | 1 REB | 14 AST",
+      "gameId": "401810641",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-02-12",
+      "isWin": true
+    }
+  }
+]

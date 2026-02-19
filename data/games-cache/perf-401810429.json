@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810429-4397688",
+    "type": "player_performance",
+    "timestamp": 1768438800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Trey Murphy III",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png",
+      "teamAbbreviation": "NO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 34,
+        "FG": 12,
+        "3PT": 5,
+        "FT": 5,
+        "REB": 9,
+        "AST": 5,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 8,
+        "PF": 1,
+        "+/-": 15
+      },
+      "headline": "34 PTS | 9 REB | 5 AST",
+      "gameId": "401810429",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-01-15",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810642-3112335",
+    "type": "player_performance",
+    "timestamp": 1770861600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nikola Jokic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 26,
+        "FG": 8,
+        "3PT": 0,
+        "FT": 10,
+        "REB": 15,
+        "AST": 11,
+        "TO": 9,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 5,
+        "DREB": 10,
+        "PF": 2,
+        "+/-": 8
+      },
+      "headline": "26 PTS | 15 REB | 11 AST",
+      "gameId": "401810642",
+      "opponentAbbreviation": "MEM",
+      "gameDate": "2026-02-12",
+      "isWin": true
+    }
+  }
+]

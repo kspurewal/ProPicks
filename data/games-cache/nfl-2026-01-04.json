@@ -1,0 +1,352 @@
+[
+  {
+    "id": "401772966",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "1",
+      "name": "Falcons",
+      "displayName": "Atlanta Falcons",
+      "abbreviation": "ATL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "record": "8-9"
+    },
+    "awayTeam": {
+      "id": "18",
+      "name": "Saints",
+      "displayName": "New Orleans Saints",
+      "abbreviation": "NO",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+      "record": "6-11"
+    },
+    "homeScore": 19,
+    "awayScore": 17,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772964",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "4",
+      "name": "Bengals",
+      "displayName": "Cincinnati Bengals",
+      "abbreviation": "CIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+      "record": "6-11"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Browns",
+      "displayName": "Cleveland Browns",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+      "record": "5-12"
+    },
+    "homeScore": 18,
+    "awayScore": 20,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772968",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "16",
+      "name": "Vikings",
+      "displayName": "Minnesota Vikings",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+      "record": "9-8"
+    },
+    "awayTeam": {
+      "id": "9",
+      "name": "Packers",
+      "displayName": "Green Bay Packers",
+      "abbreviation": "GB",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "record": "9-7-1"
+    },
+    "homeScore": 16,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772963",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "19",
+      "name": "Giants",
+      "displayName": "New York Giants",
+      "abbreviation": "NYG",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "record": "4-13"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Cowboys",
+      "displayName": "Dallas Cowboys",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "record": "7-9-1"
+    },
+    "homeScore": 34,
+    "awayScore": 17,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772970",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "30",
+      "name": "Jaguars",
+      "displayName": "Jacksonville Jaguars",
+      "abbreviation": "JAX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+      "record": "13-4"
+    },
+    "awayTeam": {
+      "id": "10",
+      "name": "Titans",
+      "displayName": "Tennessee Titans",
+      "abbreviation": "TEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+      "record": "3-14"
+    },
+    "homeScore": 41,
+    "awayScore": 7,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772962",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "34",
+      "name": "Texans",
+      "displayName": "Houston Texans",
+      "abbreviation": "HOU",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+      "record": "12-5"
+    },
+    "awayTeam": {
+      "id": "11",
+      "name": "Colts",
+      "displayName": "Indianapolis Colts",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+      "record": "8-9"
+    },
+    "homeScore": 38,
+    "awayScore": 30,
+    "status": "final",
+    "startTime": "2026-01-04T18:00Z"
+  },
+  {
+    "id": "401772967",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "2",
+      "name": "Bills",
+      "displayName": "Buffalo Bills",
+      "abbreviation": "BUF",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "record": "12-5"
+    },
+    "awayTeam": {
+      "id": "20",
+      "name": "Jets",
+      "displayName": "New York Jets",
+      "abbreviation": "NYJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+      "record": "3-14"
+    },
+    "homeScore": 35,
+    "awayScore": 8,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772965",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "3",
+      "name": "Bears",
+      "displayName": "Chicago Bears",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "record": "11-6"
+    },
+    "awayTeam": {
+      "id": "8",
+      "name": "Lions",
+      "displayName": "Detroit Lions",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+      "record": "9-8"
+    },
+    "homeScore": 16,
+    "awayScore": 19,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772956",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "7",
+      "name": "Broncos",
+      "displayName": "Denver Broncos",
+      "abbreviation": "DEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "record": "14-3"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Chargers",
+      "displayName": "Los Angeles Chargers",
+      "abbreviation": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "record": "11-6"
+    },
+    "homeScore": 19,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772957",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "13",
+      "name": "Raiders",
+      "displayName": "Las Vegas Raiders",
+      "abbreviation": "LV",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+      "record": "3-14"
+    },
+    "awayTeam": {
+      "id": "12",
+      "name": "Chiefs",
+      "displayName": "Kansas City Chiefs",
+      "abbreviation": "KC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "record": "6-11"
+    },
+    "homeScore": 14,
+    "awayScore": 12,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772955",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "14",
+      "name": "Rams",
+      "displayName": "Los Angeles Rams",
+      "abbreviation": "LAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "record": "12-5"
+    },
+    "awayTeam": {
+      "id": "22",
+      "name": "Cardinals",
+      "displayName": "Arizona Cardinals",
+      "abbreviation": "ARI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+      "record": "3-14"
+    },
+    "homeScore": 37,
+    "awayScore": 20,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772958",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "17",
+      "name": "Patriots",
+      "displayName": "New England Patriots",
+      "abbreviation": "NE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "record": "14-3"
+    },
+    "awayTeam": {
+      "id": "15",
+      "name": "Dolphins",
+      "displayName": "Miami Dolphins",
+      "abbreviation": "MIA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+      "record": "7-10"
+    },
+    "homeScore": 38,
+    "awayScore": 10,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772959",
+    "sport": "nfl",
+    "date": "2026-01-04",
+    "homeTeam": {
+      "id": "21",
+      "name": "Eagles",
+      "displayName": "Philadelphia Eagles",
+      "abbreviation": "PHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "record": "11-6"
+    },
+    "awayTeam": {
+      "id": "28",
+      "name": "Commanders",
+      "displayName": "Washington Commanders",
+      "abbreviation": "WSH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+      "record": "5-12"
+    },
+    "homeScore": 17,
+    "awayScore": 24,
+    "status": "final",
+    "startTime": "2026-01-04T21:25Z"
+  },
+  {
+    "id": "401772960",
+    "sport": "nfl",
+    "date": "2026-01-05",
+    "homeTeam": {
+      "id": "23",
+      "name": "Steelers",
+      "displayName": "Pittsburgh Steelers",
+      "abbreviation": "PIT",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+      "record": "10-7"
+    },
+    "awayTeam": {
+      "id": "33",
+      "name": "Ravens",
+      "displayName": "Baltimore Ravens",
+      "abbreviation": "BAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+      "record": "8-9"
+    },
+    "homeScore": 26,
+    "awayScore": 24,
+    "status": "final",
+    "startTime": "2026-01-05T01:20Z"
+  }
+]

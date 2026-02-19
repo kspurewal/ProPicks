@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810538-5061575",
+    "type": "player_performance",
+    "timestamp": 1769736600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kon Knueppel",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5061575.png",
+      "teamAbbreviation": "CHA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 34,
+        "FG": 10,
+        "3PT": 8,
+        "FT": 6,
+        "REB": 4,
+        "AST": 3,
+        "TO": 0,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 0,
+        "+/-": 7
+      },
+      "headline": "34 PTS | 4 REB | 3 AST",
+      "gameId": "401810538",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-01-30",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810538-5041939",
+    "type": "player_performance",
+    "timestamp": 1769736600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cooper Flagg",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png",
+      "teamAbbreviation": "DAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 49,
+        "FG": 20,
+        "3PT": 3,
+        "FT": 6,
+        "REB": 10,
+        "AST": 3,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 9,
+        "PF": 2,
+        "+/-": 2
+      },
+      "headline": "49 PTS | 10 REB | 3 AST",
+      "gameId": "401810538",
+      "opponentAbbreviation": "CHA",
+      "gameDate": "2026-01-30",
+      "isWin": false
+    }
+  }
+]

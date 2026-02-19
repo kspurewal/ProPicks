@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810611-4066328",
+    "type": "player_performance",
+    "timestamp": 1770519600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jarrett Allen",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066328.png",
+      "teamAbbreviation": "CLE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 29,
+        "FG": 11,
+        "3PT": 0,
+        "FT": 7,
+        "REB": 10,
+        "AST": 1,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 9,
+        "PF": 0,
+        "+/-": -18
+      },
+      "headline": "29 PTS | 10 REB | 1 AST",
+      "gameId": "401810611",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810611-3908809",
+    "type": "player_performance",
+    "timestamp": 1770519600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Mitchell",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png",
+      "teamAbbreviation": "CLE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 35,
+        "PTS": 35,
+        "FG": 13,
+        "3PT": 2,
+        "FT": 7,
+        "REB": 2,
+        "AST": 4,
+        "TO": 3,
+        "STL": 2,
+        "BLK": 2,
+        "OREB": 1,
+        "DREB": 1,
+        "PF": 4,
+        "+/-": 12
+      },
+      "headline": "35 PTS | 2 REB | 4 AST",
+      "gameId": "401810611",
+      "opponentAbbreviation": "SAC",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810611-4702384",
+    "type": "player_performance",
+    "timestamp": 1770519600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Nique Clifford",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4702384.png",
+      "teamAbbreviation": "SAC",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 30,
+        "FG": 12,
+        "3PT": 5,
+        "FT": 1,
+        "REB": 4,
+        "AST": 4,
+        "TO": 2,
+        "STL": 2,
+        "BLK": 2,
+        "OREB": 1,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": 5
+      },
+      "headline": "30 PTS | 4 REB | 4 AST",
+      "gameId": "401810611",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-02-08",
+      "isWin": false
+    }
+  }
+]

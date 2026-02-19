@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772970-4360310",
+    "type": "player_performance",
+    "timestamp": 1767549600000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Trevor Lawrence",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360310.png",
+      "teamAbbreviation": "JAX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 22,
+        "YDS": 255,
+        "AVG": 8.5,
+        "TD": 3,
+        "INT": 0,
+        "SACKS": 2,
+        "QBR": 82.3,
+        "RTG": 131.9
+      },
+      "headline": "255 YDS | 3 TD",
+      "gameId": "401772970",
+      "opponentAbbreviation": "TEN",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

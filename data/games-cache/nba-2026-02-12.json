@@ -1,0 +1,77 @@
+[
+  {
+    "id": "401810644",
+    "sport": "nba",
+    "date": "2026-02-13",
+    "homeTeam": {
+      "id": "25",
+      "name": "Thunder",
+      "displayName": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+      "record": "42-14"
+    },
+    "awayTeam": {
+      "id": "15",
+      "name": "Bucks",
+      "displayName": "Milwaukee Bucks",
+      "abbreviation": "MIL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+      "record": "23-30"
+    },
+    "homeScore": 93,
+    "awayScore": 110,
+    "status": "final",
+    "startTime": "2026-02-13T00:30Z"
+  },
+  {
+    "id": "401810645",
+    "sport": "nba",
+    "date": "2026-02-13",
+    "homeTeam": {
+      "id": "26",
+      "name": "Jazz",
+      "displayName": "Utah Jazz",
+      "abbreviation": "UTAH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "record": "18-38"
+    },
+    "awayTeam": {
+      "id": "22",
+      "name": "Trail Blazers",
+      "displayName": "Portland Trail Blazers",
+      "abbreviation": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "record": "27-29"
+    },
+    "homeScore": 119,
+    "awayScore": 135,
+    "status": "final",
+    "startTime": "2026-02-13T02:00Z"
+  },
+  {
+    "id": "401810646",
+    "sport": "nba",
+    "date": "2026-02-13",
+    "homeTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "33-21"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Mavericks",
+      "displayName": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "record": "19-35"
+    },
+    "homeScore": 124,
+    "awayScore": 104,
+    "status": "final",
+    "startTime": "2026-02-13T03:00Z"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803235-3114770",
+    "type": "player_performance",
+    "timestamp": 1770085800000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Nick Schmaltz",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/3114770.png",
+      "teamAbbreviation": "UTA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 2,
+        "HT": 0,
+        "TK": 0,
+        "+/-": 4,
+        "TOI": 19,
+        "PPTOI": 1,
+        "SHTOI": 3,
+        "ESTOI": 14,
+        "SHFT": 26,
+        "G": 3,
+        "YTDG": 22,
+        "A": 1,
+        "S": 3,
+        "SM": 1,
+        "SOG": 0,
+        "FW": 3,
+        "FL": 5,
+        "FO%": 37.5,
+        "GV": 1,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G | 1 A",
+      "gameId": "401803235",
+      "opponentAbbreviation": "VAN",
+      "gameDate": "2026-02-03",
+      "isWin": true
+    }
+  }
+]

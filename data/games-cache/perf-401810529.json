@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810529-4432573",
+    "type": "player_performance",
+    "timestamp": 1769646600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Paolo Banchero",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+      "teamAbbreviation": "ORL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 38,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 1,
+        "FT": 8,
+        "REB": 12,
+        "AST": 4,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 4,
+        "DREB": 8,
+        "PF": 1,
+        "+/-": 27
+      },
+      "headline": "31 PTS | 12 REB | 4 AST",
+      "gameId": "401810529",
+      "opponentAbbreviation": "MIA",
+      "gameDate": "2026-01-29",
+      "isWin": true
+    }
+  }
+]

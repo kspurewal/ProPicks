@@ -1,0 +1,127 @@
+[
+  {
+    "id": "401809238",
+    "sport": "nba",
+    "date": "2025-12-25",
+    "homeTeam": {
+      "id": "18",
+      "name": "Knicks",
+      "displayName": "New York Knicks",
+      "abbreviation": "NY",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+      "record": "21-9"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Cavaliers",
+      "displayName": "Cleveland Cavaliers",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "record": "17-15"
+    },
+    "homeScore": 126,
+    "awayScore": 124,
+    "status": "final",
+    "startTime": "2025-12-25T17:00Z"
+  },
+  {
+    "id": "401809239",
+    "sport": "nba",
+    "date": "2025-12-25",
+    "homeTeam": {
+      "id": "25",
+      "name": "Thunder",
+      "displayName": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+      "record": "26-5"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "23-7"
+    },
+    "homeScore": 102,
+    "awayScore": 117,
+    "status": "final",
+    "startTime": "2025-12-25T19:30Z"
+  },
+  {
+    "id": "401809240",
+    "sport": "nba",
+    "date": "2025-12-25",
+    "homeTeam": {
+      "id": "9",
+      "name": "Warriors",
+      "displayName": "Golden State Warriors",
+      "abbreviation": "GS",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+      "record": "16-15"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Mavericks",
+      "displayName": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "record": "12-20"
+    },
+    "homeScore": 126,
+    "awayScore": 116,
+    "status": "final",
+    "startTime": "2025-12-25T22:17Z"
+  },
+  {
+    "id": "401809241",
+    "sport": "nba",
+    "date": "2025-12-26",
+    "homeTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "19-10"
+    },
+    "awayTeam": {
+      "id": "10",
+      "name": "Rockets",
+      "displayName": "Houston Rockets",
+      "abbreviation": "HOU",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "record": "18-10"
+    },
+    "homeScore": 96,
+    "awayScore": 119,
+    "status": "final",
+    "startTime": "2025-12-26T01:00Z"
+  },
+  {
+    "id": "401809242",
+    "sport": "nba",
+    "date": "2025-12-26",
+    "homeTeam": {
+      "id": "7",
+      "name": "Nuggets",
+      "displayName": "Denver Nuggets",
+      "abbreviation": "DEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "record": "22-8"
+    },
+    "awayTeam": {
+      "id": "16",
+      "name": "Timberwolves",
+      "displayName": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "record": "20-11"
+    },
+    "homeScore": 142,
+    "awayScore": 138,
+    "status": "final",
+    "startTime": "2025-12-26T03:30Z"
+  }
+]

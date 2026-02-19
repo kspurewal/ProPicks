@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810604-4845367",
+    "type": "player_performance",
+    "timestamp": 1770505200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Stephon Castle",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4845367.png",
+      "teamAbbreviation": "SA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 40,
+        "FG": 15,
+        "3PT": 3,
+        "FT": 7,
+        "REB": 12,
+        "AST": 12,
+        "TO": 6,
+        "STL": 3,
+        "BLK": 1,
+        "OREB": 2,
+        "DREB": 10,
+        "PF": 2,
+        "+/-": 30
+      },
+      "headline": "40 PTS | 12 REB | 12 AST | 3 STL",
+      "gameId": "401810604",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-02-07",
+      "isWin": true
+    }
+  }
+]

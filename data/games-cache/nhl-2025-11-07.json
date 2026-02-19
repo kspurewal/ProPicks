@@ -1,0 +1,102 @@
+[
+  {
+    "id": "401802578",
+    "sport": "nhl",
+    "date": "2025-11-08",
+    "homeTeam": {
+      "id": "5",
+      "name": "Red Wings",
+      "displayName": "Detroit Red Wings",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+      "record": "9-6-0"
+    },
+    "awayTeam": {
+      "id": "13",
+      "name": "Rangers",
+      "displayName": "New York Rangers",
+      "abbreviation": "NYR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+      "record": "7-6-2"
+    },
+    "homeScore": 1,
+    "awayScore": 4,
+    "status": "final",
+    "startTime": "2025-11-08T00:00Z"
+  },
+  {
+    "id": "401802579",
+    "sport": "nhl",
+    "date": "2025-11-08",
+    "homeTeam": {
+      "id": "12",
+      "name": "Islanders",
+      "displayName": "New York Islanders",
+      "abbreviation": "NYI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "record": "6-6-2"
+    },
+    "awayTeam": {
+      "id": "30",
+      "name": "Wild",
+      "displayName": "Minnesota Wild",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+      "record": "6-7-3"
+    },
+    "homeScore": 2,
+    "awayScore": 5,
+    "status": "final",
+    "startTime": "2025-11-08T00:00Z"
+  },
+  {
+    "id": "401802580",
+    "sport": "nhl",
+    "date": "2025-11-08",
+    "homeTeam": {
+      "id": "3",
+      "name": "Flames",
+      "displayName": "Calgary Flames",
+      "abbreviation": "CGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+      "record": "4-10-2"
+    },
+    "awayTeam": {
+      "id": "4",
+      "name": "Blackhawks",
+      "displayName": "Chicago Blackhawks",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+      "record": "7-5-3"
+    },
+    "homeScore": 0,
+    "awayScore": 4,
+    "status": "final",
+    "startTime": "2025-11-08T02:00Z"
+  },
+  {
+    "id": "401802581",
+    "sport": "nhl",
+    "date": "2025-11-08",
+    "homeTeam": {
+      "id": "18",
+      "name": "Sharks",
+      "displayName": "San Jose Sharks",
+      "abbreviation": "SJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+      "record": "6-6-3"
+    },
+    "awayTeam": {
+      "id": "28",
+      "name": "Jets",
+      "displayName": "Winnipeg Jets",
+      "abbreviation": "WPG",
+      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+      "record": "9-5-0"
+    },
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "final",
+    "startTime": "2025-11-08T03:00Z"
+  }
+]

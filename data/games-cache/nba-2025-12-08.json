@@ -1,0 +1,77 @@
+[
+  {
+    "id": "401810219",
+    "sport": "nba",
+    "date": "2025-12-09",
+    "homeTeam": {
+      "id": "11",
+      "name": "Pacers",
+      "displayName": "Indiana Pacers",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "record": "6-18"
+    },
+    "awayTeam": {
+      "id": "23",
+      "name": "Kings",
+      "displayName": "Sacramento Kings",
+      "abbreviation": "SAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "record": "6-18"
+    },
+    "homeScore": 116,
+    "awayScore": 105,
+    "status": "final",
+    "startTime": "2025-12-09T00:00Z"
+  },
+  {
+    "id": "401810220",
+    "sport": "nba",
+    "date": "2025-12-09",
+    "homeTeam": {
+      "id": "16",
+      "name": "Timberwolves",
+      "displayName": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "record": "15-9"
+    },
+    "awayTeam": {
+      "id": "21",
+      "name": "Suns",
+      "displayName": "Phoenix Suns",
+      "abbreviation": "PHX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "record": "14-10"
+    },
+    "homeScore": 105,
+    "awayScore": 108,
+    "status": "final",
+    "startTime": "2025-12-09T00:30Z"
+  },
+  {
+    "id": "401810221",
+    "sport": "nba",
+    "date": "2025-12-09",
+    "homeTeam": {
+      "id": "3",
+      "name": "Pelicans",
+      "displayName": "New Orleans Pelicans",
+      "abbreviation": "NO",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "record": "3-22"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "16-7"
+    },
+    "homeScore": 132,
+    "awayScore": 135,
+    "status": "final",
+    "startTime": "2025-12-09T01:00Z"
+  }
+]

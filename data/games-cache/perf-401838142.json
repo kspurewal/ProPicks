@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401838142-6450",
+    "type": "player_performance",
+    "timestamp": 1771197900000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kawhi Leonard",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png",
+      "teamAbbreviation": "STRIPES",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/stripes.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 12,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 6,
+        "FT": 3,
+        "REB": 3,
+        "AST": 0,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 1,
+        "+/-": 3
+      },
+      "headline": "31 PTS | 3 REB",
+      "gameId": "401838142",
+      "opponentAbbreviation": "WORLD",
+      "gameDate": "2026-02-15",
+      "isWin": true
+    }
+  }
+]

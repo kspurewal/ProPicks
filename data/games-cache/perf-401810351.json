@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810351-3936299",
+    "type": "player_performance",
+    "timestamp": 1767558600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jamal Murray",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 27,
+        "FG": 11,
+        "3PT": 1,
+        "FT": 4,
+        "REB": 6,
+        "AST": 16,
+        "TO": 4,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 6,
+        "PF": 3,
+        "+/-": -11
+      },
+      "headline": "27 PTS | 6 REB | 16 AST",
+      "gameId": "401810351",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-01-04",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810351-4278104",
+    "type": "player_performance",
+    "timestamp": 1767558600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Michael Porter Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png",
+      "teamAbbreviation": "BKN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 32,
+        "PTS": 27,
+        "FG": 8,
+        "3PT": 2,
+        "FT": 9,
+        "REB": 11,
+        "AST": 5,
+        "TO": 4,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 4,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": 22
+      },
+      "headline": "27 PTS | 11 REB | 5 AST",
+      "gameId": "401810351",
+      "opponentAbbreviation": "DEN",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

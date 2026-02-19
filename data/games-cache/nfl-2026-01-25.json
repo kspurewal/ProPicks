@@ -1,0 +1,52 @@
+[
+  {
+    "id": "401772986",
+    "sport": "nfl",
+    "date": "2026-01-25",
+    "homeTeam": {
+      "id": "7",
+      "name": "Broncos",
+      "displayName": "Denver Broncos",
+      "abbreviation": "DEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "record": "14-3"
+    },
+    "awayTeam": {
+      "id": "17",
+      "name": "Patriots",
+      "displayName": "New England Patriots",
+      "abbreviation": "NE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "record": "14-3"
+    },
+    "homeScore": 7,
+    "awayScore": 10,
+    "status": "final",
+    "startTime": "2026-01-25T20:00Z"
+  },
+  {
+    "id": "401772987",
+    "sport": "nfl",
+    "date": "2026-01-25",
+    "homeTeam": {
+      "id": "26",
+      "name": "Seahawks",
+      "displayName": "Seattle Seahawks",
+      "abbreviation": "SEA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "record": "14-3"
+    },
+    "awayTeam": {
+      "id": "14",
+      "name": "Rams",
+      "displayName": "Los Angeles Rams",
+      "abbreviation": "LAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "record": "12-5"
+    },
+    "homeScore": 31,
+    "awayScore": 27,
+    "status": "final",
+    "startTime": "2026-01-25T23:30Z"
+  }
+]

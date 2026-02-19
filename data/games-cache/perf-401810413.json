@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810413-4066336",
+    "type": "player_performance",
+    "timestamp": 1768262400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Lauri Markkanen",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 28,
+        "FG": 8,
+        "3PT": 3,
+        "FT": 9,
+        "REB": 12,
+        "AST": 2,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 12,
+        "PF": 0,
+        "+/-": 18
+      },
+      "headline": "28 PTS | 12 REB | 2 AST",
+      "gameId": "401810413",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-13",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810413-3102530",
+    "type": "player_performance",
+    "timestamp": 1768262400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jusuf Nurkic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3102530.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 30,
+        "PTS": 11,
+        "FG": 4,
+        "3PT": 1,
+        "FT": 2,
+        "REB": 17,
+        "AST": 3,
+        "TO": 1,
+        "STL": 3,
+        "BLK": 2,
+        "OREB": 3,
+        "DREB": 14,
+        "PF": 1,
+        "+/-": 13
+      },
+      "headline": "11 PTS | 17 REB | 3 AST | 3 STL",
+      "gameId": "401810413",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-13",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810413-4433627",
+    "type": "player_performance",
+    "timestamp": 1768262400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Keyonte George",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png",
+      "teamAbbreviation": "UTAH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 32,
+        "FG": 8,
+        "3PT": 4,
+        "FT": 12,
+        "REB": 5,
+        "AST": 9,
+        "TO": 4,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 4,
+        "PF": 0,
+        "+/-": 6
+      },
+      "headline": "32 PTS | 5 REB | 9 AST",
+      "gameId": "401810413",
+      "opponentAbbreviation": "CLE",
+      "gameDate": "2026-01-13",
+      "isWin": true
+    }
+  }
+]

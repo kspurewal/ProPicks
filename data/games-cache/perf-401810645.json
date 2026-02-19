@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810645-5105565",
+    "type": "player_performance",
+    "timestamp": 1770948000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 23,
+        "FG": 8,
+        "3PT": 0,
+        "FT": 7,
+        "REB": 18,
+        "AST": 7,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 3,
+        "OREB": 6,
+        "DREB": 12,
+        "PF": 1,
+        "+/-": 21
+      },
+      "headline": "23 PTS | 18 REB | 7 AST | 3 BLK",
+      "gameId": "401810645",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-02-13",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810645-3995",
+    "type": "player_performance",
+    "timestamp": 1770948000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jrue Holiday",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3995.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 31,
+        "FG": 10,
+        "3PT": 4,
+        "FT": 7,
+        "REB": 9,
+        "AST": 7,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 5,
+        "DREB": 4,
+        "PF": 2,
+        "+/-": 29
+      },
+      "headline": "31 PTS | 9 REB | 7 AST",
+      "gameId": "401810645",
+      "opponentAbbreviation": "UTAH",
+      "gameDate": "2026-02-13",
+      "isWin": true
+    }
+  }
+]

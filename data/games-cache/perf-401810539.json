@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810539-4278104",
+    "type": "player_performance",
+    "timestamp": 1769738400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Michael Porter Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png",
+      "teamAbbreviation": "BKN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 37,
+        "PTS": 38,
+        "FG": 13,
+        "3PT": 7,
+        "FT": 5,
+        "REB": 10,
+        "AST": 3,
+        "TO": 1,
+        "STL": 2,
+        "BLK": 2,
+        "OREB": 2,
+        "DREB": 8,
+        "PF": 3,
+        "+/-": 12
+      },
+      "headline": "38 PTS | 10 REB | 3 AST",
+      "gameId": "401810539",
+      "opponentAbbreviation": "DEN",
+      "gameDate": "2026-01-30",
+      "isWin": false
+    }
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "401772904",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "3",
+      "name": "Bears",
+      "displayName": "Chicago Bears",
+      "abbreviation": "CHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "record": "10-4"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Browns",
+      "displayName": "Cleveland Browns",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+      "record": "3-11"
+    },
+    "homeScore": 31,
+    "awayScore": 3,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772796",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "4",
+      "name": "Bengals",
+      "displayName": "Cincinnati Bengals",
+      "abbreviation": "CIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+      "record": "4-10"
+    },
+    "awayTeam": {
+      "id": "33",
+      "name": "Ravens",
+      "displayName": "Baltimore Ravens",
+      "abbreviation": "BAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+      "record": "7-7"
+    },
+    "homeScore": 0,
+    "awayScore": 24,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772798",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "12",
+      "name": "Chiefs",
+      "displayName": "Kansas City Chiefs",
+      "abbreviation": "KC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "record": "6-8"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Chargers",
+      "displayName": "Los Angeles Chargers",
+      "abbreviation": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "record": "10-4"
+    },
+    "homeScore": 13,
+    "awayScore": 16,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772795",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "17",
+      "name": "Patriots",
+      "displayName": "New England Patriots",
+      "abbreviation": "NE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "record": "11-3"
+    },
+    "awayTeam": {
+      "id": "2",
+      "name": "Bills",
+      "displayName": "Buffalo Bills",
+      "abbreviation": "BUF",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "record": "10-4"
+    },
+    "homeScore": 31,
+    "awayScore": 35,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772905",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "19",
+      "name": "Giants",
+      "displayName": "New York Giants",
+      "abbreviation": "NYG",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "record": "2-12"
+    },
+    "awayTeam": {
+      "id": "28",
+      "name": "Commanders",
+      "displayName": "Washington Commanders",
+      "abbreviation": "WSH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+      "record": "4-10"
+    },
+    "homeScore": 21,
+    "awayScore": 29,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772906",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "21",
+      "name": "Eagles",
+      "displayName": "Philadelphia Eagles",
+      "abbreviation": "PHI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "record": "9-5"
+    },
+    "awayTeam": {
+      "id": "13",
+      "name": "Raiders",
+      "displayName": "Las Vegas Raiders",
+      "abbreviation": "LV",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+      "record": "2-12"
+    },
+    "homeScore": 31,
+    "awayScore": 0,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772797",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "30",
+      "name": "Jaguars",
+      "displayName": "Jacksonville Jaguars",
+      "abbreviation": "JAX",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+      "record": "10-4"
+    },
+    "awayTeam": {
+      "id": "20",
+      "name": "Jets",
+      "displayName": "New York Jets",
+      "abbreviation": "NYJ",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+      "record": "3-11"
+    },
+    "homeScore": 48,
+    "awayScore": 20,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772903",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "34",
+      "name": "Texans",
+      "displayName": "Houston Texans",
+      "abbreviation": "HOU",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+      "record": "9-5"
+    },
+    "awayTeam": {
+      "id": "22",
+      "name": "Cardinals",
+      "displayName": "Arizona Cardinals",
+      "abbreviation": "ARI",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+      "record": "3-11"
+    },
+    "homeScore": 40,
+    "awayScore": 20,
+    "status": "final",
+    "startTime": "2025-12-14T18:00Z"
+  },
+  {
+    "id": "401772800",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "7",
+      "name": "Broncos",
+      "displayName": "Denver Broncos",
+      "abbreviation": "DEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "record": "12-2"
+    },
+    "awayTeam": {
+      "id": "9",
+      "name": "Packers",
+      "displayName": "Green Bay Packers",
+      "abbreviation": "GB",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "record": "9-4-1"
+    },
+    "homeScore": 34,
+    "awayScore": 26,
+    "status": "final",
+    "startTime": "2025-12-14T21:25Z"
+  },
+  {
+    "id": "401772909",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "14",
+      "name": "Rams",
+      "displayName": "Los Angeles Rams",
+      "abbreviation": "LAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "record": "11-3"
+    },
+    "awayTeam": {
+      "id": "8",
+      "name": "Lions",
+      "displayName": "Detroit Lions",
+      "abbreviation": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+      "record": "8-6"
+    },
+    "homeScore": 41,
+    "awayScore": 34,
+    "status": "final",
+    "startTime": "2025-12-14T21:25Z"
+  },
+  {
+    "id": "401772908",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "18",
+      "name": "Saints",
+      "displayName": "New Orleans Saints",
+      "abbreviation": "NO",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+      "record": "4-10"
+    },
+    "awayTeam": {
+      "id": "29",
+      "name": "Panthers",
+      "displayName": "Carolina Panthers",
+      "abbreviation": "CAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "record": "7-7"
+    },
+    "homeScore": 20,
+    "awayScore": 17,
+    "status": "final",
+    "startTime": "2025-12-14T21:25Z"
+  },
+  {
+    "id": "401772907",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "25",
+      "name": "49ers",
+      "displayName": "San Francisco 49ers",
+      "abbreviation": "SF",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+      "record": "10-4"
+    },
+    "awayTeam": {
+      "id": "10",
+      "name": "Titans",
+      "displayName": "Tennessee Titans",
+      "abbreviation": "TEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+      "record": "2-12"
+    },
+    "homeScore": 37,
+    "awayScore": 24,
+    "status": "final",
+    "startTime": "2025-12-14T21:25Z"
+  },
+  {
+    "id": "401772799",
+    "sport": "nfl",
+    "date": "2025-12-14",
+    "homeTeam": {
+      "id": "26",
+      "name": "Seahawks",
+      "displayName": "Seattle Seahawks",
+      "abbreviation": "SEA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "record": "11-3"
+    },
+    "awayTeam": {
+      "id": "11",
+      "name": "Colts",
+      "displayName": "Indianapolis Colts",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+      "record": "8-6"
+    },
+    "homeScore": 18,
+    "awayScore": 16,
+    "status": "final",
+    "startTime": "2025-12-14T21:25Z"
+  },
+  {
+    "id": "401772933",
+    "sport": "nfl",
+    "date": "2025-12-15",
+    "homeTeam": {
+      "id": "6",
+      "name": "Cowboys",
+      "displayName": "Dallas Cowboys",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "record": "6-7-1"
+    },
+    "awayTeam": {
+      "id": "16",
+      "name": "Vikings",
+      "displayName": "Minnesota Vikings",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+      "record": "6-8"
+    },
+    "homeScore": 26,
+    "awayScore": 34,
+    "status": "final",
+    "startTime": "2025-12-15T01:20Z"
+  }
+]

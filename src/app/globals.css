@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a1a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #16213e;
+  --accent-green: #4ade80;
+  --accent-gold: #ffd700;
+  --text-primary: #e0e0e0;
+  --text-secondary: #8892b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .card-glow-correct {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+  .card-glow-incorrect {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+  }
+  .card-glow-picked {
+    box-shadow: 0 0 15px rgba(74, 222, 128, 0.3);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a4a;
+  border-radius: 4px;
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810383-3149673",
+    "type": "player_performance",
+    "timestamp": 1767916800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Pascal Siakam",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png",
+      "teamAbbreviation": "IND",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 30,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 14,
+        "AST": 3,
+        "TO": 6,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 4,
+        "DREB": 10,
+        "PF": 2,
+        "+/-": 7
+      },
+      "headline": "30 PTS | 14 REB | 3 AST",
+      "gameId": "401810383",
+      "opponentAbbreviation": "CHA",
+      "gameDate": "2026-01-09",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810383-4432816",
+    "type": "player_performance",
+    "timestamp": 1767916800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "LaMelo Ball",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png",
+      "teamAbbreviation": "CHA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 27,
+        "PTS": 33,
+        "FG": 12,
+        "3PT": 7,
+        "FT": 2,
+        "REB": 3,
+        "AST": 8,
+        "TO": 3,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": 19
+      },
+      "headline": "33 PTS | 3 REB | 8 AST | 3 STL",
+      "gameId": "401810383",
+      "opponentAbbreviation": "IND",
+      "gameDate": "2026-01-09",
+      "isWin": false
+    }
+  }
+]

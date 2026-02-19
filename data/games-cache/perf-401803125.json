@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803125-5172",
+    "type": "player_performance",
+    "timestamp": 1768869000000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Marcus Foligno",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/5172.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 0,
+        "HT": 2,
+        "TK": 1,
+        "+/-": 1,
+        "TOI": 14,
+        "PPTOI": 0,
+        "SHTOI": 3,
+        "ESTOI": 9,
+        "SHFT": 20,
+        "G": 3,
+        "YTDG": 6,
+        "A": 0,
+        "S": 5,
+        "SM": 0,
+        "SOG": 0,
+        "FW": 1,
+        "FL": 0,
+        "FO%": 100,
+        "GV": 2,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803125",
+      "opponentAbbreviation": "TOR",
+      "gameDate": "2026-01-20",
+      "isWin": true
+    }
+  }
+]

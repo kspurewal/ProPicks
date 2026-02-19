@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810559-4432166",
+    "type": "player_performance",
+    "timestamp": 1769986800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Cade Cunningham",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png",
+      "teamAbbreviation": "DET",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 26,
+        "PTS": 18,
+        "FG": 7,
+        "3PT": 1,
+        "FT": 3,
+        "REB": 4,
+        "AST": 12,
+        "TO": 2,
+        "STL": 4,
+        "BLK": 3,
+        "OREB": 1,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": 34
+      },
+      "headline": "18 PTS | 4 REB | 12 AST | 4 STL | 3 BLK",
+      "gameId": "401810559",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-02-01",
+      "isWin": true
+    }
+  }
+]

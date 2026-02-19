@@ -1,0 +1,30 @@
+[
+  {
+    "id": "perf-401772965-3046779",
+    "type": "player_performance",
+    "timestamp": 1767561900000,
+    "sport": "nfl",
+    "data": {
+      "playerName": "Jared Goff",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3046779.png",
+      "teamAbbreviation": "DET",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "sport": "nfl",
+      "stats": {
+        "C/ATT": 27,
+        "YDS": 331,
+        "AVG": 7.9,
+        "TD": 1,
+        "INT": 1,
+        "SACKS": 2,
+        "QBR": 66.4,
+        "RTG": 86.5
+      },
+      "headline": "331 YDS | 1 TD",
+      "gameId": "401772965",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

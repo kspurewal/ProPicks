@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810420-4395626",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Tre Jones",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4395626.png",
+      "teamAbbreviation": "CHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 27,
+        "PTS": 34,
+        "FG": 11,
+        "3PT": 5,
+        "FT": 7,
+        "REB": 2,
+        "AST": 7,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 1,
+        "PF": 0,
+        "+/-": 2
+      },
+      "headline": "34 PTS | 2 REB | 7 AST",
+      "gameId": "401810420",
+      "opponentAbbreviation": "HOU",
+      "gameDate": "2026-01-14",
+      "isWin": false
+    }
+  },
+  {
+    "id": "perf-401810420-3202",
+    "type": "player_performance",
+    "timestamp": 1768352400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kevin Durant",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
+      "teamAbbreviation": "HOU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 28,
+        "FG": 12,
+        "3PT": 1,
+        "FT": 3,
+        "REB": 10,
+        "AST": 4,
+        "TO": 3,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 2,
+        "DREB": 8,
+        "PF": 2,
+        "+/-": 4
+      },
+      "headline": "28 PTS | 10 REB | 4 AST",
+      "gameId": "401810420",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-01-14",
+      "isWin": true
+    }
+  }
+]

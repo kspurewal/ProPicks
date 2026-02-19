@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803163-4565236",
+    "type": "player_performance",
+    "timestamp": 1769299200000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Cole Caufield",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/4565236.png",
+      "teamAbbreviation": "MTL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 0,
+        "HT": 0,
+        "TK": 0,
+        "+/-": 1,
+        "TOI": 19,
+        "PPTOI": 3,
+        "SHTOI": 0,
+        "ESTOI": 15,
+        "SHFT": 23,
+        "G": 3,
+        "YTDG": 29,
+        "A": 0,
+        "S": 6,
+        "SM": 4,
+        "SOG": 0,
+        "FW": 1,
+        "FL": 0,
+        "FO%": 100,
+        "GV": 1,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803163",
+      "opponentAbbreviation": "BOS",
+      "gameDate": "2026-01-25",
+      "isWin": false
+    }
+  }
+]

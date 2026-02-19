@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810457-4279888",
+    "type": "player_performance",
+    "timestamp": 1768755600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Ja Morant",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4279888.png",
+      "teamAbbreviation": "MEM",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 28,
+        "PTS": 24,
+        "FG": 7,
+        "3PT": 3,
+        "FT": 7,
+        "REB": 5,
+        "AST": 13,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 5,
+        "PF": 2,
+        "+/-": 26
+      },
+      "headline": "24 PTS | 5 REB | 13 AST",
+      "gameId": "401810457",
+      "opponentAbbreviation": "ORL",
+      "gameDate": "2026-01-18",
+      "isWin": true
+    }
+  }
+]

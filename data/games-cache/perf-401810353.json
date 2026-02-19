@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810353-4594268",
+    "type": "player_performance",
+    "timestamp": 1767567600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Anthony Edwards",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4594268.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 30,
+        "PTS": 35,
+        "FG": 14,
+        "3PT": 6,
+        "FT": 1,
+        "REB": 6,
+        "AST": 3,
+        "TO": 4,
+        "STL": 4,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 6,
+        "PF": 2,
+        "+/-": 29
+      },
+      "headline": "35 PTS | 6 REB | 3 AST | 4 STL",
+      "gameId": "401810353",
+      "opponentAbbreviation": "WSH",
+      "gameDate": "2026-01-04",
+      "isWin": true
+    }
+  }
+]

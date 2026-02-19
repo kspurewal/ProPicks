@@ -1,0 +1,104 @@
+[
+  {
+    "id": "perf-401810492-3917376",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Jaylen Brown",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png",
+      "teamAbbreviation": "BOS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 46,
+        "PTS": 27,
+        "FG": 9,
+        "3PT": 4,
+        "FT": 5,
+        "REB": 10,
+        "AST": 12,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 9,
+        "PF": 2,
+        "+/-": 11
+      },
+      "headline": "27 PTS | 10 REB | 12 AST",
+      "gameId": "401810492",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810492-4066354",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Payton Pritchard",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4066354.png",
+      "teamAbbreviation": "BOS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 40,
+        "PTS": 32,
+        "FG": 13,
+        "3PT": 6,
+        "FT": 0,
+        "REB": 4,
+        "AST": 4,
+        "TO": 1,
+        "STL": 0,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 3,
+        "PF": 3,
+        "+/-": -3
+      },
+      "headline": "32 PTS | 4 REB | 4 AST",
+      "gameId": "401810492",
+      "opponentAbbreviation": "BKN",
+      "gameDate": "2026-01-24",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810492-4278104",
+    "type": "player_performance",
+    "timestamp": 1769214600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Michael Porter Jr.",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png",
+      "teamAbbreviation": "BKN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 42,
+        "PTS": 30,
+        "FG": 9,
+        "3PT": 4,
+        "FT": 8,
+        "REB": 8,
+        "AST": 4,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 7,
+        "PF": 3,
+        "+/-": 0
+      },
+      "headline": "30 PTS | 8 REB | 4 AST",
+      "gameId": "401810492",
+      "opponentAbbreviation": "BOS",
+      "gameDate": "2026-01-24",
+      "isWin": false
+    }
+  }
+]

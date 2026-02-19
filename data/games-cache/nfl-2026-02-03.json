@@ -1,0 +1,25 @@
+[
+  {
+    "id": "401831718",
+    "sport": "nfl",
+    "date": "2026-02-04",
+    "homeTeam": {
+      "id": "31",
+      "displayName": "AFC",
+      "abbreviation": "AFC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/afc.png",
+      "record": "0-0"
+    },
+    "awayTeam": {
+      "id": "32",
+      "displayName": "NFC",
+      "abbreviation": "NFC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nfc.png",
+      "record": "0-0"
+    },
+    "homeScore": 52,
+    "awayScore": 66,
+    "status": "final",
+    "startTime": "2026-02-04T01:00Z"
+  }
+]

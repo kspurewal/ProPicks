@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810392-4576087",
+    "type": "player_performance",
+    "timestamp": 1768010400000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Peyton Watson",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4576087.png",
+      "teamAbbreviation": "DEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 34,
+        "PTS": 25,
+        "FG": 9,
+        "3PT": 2,
+        "FT": 5,
+        "REB": 11,
+        "AST": 4,
+        "TO": 5,
+        "STL": 3,
+        "BLK": 1,
+        "OREB": 2,
+        "DREB": 9,
+        "PF": 3,
+        "+/-": 2
+      },
+      "headline": "25 PTS | 11 REB | 4 AST | 3 STL",
+      "gameId": "401810392",
+      "opponentAbbreviation": "ATL",
+      "gameDate": "2026-01-10",
+      "isWin": false
+    }
+  }
+]

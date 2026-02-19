@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810503-3945274",
+    "type": "player_performance",
+    "timestamp": 1769304600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Luka Doncic",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3945274.png",
+      "teamAbbreviation": "LAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 39,
+        "PTS": 33,
+        "FG": 8,
+        "3PT": 3,
+        "FT": 14,
+        "REB": 8,
+        "AST": 11,
+        "TO": 5,
+        "STL": 1,
+        "BLK": 1,
+        "OREB": 0,
+        "DREB": 8,
+        "PF": 2,
+        "+/-": 18
+      },
+      "headline": "33 PTS | 8 REB | 11 AST",
+      "gameId": "401810503",
+      "opponentAbbreviation": "DAL",
+      "gameDate": "2026-01-25",
+      "isWin": true
+    }
+  }
+]

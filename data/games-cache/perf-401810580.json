@@ -1,0 +1,70 @@
+[
+  {
+    "id": "perf-401810580-4278585",
+    "type": "player_performance",
+    "timestamp": 1770177600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Collin Gillespie",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278585.png",
+      "teamAbbreviation": "PHX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 30,
+        "FG": 10,
+        "3PT": 8,
+        "FT": 2,
+        "REB": 4,
+        "AST": 10,
+        "TO": 1,
+        "STL": 3,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 4,
+        "PF": 2,
+        "+/-": 5
+      },
+      "headline": "30 PTS | 4 REB | 10 AST | 3 STL",
+      "gameId": "401810580",
+      "opponentAbbreviation": "POR",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  },
+  {
+    "id": "perf-401810580-5105565",
+    "type": "player_performance",
+    "timestamp": 1770177600000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Donovan Clingan",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png",
+      "teamAbbreviation": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 27,
+        "PTS": 14,
+        "FG": 4,
+        "3PT": 3,
+        "FT": 3,
+        "REB": 15,
+        "AST": 3,
+        "TO": 0,
+        "STL": 0,
+        "BLK": 2,
+        "OREB": 6,
+        "DREB": 9,
+        "PF": 0,
+        "+/-": 5
+      },
+      "headline": "14 PTS | 15 REB | 3 AST",
+      "gameId": "401810580",
+      "opponentAbbreviation": "PHX",
+      "gameDate": "2026-02-04",
+      "isWin": false
+    }
+  }
+]

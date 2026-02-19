@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803191-3900169",
+    "type": "player_performance",
+    "timestamp": 1769646600000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Travis Konecny",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/3900169.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/phi.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 1,
+        "HT": 1,
+        "TK": 0,
+        "+/-": 1,
+        "TOI": 21,
+        "PPTOI": 4,
+        "SHTOI": 0,
+        "ESTOI": 16,
+        "SHFT": 26,
+        "G": 3,
+        "YTDG": 20,
+        "A": 0,
+        "S": 3,
+        "SM": 2,
+        "SOG": 0,
+        "FW": 0,
+        "FL": 0,
+        "FO%": 0,
+        "GV": 0,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803191",
+      "opponentAbbreviation": "CBJ",
+      "gameDate": "2026-01-29",
+      "isWin": false
+    }
+  }
+]

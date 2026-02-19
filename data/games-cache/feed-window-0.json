@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "biggame-401810651",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810651",
+      "homeTeam": {
+        "id": "18",
+        "name": "Knicks",
+        "displayName": "New York Knicks",
+        "abbreviation": "NY",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "record": "35-20"
+      },
+      "awayTeam": {
+        "id": "8",
+        "name": "Pistons",
+        "displayName": "Detroit Pistons",
+        "abbreviation": "DET",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "record": "40-13"
+      },
+      "startTime": "2026-02-20T00:30Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Playoff-Caliber Clash",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810653",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810653",
+      "homeTeam": {
+        "id": "24",
+        "name": "Spurs",
+        "displayName": "San Antonio Spurs",
+        "abbreviation": "SA",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "record": "38-16"
+      },
+      "awayTeam": {
+        "id": "21",
+        "name": "Suns",
+        "displayName": "Phoenix Suns",
+        "abbreviation": "PHX",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "record": "32-23"
+      },
+      "startTime": "2026-02-20T01:30Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Playoff-Caliber Clash",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810654",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810654",
+      "homeTeam": {
+        "id": "9",
+        "name": "Warriors",
+        "displayName": "Golden State Warriors",
+        "abbreviation": "GS",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "record": "29-26"
+      },
+      "awayTeam": {
+        "id": "2",
+        "name": "Celtics",
+        "displayName": "Boston Celtics",
+        "abbreviation": "BOS",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "record": "35-19"
+      },
+      "startTime": "2026-02-20T03:00Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Playoff-Caliber Clash",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810647",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810647",
+      "homeTeam": {
+        "id": "30",
+        "name": "Hornets",
+        "displayName": "Charlotte Hornets",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "record": "26-29"
+      },
+      "awayTeam": {
+        "id": "10",
+        "name": "Rockets",
+        "displayName": "Houston Rockets",
+        "abbreviation": "HOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "record": "33-20"
+      },
+      "startTime": "2026-02-20T00:00Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Must-Watch Game",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810649",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810649",
+      "homeTeam": {
+        "id": "20",
+        "name": "76ers",
+        "displayName": "Philadelphia 76ers",
+        "abbreviation": "PHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "record": "30-24"
+      },
+      "awayTeam": {
+        "id": "1",
+        "name": "Hawks",
+        "displayName": "Atlanta Hawks",
+        "abbreviation": "ATL",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "record": "26-30"
+      },
+      "startTime": "2026-02-20T00:00Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Must-Watch Game",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810650",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810650",
+      "homeTeam": {
+        "id": "27",
+        "name": "Wizards",
+        "displayName": "Washington Wizards",
+        "abbreviation": "WSH",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "record": "14-39"
+      },
+      "awayTeam": {
+        "id": "11",
+        "name": "Pacers",
+        "displayName": "Indiana Pacers",
+        "abbreviation": "IND",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "record": "15-40"
+      },
+      "startTime": "2026-02-20T00:00Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Must-Watch Game",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810652",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810652",
+      "homeTeam": {
+        "id": "4",
+        "name": "Bulls",
+        "displayName": "Chicago Bulls",
+        "abbreviation": "CHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "record": "24-31"
+      },
+      "awayTeam": {
+        "id": "28",
+        "name": "Raptors",
+        "displayName": "Toronto Raptors",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "record": "32-23"
+      },
+      "startTime": "2026-02-20T01:00Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Must-Watch Game",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401810656",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401810656",
+      "homeTeam": {
+        "id": "12",
+        "name": "Clippers",
+        "displayName": "LA Clippers",
+        "abbreviation": "LAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "record": "26-28"
+      },
+      "awayTeam": {
+        "id": "7",
+        "name": "Nuggets",
+        "displayName": "Denver Nuggets",
+        "abbreviation": "DEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "record": "35-20"
+      },
+      "startTime": "2026-02-20T03:30Z",
+      "gameDate": "2026-02-20",
+      "sport": "nba",
+      "headline": "Must-Watch Game",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "scheduled"
+    }
+  },
+  {
+    "id": "biggame-401838140",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401838140",
+      "homeTeam": {
+        "id": "132374",
+        "name": "Team Stars",
+        "displayName": "Team Stars",
+        "abbreviation": "STARS",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stars.png",
+        "record": "0-0"
+      },
+      "awayTeam": {
+        "id": "111386",
+        "name": "World",
+        "displayName": "World",
+        "abbreviation": "WORLD",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/world.png",
+        "record": "0-0"
+      },
+      "startTime": "2026-02-15T22:00Z",
+      "gameDate": "2026-02-15",
+      "sport": "nba",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 37,
+      "awayScore": 35,
+      "status": "final"
+    }
+  },
+  {
+    "id": "biggame-401838141",
+    "type": "big_game",
+    "timestamp": 1771513877672,
+    "sport": "nba",
+    "data": {
+      "gameId": "401838141",
+      "homeTeam": {
+        "id": "132375",
+        "name": "Team Stripes",
+        "displayName": "Team Stripes",
+        "abbreviation": "STRIPES",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stripes.png",
+        "record": "0-0"
+      },
+      "awayTeam": {
+        "id": "132374",
+        "name": "Team Stars",
+        "displayName": "Team Stars",
+        "abbreviation": "STARS",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/stars.png",
+        "record": "0-0"
+      },
+      "startTime": "2026-02-15T22:55Z",
+      "gameDate": "2026-02-15",
+      "sport": "nba",
+      "headline": "Nail-Biter Finish",
+      "homeScore": 42,
+      "awayScore": 40,
+      "status": "final"
+    }
+  },
+  {
+    "id": "news-mlb-1771456108000-",
+    "type": "news",
+    "timestamp": 1771456108000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Clark's 'unforeseen' MLBPA exit won't hurt CBA plan, exec says",
+      "description": "The sudden resignation of MLBPA executive director Tony Clark won't weaken or distract the players' association as it prepares for negotiations on a new CBA, deputy executive director Bruce Meyer says.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616883_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47967531/clark-unforeseen-mlbpa-exit-hurt-cba-plan-exec-says",
+      "sport": "mlb",
+      "published": "2026-02-18T23:08:28Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771455979000-CLE",
+    "type": "news",
+    "timestamp": 1771455979000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Longtime Browns OL Wyatt Teller won't return in 2026",
+      "description": "Wyatt Teller, an impending free agent, said goodbye to the city of Cleveland in an Instagram post Wednesday.",
+      "imageUrl": "https://a.espncdn.com/photo/2020/1223/r794057_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47969953/long-browns-ol-wyatt-teller-return-2026",
+      "sport": "nfl",
+      "published": "2026-02-18T23:06:19Z",
+      "teamAbbreviations": [
+        "CLE"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771455942000-DEN",
+    "type": "news",
+    "timestamp": 1771455942000,
+    "sport": "nba",
+    "data": {
+      "headline": "Nuggets convert Spencer Jones' deal to standard contract",
+      "description": "The Denver Nuggets are converting two-way Spencer Jones to a standard NBA contract for the remainder of the season, sources told ESPN on Wednesday.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0124/r1604889_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47969933/nuggets-convert-spencer-jones-deal-standard-contract",
+      "sport": "nba",
+      "published": "2026-02-18T23:05:42Z",
+      "teamAbbreviations": [
+        "DEN"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771455693000-ARI",
+    "type": "news",
+    "timestamp": 1771455693000,
+    "sport": "nfl",
+    "data": {
+      "headline": "New OC Nathaniel Hackett will be 'setting the menu' for Arizona",
+      "description": "New Cardinals OC Nathaniel Hackett was introduced by the team on Wednesday.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1617021_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47969547/new-oc-nathaniel-hackett-setting-menu-arizona",
+      "sport": "nfl",
+      "published": "2026-02-18T23:01:33Z",
+      "teamAbbreviations": [
+        "ARI"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771455529000-PHI",
+    "type": "news",
+    "timestamp": 1771455529000,
+    "sport": "nba",
+    "data": {
+      "headline": "Embiid to miss 76ers' game vs. Hawks due to a sore shin",
+      "description": "Joel Embiid reported soreness in his right shin over the All-Star break and will miss the Philadelphia 76ers' game against Atlanta on Thursday night.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0123/r1604448_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47969837/embiid-miss-76ers-game-vs-hawks-due-sore-right-shin",
+      "sport": "nba",
+      "published": "2026-02-18T22:58:49Z",
+      "teamAbbreviations": [
+        "PHI"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771455523000-",
+    "type": "news",
+    "timestamp": 1771455523000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Quinn Hughes' OT goal sends U.S. to Olympic men's hockey semis",
+      "description": "The U.S. men are moving on to the semifinals at the Olympics, after needing extra hockey to get through the quarterfinals Wednesday against Sweden.",
+      "linkUrl": "https://www.espn.com/olympics/hockey/story/_/id/47969842/quinn-hughes-scores-ot-send-usa-sweden-olympic-men-hockey-semifinals-vs-slovakia",
+      "sport": "nhl",
+      "published": "2026-02-18T22:58:43Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771454978000-DET",
+    "type": "news",
+    "timestamp": 1771454978000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Lions president and CEO Rod Wood to retire before 2026 season",
+      "description": "Lions team president and CEO Rod Wood will retire ahead of the 2026 season.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616981_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47968912/lions-president-ceo-rod-wood-retire-26-season",
+      "sport": "nfl",
+      "published": "2026-02-18T22:49:38Z",
+      "teamAbbreviations": [
+        "DET"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771454841000-",
+    "type": "news",
+    "timestamp": 1771454841000,
+    "sport": "nhl",
+    "data": {
+      "headline": "2026 Olympics: Top moments from USA-Sweden men's hockey",
+      "description": "Here are the goals and top moments as the U.S. moves on to the semifinals.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1617037_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47965973/2026-milan-cortina-winter-olympics-live-updates-men-hockey-usa-sweden",
+      "sport": "nhl",
+      "published": "2026-02-18T22:47:21Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771452687000-TEN",
+    "type": "news",
+    "timestamp": 1771452687000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Titans new OC Brian Daboll excited to work with Cam Ward",
+      "description": "Tennessee's new offensive coordinator plans to lean on his experience with Josh Allen and others to help Ward.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616927_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47967992/tennessee-titans-oc-brian-daboll-excited-cam-ward",
+      "sport": "nfl",
+      "published": "2026-02-18T22:11:27Z",
+      "teamAbbreviations": [
+        "TEN"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771452468000-SAC",
+    "type": "news",
+    "timestamp": 1771452468000,
+    "sport": "nba",
+    "data": {
+      "headline": "Sources: Kings' Sabonis, LaVine have season-ending surgeries",
+      "description": "Sacramento Kings stars Domantas Sabonis (knee) and Zach LaVine (hand) both underwent season-ending surgeries on Wednesday, league sources told ESPN's Shams Charania.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616997_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47968993/sources-kings-sabonis-lavine-season-ending-surgeries",
+      "sport": "nba",
+      "published": "2026-02-18T22:07:48Z",
+      "teamAbbreviations": [
+        "SAC"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771450750000-",
+    "type": "news",
+    "timestamp": 1771450750000,
+    "sport": "mlb",
+    "data": {
+      "headline": "ESPN fantasy baseball rankings: 2026 points leagues",
+      "description": "Here are Tristan H. Cockcroft's way-too-early rankings for ESPN points leagues for the 2026 fantasy baseball season.",
+      "imageUrl": "https://a.espncdn.com/photo/2025/1003/r1555005_576x324_16-9.jpg",
+      "linkUrl": "https://www.espn.com/fantasy/baseball/story/_/id/35437997/fantasy-baseball-rankings-points-leagues-2026-espn-cockcroft",
+      "sport": "mlb",
+      "published": "2026-02-18T21:39:10Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771450358000-TB",
+    "type": "news",
+    "timestamp": 1771450358000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Riddick: Mike Evans will be in high demand",
+      "description": "Louis Riddick and Booger McFarland react to Mike Evans playing in 2026 and being set to be a free agent.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/07edfb3618994e1f8c46f8eecadde281989/07edfb3618994e1f8c46f8eecadde281989.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47968781",
+      "sport": "nfl",
+      "published": "2026-02-18T21:32:38Z",
+      "teamAbbreviations": [
+        "TB"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771450252000-SEA",
+    "type": "news",
+    "timestamp": 1771450252000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Paul Allen's estate begins selling Super Bowl champ Seahawks",
+      "description": "According to the wishes of late team owner Paul Allen, the estate announced Wednesday it has begun the process of selling the Seahawks.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0208/r1612389_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47967201/paul-allen-estate-begins-selling-super-bowl-champ-seahawks",
+      "sport": "nfl",
+      "published": "2026-02-18T21:30:52Z",
+      "teamAbbreviations": [
+        "SEA"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771449638000-ARI-ATL-BAL-BUF-CAR-CHI-CIN-CLE-DAL-DEN-DET-GB-HOU-IND-JAX-LV-LAC-LAR-MIA-MIN-NE-NO-NYJ-PIT-SF-SEA-TB-TEN-WSH",
+    "type": "news",
+    "timestamp": 1771449638000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Who are the current NFL team owners?",
+      "description": "NFL team owners carry a variety of reputations in the public eye. Who is in charge of your favorite franchises? Check out this list for more details.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0209/r1612510_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/39387572/who-current-nfl-team-owners",
+      "sport": "nfl",
+      "published": "2026-02-18T21:20:38Z",
+      "teamAbbreviations": [
+        "ARI",
+        "ATL",
+        "BAL",
+        "BUF",
+        "CAR",
+        "CHI",
+        "CIN",
+        "CLE",
+        "DAL",
+        "DEN",
+        "DET",
+        "GB",
+        "HOU",
+        "IND",
+        "JAX",
+        "LV",
+        "LAC",
+        "LAR",
+        "MIA",
+        "MIN",
+        "NE",
+        "NO",
+        "NYJ",
+        "PIT",
+        "SF",
+        "SEA",
+        "TB",
+        "TEN",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771448101000-PIT",
+    "type": "news",
+    "timestamp": 1771448101000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Canada's Sidney Crosby suffers injury at Olympics, to get imaging",
+      "description": "Team Canada's Sidney Crosby will undergo imaging, sources told ESPN, to determine the severity of his lower-body injury suffered in the Olympic hockey quarterfinals.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616813_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/olympics/story/_/id/47966260/canada-sidney-crosby-leaves-olympic-quarterfinal-injury",
+      "sport": "nhl",
+      "published": "2026-02-18T20:55:01Z",
+      "teamAbbreviations": [
+        "PIT"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771447565000-ATL",
+    "type": "news",
+    "timestamp": 1771447565000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Braves to begin season down pitchers Schwellenbach, Waldrep",
+      "description": "Braves pitchers Spencer Schwellenbach and Hurston Waldrep are both dealing with elbow issues, but manager Welt Weiss said he hopes both will pitch this season.",
+      "imageUrl": "https://a.espncdn.com/photo/2024/0530/r1339395_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47968336/braves-begin-season-starters-schwellenbach-waldrep",
+      "sport": "mlb",
+      "published": "2026-02-18T20:46:05Z",
+      "teamAbbreviations": [
+        "ATL"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771446742000-DAL",
+    "type": "news",
+    "timestamp": 1771446742000,
+    "sport": "nba",
+    "data": {
+      "headline": "Kyrie Irving to miss rest of season, eyes return for 2026-27",
+      "description": "Mavericks star Kyrie Irving will miss the remainder of the season as he continues to recover from knee surgery last March.",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0625/r1510939_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47964482/kyrie-irving-miss-rest-season-eyes-return-2026-27",
+      "sport": "nba",
+      "published": "2026-02-18T20:32:22Z",
+      "teamAbbreviations": [
+        "DAL"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771446374000-DAL",
+    "type": "news",
+    "timestamp": 1771446374000,
+    "sport": "nba",
+    "data": {
+      "headline": "How Kyrie Irving's season-ending injury impacts Mavs",
+      "description": "Shams Charania joins \"NBA Today\" and says Kyrie Irving will miss the remainder of the season to \"fully heal\" from a torn ACL. ",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/cbc18beacc3f4e288adfdcd1f595379e921/cbc18beacc3f4e288adfdcd1f595379e921.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47968270",
+      "sport": "nba",
+      "published": "2026-02-18T20:26:14Z",
+      "teamAbbreviations": [
+        "DAL"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771445112000-",
+    "type": "news",
+    "timestamp": 1771445112000,
+    "sport": "nhl",
+    "data": {
+      "headline": "How Sidney Crosby's injury motivated Canada vs. Czechia",
+      "description": "Emily Kaplan provides an update on Sidney Crosby after he left Canada's Olympic quarterfinal game against Czechia in the second period.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/d177ce3f3ccc411da08fb9eca0b6d15b886/d177ce3f3ccc411da08fb9eca0b6d15b886.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47967852",
+      "sport": "nhl",
+      "published": "2026-02-18T20:05:12Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nhl-1771444261000-",
+    "type": "news",
+    "timestamp": 1771444261000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Grades, questions from Canada's Olympic hockey win vs. Czechia",
+      "description": "The overwhelming tournament favorites needed a late tying goal and overtime to win, but they made the semis.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616871_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47966986/olympics-2026-men-hockey-canada-win-czechia-grades-players-questions",
+      "sport": "nhl",
+      "published": "2026-02-18T19:51:01Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nhl-1771444119000-",
+    "type": "news",
+    "timestamp": 1771444119000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Olympics 2026 men's hockey: Standings, stats, schedule, more",
+      "description": "Find the full schedule, scoring and goaltending leaders and knockout round bracket here.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0215/r1615706_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47898378/olympics-2026-men-hockey-nhl-players-teams-standings-stats-schedule",
+      "sport": "nhl",
+      "published": "2026-02-18T19:48:39Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771442666000-BAL",
+    "type": "news",
+    "timestamp": 1771442666000,
+    "sport": "nfl",
+    "data": {
+      "headline": "New OC Declan Doyle expects all Ravens players at voluntary OTAs",
+      "description": "New Ravens offensive coordinator Declan Doyle expects all the team's players to attend voluntary OTAs to start the \"next regime on the right foot.\"",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0212/cbe8080423c34b12975fe54884682362787/cbe8080423c34b12975fe54884682362787.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47967510/new-oc-declan-doyle-expects-all-ravens-players-voluntary-otas",
+      "sport": "nfl",
+      "published": "2026-02-18T19:24:26Z",
+      "teamAbbreviations": [
+        "BAL"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771440579000-LV",
+    "type": "news",
+    "timestamp": 1771440579000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Mel Kiper Jr.: Nonsense to say Fernando Mendoza isn't worthy of No. 1 pick",
+      "description": "Mel Kiper Jr. joins Rich Eisen and examines the potential fit between the Raiders and quarterback Fernando Mendoza.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/71eeb7fc51d74443898167e40e3f2f74814/71eeb7fc51d74443898167e40e3f2f74814.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47967286",
+      "sport": "nfl",
+      "published": "2026-02-18T18:49:39Z",
+      "teamAbbreviations": [
+        "LV"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771439556000-CAR",
+    "type": "news",
+    "timestamp": 1771439556000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Luke Kuechly reflects on playing against fellow HOF inductees",
+      "description": "Former Panthers linebacker Luke Kuechly joins \"The Rich Eisen Show\" to share stories about the 2026 Pro Football Hall of Fame class.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/41b08d315c8b4cfaa1f9db45e256ca44798/41b08d315c8b4cfaa1f9db45e256ca44798.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47967027",
+      "sport": "nfl",
+      "published": "2026-02-18T18:32:36Z",
+      "teamAbbreviations": [
+        "CAR"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771438126000-LAL",
+    "type": "news",
+    "timestamp": 1771438126000,
+    "sport": "nba",
+    "data": {
+      "headline": "Caitlin Clark says she couldn't handle LeBron James' cookies and wine fast",
+      "description": "The Los Angeles Lakers star revealed he went two months without his two favorite snacks.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616826_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47966418/lebron-james-stops-cookies-drinking-wine-caitlin-clark",
+      "sport": "nba",
+      "published": "2026-02-18T18:08:46Z",
+      "teamAbbreviations": [
+        "LAL"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771436107000-",
+    "type": "news",
+    "timestamp": 1771436107000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Mad Dog: Tony Clark scandal a mess for MLBPA",
+      "description": "Chris \"Mad Dog\" Russo details the negative impact Tony Clark's resignation poses for the MLB Players Association.",
+      "imageUrl": "https://a.espncdn.com/media/motion/wsc/2026/0218/cf02ccba-1aa7-4325-a5c3-5e13ba50755b/cf02ccba-1aa7-4325-a5c3-5e13ba50755b.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47966268",
+      "sport": "mlb",
+      "published": "2026-02-18T17:35:07Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nba-1771434848000-ORL",
+    "type": "news",
+    "timestamp": 1771434848000,
+    "sport": "nba",
+    "data": {
+      "headline": "Magic's Franz Wagner out indefinitely due to ankle soreness",
+      "description": "Magic forward Franz Wagner will be sidelined indefinitely because of lingering soreness in his sprained left ankle, the team announced on Wednesday.",
+      "imageUrl": "https://a.espncdn.com/photo/2022/1104/r1085768_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47965482/sources-magic-franz-wagner-ankle-soreness-indefinitely",
+      "sport": "nba",
+      "published": "2026-02-18T17:14:08Z",
+      "teamAbbreviations": [
+        "ORL"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771434672000-ARI-ATH-ATL-BAL-BOS-CLE-COL-DET-HOU-KC-LAD-MIL-NYM-NYY-PHI-SF-SEA-TOR",
+    "type": "news",
+    "timestamp": 1771434672000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Buster Olney's 2026 top 10 at every MLB position: Catchers",
+      "description": "Seattle's slugger set the standard for hard-hitting catchers last season. Who else makes our list?",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/r1616294_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47900511/mlb-2026-buster-olney-top-10-positions-ranking-catcher-raleigh",
+      "sport": "mlb",
+      "published": "2026-02-18T17:11:12Z",
+      "teamAbbreviations": [
+        "ARI",
+        "ATH",
+        "ATL",
+        "BAL",
+        "BOS",
+        "CLE",
+        "COL",
+        "DET",
+        "HOU",
+        "KC",
+        "LAD",
+        "MIL",
+        "NYM",
+        "NYY",
+        "PHI",
+        "SF",
+        "SEA",
+        "TOR"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771433963000-LAL-MIL",
+    "type": "news",
+    "timestamp": 1771433963000,
+    "sport": "nba",
+    "data": {
+      "headline": "Stephen A.: Luka-Giannis on Lakers highly unlikely, but can never say never",
+      "description": "While Stephen A. Smith doesn't believe Giannis Antetokounmpo and Luka Doncic teaming up with the Lakers will happen, he explains why it can't be completely ruled out.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/98173caac5f7426f919203b05db17f7c652/98173caac5f7426f919203b05db17f7c652.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47965490",
+      "sport": "nba",
+      "published": "2026-02-18T16:59:23Z",
+      "teamAbbreviations": [
+        "LAL",
+        "MIL"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771433790000-MIA-TB",
+    "type": "news",
+    "timestamp": 1771433790000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Buster Olney's 2026 top 10 at every MLB position: Relievers",
+      "description": "The dominance of San Diego's Mason Miller is undeniable, but who else makes the grade?",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0215/r1615668_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47900466/mlb-2026-buster-olney-top-10-positions-ranking-relievers",
+      "sport": "mlb",
+      "published": "2026-02-18T16:56:30Z",
+      "teamAbbreviations": [
+        "MIA",
+        "TB"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771433316000-ARI-LAA-NYY-PHI",
+    "type": "news",
+    "timestamp": 1771433316000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Dog on the course at the Olympics recalls past wildlife interruptions",
+      "description": "A dog dashed onto the homestretch of an Olympic ski course Tuesday -- while competition was ongoing. It's not the first time a creature stole the show at a sporting event.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616771_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/28074905/squirrels-cats-dogs-bees-animals-ran-loose-stadiums",
+      "sport": "mlb",
+      "published": "2026-02-18T16:48:36Z",
+      "teamAbbreviations": [
+        "ARI",
+        "LAA",
+        "NYY",
+        "PHI"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771432343000-ATH-BAL-BOS-CHC-CHW-CIN-CLE-COL-DET-HOU-KC-LAA-LAD-MIA-MIL-MIN-NYM-PIT-SD-SF-SEA-STL-TB-TEX-TOR-WSH",
+    "type": "news",
+    "timestamp": 1771432343000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Final 2026 offseason grades for all 30 MLB teams",
+      "description": "Now that spring training and preparation for the 2026 season are underway, let's hand out offseason report cards for every club.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/r1616476_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47956584/mlb-2025-26-offseason-moves-final-grades-all-30-teams",
+      "sport": "mlb",
+      "published": "2026-02-18T16:32:23Z",
+      "teamAbbreviations": [
+        "ATH",
+        "BAL",
+        "BOS",
+        "CHC",
+        "CHW",
+        "CIN",
+        "CLE",
+        "COL",
+        "DET",
+        "HOU",
+        "KC",
+        "LAA",
+        "LAD",
+        "MIA",
+        "MIL",
+        "MIN",
+        "NYM",
+        "PIT",
+        "SD",
+        "SF",
+        "SEA",
+        "STL",
+        "TB",
+        "TEX",
+        "TOR",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771431424000-",
+    "type": "news",
+    "timestamp": 1771431424000,
+    "sport": "mlb",
+    "data": {
+      "headline": "ESPN fantasy baseball rankings: 2026 category and roto leagues",
+      "description": "Here are Eric Karabell's rankings for ESPN head-to-head category and rotisserie leagues for the 2025 fantasy baseball season.",
+      "imageUrl": "https://a.espncdn.com/photo/2025/1003/r1555004_576x324_16-9.jpg",
+      "linkUrl": "https://www.espn.com/fantasy/baseball/story/_/id/35438162/fantasy-baseball-rankings-head-head-rotisserie-leagues-2026-espn-karabell",
+      "sport": "mlb",
+      "published": "2026-02-18T16:17:04Z",
+      "teamAbbreviations": []
+    }
+  },
+  {
+    "id": "news-nfl-1771430686000-GB",
+    "type": "news",
+    "timestamp": 1771430686000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Rich Bisaccia to step down as Packers special teams coach",
+      "description": "Rob Demovsky reports on who the Packers will look at to replace Rich Bisaccia as special teams coordinator.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/dm_260218_Packers_IA_16x9/dm_260218_Packers_IA_16x9.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47965598",
+      "sport": "nfl",
+      "published": "2026-02-18T16:04:46Z",
+      "teamAbbreviations": [
+        "GB"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771430679000-KC-MIA",
+    "type": "news",
+    "timestamp": 1771430679000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Why Stephen A. thinks Tyreek Hill should return to the Chiefs",
+      "description": "Stephen A. Smith says Kansas City would be the perfect fit for Tyreek Hill after being released by the Dolphins.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/b378a57a2eab49579eb4370000921e22662/b378a57a2eab49579eb4370000921e22662.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47965572",
+      "sport": "nfl",
+      "published": "2026-02-18T16:04:39Z",
+      "teamAbbreviations": [
+        "KC",
+        "MIA"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771429843000-ATL-BUF-CHI-CIN-DAL-DEN-HOU-JAX-LAC-LAR-MIN-NE-NO-NYG-NYJ-PHI-PIT-WSH",
+    "type": "news",
+    "timestamp": 1771429843000,
+    "sport": "nfl",
+    "data": {
+      "headline": "2026 NFL offseason: Players who need a change of scenery",
+      "description": "Let's pick out players who could use a change of scenery for the 2026 season, including David Montgomery, Anthony Richardson and L'Jarius Sneed.",
+      "imageUrl": "https://a.espncdn.com/photo/2024/1216/r1428664_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47955391/nfl-2026-offseason-draft-trade-free-agency-change-scenery",
+      "sport": "nfl",
+      "published": "2026-02-18T15:50:43Z",
+      "teamAbbreviations": [
+        "ATL",
+        "BUF",
+        "CHI",
+        "CIN",
+        "DAL",
+        "DEN",
+        "HOU",
+        "JAX",
+        "LAC",
+        "LAR",
+        "MIN",
+        "NE",
+        "NO",
+        "NYG",
+        "NYJ",
+        "PHI",
+        "PIT",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771428985000-KC",
+    "type": "news",
+    "timestamp": 1771428985000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Where should Chiefs look to improve with savings from Mahomes' restructuring?",
+      "description": "Louis Riddick and Kimberley A. Martin examine where the Chiefs should look to improve with the cap space provided by Patrick Mahomes' restructured contract.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/88f47d7d0c804693b0144ba8652a1106605/88f47d7d0c804693b0144ba8652a1106605.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47965108",
+      "sport": "nfl",
+      "published": "2026-02-18T15:36:25Z",
+      "teamAbbreviations": [
+        "KC"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771428515000-BOS",
+    "type": "news",
+    "timestamp": 1771428515000,
+    "sport": "nba",
+    "data": {
+      "headline": "Are Celtics No. 1 in the East if Jayson Tatum returns this season?",
+      "description": "Alan Hahn says it's unfair to put high expectations on Jayson Tatum should he return for the Celtics this season.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/75f26c8015ee416098f5c03c60eb5e0b598/75f26c8015ee416098f5c03c60eb5e0b598.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47965010",
+      "sport": "nba",
+      "published": "2026-02-18T15:28:35Z",
+      "teamAbbreviations": [
+        "BOS"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771428237000-ATL-BKN-CHA-CHI-CLE-DEN-DET-GS-HOU-IND-LAC-MEM-MIA-MIL-MIN-NO-NY-OKC-PHI-PHX-POR-SAC-SA-TOR-UTAH-WSH",
+    "type": "news",
+    "timestamp": 1771428237000,
+    "sport": "nba",
+    "data": {
+      "headline": "NBA viewers guide: Biggest matchups, storylines, playoff races",
+      "description": "Biggest storylines, matchups and award races to watch in the last two months of the 2025-26 NBA regular season.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/260218_nba_viewers-guide_16x9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47958400/nba-viewers-guide-biggest-question-matchups-schedule-playoff-race-watch",
+      "sport": "nba",
+      "published": "2026-02-18T15:23:57Z",
+      "teamAbbreviations": [
+        "ATL",
+        "BKN",
+        "CHA",
+        "CHI",
+        "CLE",
+        "DEN",
+        "DET",
+        "GS",
+        "HOU",
+        "IND",
+        "LAC",
+        "MEM",
+        "MIA",
+        "MIL",
+        "MIN",
+        "NO",
+        "NY",
+        "OKC",
+        "PHI",
+        "PHX",
+        "POR",
+        "SAC",
+        "SA",
+        "TOR",
+        "UTAH",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771422931000-IND",
+    "type": "news",
+    "timestamp": 1771422931000,
+    "sport": "nfl",
+    "data": {
+      "headline": "Is Daniel Jones worthy of an extension with the Colts?",
+      "description": "Louis Riddick and Mike Tannenbaum question whether if Daniel Jones has done enough to earn a contract extension from the Colts. ",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0218/169c766d2fa44cc7a801383aa7b7b751533/169c766d2fa44cc7a801383aa7b7b751533.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47964174",
+      "sport": "nfl",
+      "published": "2026-02-18T13:55:31Z",
+      "teamAbbreviations": [
+        "IND"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771422244000-SF",
+    "type": "news",
+    "timestamp": 1771422244000,
+    "sport": "nfl",
+    "data": {
+      "headline": "49ers named as home team for 2026 Mexico City game",
+      "description": "The 49ers will be the home team for a regular-season game at Estadio Banorte in Mexico City that is set to take place in December.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0218/r1616591_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47963574/49ers-named-home-team-2026-mexico-city-game",
+      "sport": "nfl",
+      "published": "2026-02-18T13:44:04Z",
+      "teamAbbreviations": [
+        "SF"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771419147000-CHW-STL-WSH",
+    "type": "news",
+    "timestamp": 1771419147000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Ranking MLB's best at every position for 2026: Olney's top 10s",
+      "description": "As a new baseball season approaches, we compare the elite at every spot on the diamond.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0214/mlb_top_10_positional_lede_cr_16x9_608x342.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47921972/2026-buster-olney-top-10-mlb-players-best-every-position",
+      "sport": "mlb",
+      "published": "2026-02-18T12:52:27Z",
+      "teamAbbreviations": [
+        "CHW",
+        "STL",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771418793000-SD",
+    "type": "news",
+    "timestamp": 1771418793000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Ex-Dodger Walker Buehler signs with NL West rival Padres",
+      "description": "Walker Buehler has signed with the Padres. The right-hander spent the first eight seasons of his major league career with their archrivals, the Dodgers.",
+      "imageUrl": "https://a.espncdn.com/photo/2024/1229/r1432905_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47958615/ex-dodger-walker-buehler-signs-nl-west-rival-padres",
+      "sport": "mlb",
+      "published": "2026-02-18T12:46:33Z",
+      "teamAbbreviations": [
+        "SD"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771416068000-ATL-BOS-CHI-DET-HOU-MEM-NY-OKC-ORL",
+    "type": "news",
+    "timestamp": 1771416068000,
+    "sport": "nba",
+    "data": {
+      "headline": "Generation Jalen: How one name dominates the NBA like few before",
+      "description": "The Jalens (and Jaylens, Jaylins and Jaylons) are running the modern NBA -- but could they beat some of the all-time greats if they teamed up?",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/nba_jalen-generation_16x9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47956675/nba-2025-2026-generation-jalen-brunson-jaylen-brown-kevin-durant-michael-jordan",
+      "sport": "nba",
+      "published": "2026-02-18T12:01:08Z",
+      "teamAbbreviations": [
+        "ATL",
+        "BOS",
+        "CHI",
+        "DET",
+        "HOU",
+        "MEM",
+        "NY",
+        "OKC",
+        "ORL"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398333000-TOR",
+    "type": "news",
+    "timestamp": 1771398333000,
+    "sport": "nba",
+    "data": {
+      "headline": "Chicago hosts Toronto on home skid",
+      "description": "Toronto Raptors (32-23, fifth in the Eastern Conference) vs. Chicago Bulls (24-31, 11th in the Eastern Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810652.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810652",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:33Z",
+      "teamAbbreviations": [
+        "TOR"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398326000-IND-WSH",
+    "type": "news",
+    "timestamp": 1771398326000,
+    "sport": "nba",
+    "data": {
+      "headline": "Washington takes on Indiana, seeks to end 3-game skid",
+      "description": "Indiana Pacers (15-40, 14th in the Eastern Conference) vs. Washington Wizards (14-39, 15th in the Eastern Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810650.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810650",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:26Z",
+      "teamAbbreviations": [
+        "IND",
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398323000-BKN-CLE",
+    "type": "news",
+    "timestamp": 1771398323000,
+    "sport": "nba",
+    "data": {
+      "headline": "Cleveland plays Brooklyn, looks for 6th straight win",
+      "description": "Brooklyn Nets (15-38, 13th in the Eastern Conference) vs. Cleveland Cavaliers (34-21, fourth in the Eastern Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810648.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810648",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:23Z",
+      "teamAbbreviations": [
+        "BKN",
+        "CLE"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398316000-GS",
+    "type": "news",
+    "timestamp": 1771398316000,
+    "sport": "nba",
+    "data": {
+      "headline": "Golden State and Boston to meet for out-of-conference game",
+      "description": "Boston Celtics (35-19, second in the Eastern Conference) vs. Golden State Warriors (29-26, eighth in the Western Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810654.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810654",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:16Z",
+      "teamAbbreviations": [
+        "GS"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398312000-CHA",
+    "type": "news",
+    "timestamp": 1771398312000,
+    "sport": "nba",
+    "data": {
+      "headline": "Houston takes on Charlotte, seeks 5th straight road win",
+      "description": "Houston Rockets (33-20, fourth in the Western Conference) vs. Charlotte Hornets (26-29, ninth in the Eastern Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810647.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810647",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:12Z",
+      "teamAbbreviations": [
+        "CHA"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398305000-PHX-SA",
+    "type": "news",
+    "timestamp": 1771398305000,
+    "sport": "nba",
+    "data": {
+      "headline": "San Antonio faces Phoenix, seeks 7th straight victory",
+      "description": "Phoenix Suns (32-23, seventh in the Western Conference) vs. San Antonio Spurs (38-16, second in the Western Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810653.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810653",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:05Z",
+      "teamAbbreviations": [
+        "PHX",
+        "SA"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771398302000-LAC",
+    "type": "news",
+    "timestamp": 1771398302000,
+    "sport": "nba",
+    "data": {
+      "headline": "Jokic and the Nuggets visit conference foe Los Angeles",
+      "description": "Denver Nuggets (35-20, third in the Western Conference) vs. Los Angeles Clippers (26-28, 10th in the Western Conference)",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401810656.png?templateId=espn.applewatch.awayhome.1",
+      "linkUrl": "http://www.espn.com/nba/preview?gameId=401810656",
+      "sport": "nba",
+      "published": "2026-02-18T07:05:02Z",
+      "teamAbbreviations": [
+        "LAC"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771378204000-MIN",
+    "type": "news",
+    "timestamp": 1771378204000,
+    "sport": "nba",
+    "data": {
+      "headline": "Mike Conley back with Wolves two weeks after being traded",
+      "description": "Mike Conley is returning to the Minnesota Timberwolves two weeks after he was traded in a deadline move, the team announced Tuesday.",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0520/r1495663_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47959675/mike-conley-back-wolves-two-weeks-being-traded",
+      "sport": "nba",
+      "published": "2026-02-18T01:30:04Z",
+      "teamAbbreviations": [
+        "MIN"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771364427000-PIT",
+    "type": "news",
+    "timestamp": 1771364427000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Who's the top pitcher in baseball: Tarik Skubal or Paul Skenes?",
+      "description": "Buster Olney and Paul Hembekides talk about what separates Paul Skenes and Tarik Skubal.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0216/3f13557cda5c442888adb873c8f5aa651120/3f13557cda5c442888adb873c8f5aa651120.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47950538",
+      "sport": "mlb",
+      "published": "2026-02-17T21:40:27Z",
+      "teamAbbreviations": [
+        "PIT"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771363767000-MIN",
+    "type": "news",
+    "timestamp": 1771363767000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Twins ace Lopez has 'significant' UCL tear, likely needs surgery",
+      "description": "Twins ace Pablo Lopez has a \"significant tear\" in the UCL of his right elbow, GM Jeremy Zoll said Tuesday, and will likely need season-ending Tommy John surgery.",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0920/r1548584_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47956198/twins-pablo-lopez-ucl-tear-need-season-ending-surgery",
+      "sport": "mlb",
+      "published": "2026-02-17T21:29:27Z",
+      "teamAbbreviations": [
+        "MIN"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771363471000-UTAH",
+    "type": "news",
+    "timestamp": 1771363471000,
+    "sport": "nba",
+    "data": {
+      "headline": "Jazz's Jaren Jackson Jr. has surgery for growth in left knee",
+      "description": "Utah Jazz forward Jaren Jackson Jr. underwent surgery on Tuesday to remove a growth in his left knee.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0212/r1614018_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47957672/jazz-jaren-jackson-jr-surgery-growth-left-knee",
+      "sport": "nba",
+      "published": "2026-02-17T21:24:31Z",
+      "teamAbbreviations": [
+        "UTAH"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771362322000-SJ",
+    "type": "news",
+    "timestamp": 1771362322000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Jeff Skinner clears waivers after Sharks waive vet forward",
+      "description": "Veteran forward Jeff Skinner cleared waivers Tuesday after the San Jose Sharks waived him the day before.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/r1616406_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47957786/jeff-skinner-clears-waivers-sharks-waive-vet-forward",
+      "sport": "nhl",
+      "published": "2026-02-17T21:05:22Z",
+      "teamAbbreviations": [
+        "SJ"
+      ]
+    }
+  },
+  {
+    "id": "news-nfl-1771345088000-NYG-PHI",
+    "type": "news",
+    "timestamp": 1771345088000,
+    "sport": "nfl",
+    "data": {
+      "headline": "2026 NFL free agency: Best team fits for the top 50 players",
+      "description": "Which team makes the most sense for Alec Pierce? Where do Malik Willis and the QBs fit best? And where could defensive standouts excel?",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0217/r1616149_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nfl/story/_/id/47940120/2026-nfl-free-agency-best-team-fits-ranking-top-50-players-available-offseason",
+      "sport": "nfl",
+      "published": "2026-02-17T16:18:08Z",
+      "teamAbbreviations": [
+        "NYG",
+        "PHI"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771331393000-CIN-TEX",
+    "type": "news",
+    "timestamp": 1771331393000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Buster Olney's 2026 top 10 at every MLB position: Starting pitchers",
+      "description": "We break down the best players at every spot on the diamond entering 2026, starting with a star-studded position featuring two of baseball's biggest stars.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0214/mlb_top_10_positional_pitchers_cr_16x9_608x342.jpg",
+      "linkUrl": "https://www.espn.com/mlb/story/_/id/47899748/mlb-2026-buster-olney-top-10-positions-ranking-starting-pitcher-skubal-skenes",
+      "sport": "mlb",
+      "published": "2026-02-17T12:29:53Z",
+      "teamAbbreviations": [
+        "CIN",
+        "TEX"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771285327000-CAR",
+    "type": "news",
+    "timestamp": 1771285327000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Hurricanes sign Brandon Bussi to 3-year, $5.7M extension",
+      "description": "The Hurricanes announced Brandon Bussi's deal Monday, the latest chapter in his unlikely rise to prominence for the Eastern Conference contender.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0201/r1608832_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47950322/hurricanes-sign-brandon-bussi-3-year-57m-extension",
+      "sport": "nhl",
+      "published": "2026-02-16T23:42:07Z",
+      "teamAbbreviations": [
+        "CAR"
+      ]
+    }
+  },
+  {
+    "id": "news-mlb-1771283509000-CHC",
+    "type": "news",
+    "timestamp": 1771283509000,
+    "sport": "mlb",
+    "data": {
+      "headline": "Cubs owner Tom Ricketts sees division title for Cubs",
+      "description": "Jesse Rogers reports that Tom Ricketts believes the Cubs should win the division and is willing to pay the luxury tax.",
+      "imageUrl": "https://a.espncdn.com/media/motion/2026/0216/dm_260216_Cubs_owner_Tom_Ricketts_sees_division_title_for_Cubs/dm_260216_Cubs_owner_Tom_Ricketts_sees_division_title_for_Cubs.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47950401",
+      "sport": "mlb",
+      "published": "2026-02-16T23:11:49Z",
+      "teamAbbreviations": [
+        "CHC"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771276193000-POR",
+    "type": "news",
+    "timestamp": 1771276193000,
+    "sport": "nba",
+    "data": {
+      "headline": "Damian Lillard recruiting Steph, Klay and Booker for 2027 3-point contest",
+      "description": "The Portland Trail Blazers guard messaged Stephen Curry about inviting Klay Thompson, Devin Booker and \"4 more real shooters\" to the event.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0216/r1616016_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47948965/damian-lillard-2027-3-point-contest-stephen-curry-klay-thompson-devin-booker",
+      "sport": "nba",
+      "published": "2026-02-16T21:09:53Z",
+      "teamAbbreviations": [
+        "POR"
+      ]
+    }
+  },
+  {
+    "id": "news-nba-1771212448000-MIA-NO",
+    "type": "news",
+    "timestamp": 1771212448000,
+    "sport": "nba",
+    "data": {
+      "headline": "NBA All-Star 2026: Best moments, highlights from Los Angeles",
+      "description": "All of the top moments and results from NBA All-Star Weekend in Inglewood, California.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0215/r1615728_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nba/story/_/id/47900664/nba-all-star-weekend-2026-live-updates-results-highlights",
+      "sport": "nba",
+      "published": "2026-02-16T03:27:28Z",
+      "teamAbbreviations": [
+        "MIA",
+        "NO"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771207236000-MIN",
+    "type": "news",
+    "timestamp": 1771207236000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Brock Faber after USA's win: We have the right guys to go the distance",
+      "description": "Brock Faber talks about the intensity of a win-or-go-home game and the success this Olympic team can have.",
+      "imageUrl": "https://a.espncdn.com/media/motion/wsc/2026/0216/fc954f0f-6ee7-44c8-9c59-bee31e33e76b/fc954f0f-6ee7-44c8-9c59-bee31e33e76b.jpg",
+      "linkUrl": "https://www.espn.com/video/clip?id=47943047",
+      "sport": "nhl",
+      "published": "2026-02-16T02:00:36Z",
+      "teamAbbreviations": [
+        "MIN"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771202868000-LA",
+    "type": "news",
+    "timestamp": 1771202868000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Kings confirm Kevin Fiala out for rest of regular season",
+      "description": "Kevin Fiala's leg surgery following his injury in the Olympics while playing for Switzerland was successful, the Kings announced Sunday, and the 29-year-old star forward will sit out the rest of the regular season as L.A. battles for a playoff spot.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0216/r1615742_600x600_1-1.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47942794/kings-confirm-kevin-fiala-rest-regular-season",
+      "sport": "nhl",
+      "published": "2026-02-16T00:47:48Z",
+      "teamAbbreviations": [
+        "LA"
+      ]
+    }
+  },
+  {
+    "id": "perf-401838142-6450",
+    "type": "player_performance",
+    "timestamp": 1771197900000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kawhi Leonard",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png",
+      "teamAbbreviation": "STRIPES",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/stripes.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 12,
+        "PTS": 31,
+        "FG": 11,
+        "3PT": 6,
+        "FT": 3,
+        "REB": 3,
+        "AST": 0,
+        "TO": 0,
+        "STL": 2,
+        "BLK": 0,
+        "OREB": 0,
+        "DREB": 3,
+        "PF": 1,
+        "+/-": 3
+      },
+      "headline": "31 PTS | 3 REB",
+      "gameId": "401838142",
+      "opponentAbbreviation": "WORLD",
+      "gameDate": "2026-02-15",
+      "isWin": true
+    }
+  },
+  {
+    "id": "news-nhl-1771186606000-WSH",
+    "type": "news",
+    "timestamp": 1771186606000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Canada's Tom Wilson drops gloves in rare Olympic hockey fight",
+      "description": "Tom Wilson dropped the gloves late in Canada's game against France, going after the player who delivered a forearm to the head of teammate Nathan MacKinnon minutes earlier.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0215/r1615632_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/olympics/story/_/id/47940390/canada-tom-wilson-drops-gloves-rare-olympic-hockey-fight",
+      "sport": "nhl",
+      "published": "2026-02-15T20:16:46Z",
+      "teamAbbreviations": [
+        "WSH"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1771090772000-LA",
+    "type": "news",
+    "timestamp": 1771090772000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Source: Kevin Fiala's season likely over after Olympic injury",
+      "description": "Kings star Kevin Fiala's leg injury suffered in Switzerland's loss to Canada is likely season-ending, an NHL source told ESPN.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0214/r1615122_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/olympics/hockey/story/_/id/47928384/source-fiala-season-likely-olympic-injury",
+      "sport": "nhl",
+      "published": "2026-02-14T17:39:32Z",
+      "teamAbbreviations": [
+        "LA"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1770981674000-SJ",
+    "type": "news",
+    "timestamp": 1770981674000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Inside Macklin Celebrini's rise to stardom for Sharks, Canada",
+      "description": "Scoring the opening Olympic goal for his country was the latest milestone on the phenom's meteoric rise.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0212/r1614338_1296x729_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47909922/nhl-olympics-2026-macklin-celebrini-sharks-canada-sidney-crosby",
+      "sport": "nhl",
+      "published": "2026-02-13T11:21:14Z",
+      "teamAbbreviations": [
+        "SJ"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1770935794000-COL-MTL-NYI-STL-VGK",
+    "type": "news",
+    "timestamp": 1770935794000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Celebrini leads Canada's rout in Olympic men's hockey opener",
+      "description": "Macklin Celebrini scored Canada's first goal in the return of NHL players to the Olympics and Jordan Binnington stopped all 26 shots he faced in a 5-0 defeat of Czechia.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0212/r1614294_600x400_3-2.jpg",
+      "linkUrl": "https://www.espn.com/olympics/story/_/id/47910130/celebrini-canada-rout-czechia-olympic-men-hockey-opener",
+      "sport": "nhl",
+      "published": "2026-02-12T22:36:34Z",
+      "teamAbbreviations": [
+        "COL",
+        "MTL",
+        "NYI",
+        "STL",
+        "VGK"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1770908672000-ANA-BOS-BUF-CGY-CHI-CBJ-DAL-DET-EDM-FLA-NSH-NJ-NYR-OTT-PHI-SEA-TB-TOR-UTAH-VAN-WPG",
+    "type": "news",
+    "timestamp": 1770908672000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Olympic 2026 men's hockey preview: Players, teams, favorites",
+      "description": "The NHL is back at the Olympics! Here are the top players to know, each team's medal chances and schedule, and much more.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0209/260211_nhl_olympic-megapreview_16x9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47878418/olympics-2026-men-hockey-nhl-players-best-teams-favorites-schedule-medals",
+      "sport": "nhl",
+      "published": "2026-02-12T15:04:32Z",
+      "teamAbbreviations": [
+        "ANA",
+        "BOS",
+        "BUF",
+        "CGY",
+        "CHI",
+        "CBJ",
+        "DAL",
+        "DET",
+        "EDM",
+        "FLA",
+        "NSH",
+        "NJ",
+        "NYR",
+        "OTT",
+        "PHI",
+        "SEA",
+        "TB",
+        "TOR",
+        "UTAH",
+        "VAN",
+        "WPG"
+      ]
+    }
+  },
+  {
+    "id": "news-nhl-1770852252000-ANA-BOS-BUF-CGY-CAR-CHI-COL-CBJ-DAL-DET-EDM-FLA-MIN-MTL-NSH-NJ-NYI-NYR-OTT-PHI-PIT-SEA-STL-TB-TOR-UTAH-VAN-VGK-WSH-WPG",
+    "type": "news",
+    "timestamp": 1770852252000,
+    "sport": "nhl",
+    "data": {
+      "headline": "Which NHL players are playing in 2026 Winter Olympics?",
+      "description": "Talent from teams across the NHL will be representing their countries at the 2026 Winter Olympics. Find out which players will be on the ice now.",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0122/r1604193_608x342_16-9.jpg",
+      "linkUrl": "https://www.espn.com/nhl/story/_/id/47694474/which-nhl-players-playing-2026-winter-olympics",
+      "sport": "nhl",
+      "published": "2026-02-11T23:24:12Z",
+      "teamAbbreviations": [
+        "ANA",
+        "BOS",
+        "BUF",
+        "CGY",
+        "CAR",
+        "CHI",
+        "COL",
+        "CBJ",
+        "DAL",
+        "DET",
+        "EDM",
+        "FLA",
+        "MIN",
+        "MTL",
+        "NSH",
+        "NJ",
+        "NYI",
+        "NYR",
+        "OTT",
+        "PHI",
+        "PIT",
+        "SEA",
+        "STL",
+        "TB",
+        "TOR",
+        "UTAH",
+        "VAN",
+        "VGK",
+        "WSH",
+        "WPG"
+      ]
+    }
+  }
+]

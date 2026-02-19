@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810577-3134907",
+    "type": "player_performance",
+    "timestamp": 1770166800000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Kyle Kuzma",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3134907.png",
+      "teamAbbreviation": "MIL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 31,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 3,
+        "FT": 4,
+        "REB": 10,
+        "AST": 6,
+        "TO": 1,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 3,
+        "DREB": 7,
+        "PF": 1,
+        "+/-": 18
+      },
+      "headline": "31 PTS | 10 REB | 6 AST",
+      "gameId": "401810577",
+      "opponentAbbreviation": "CHI",
+      "gameDate": "2026-02-04",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "KrishPUPU-401810654",
+    "username": "KrishPUPU",
+    "gameId": "401810654",
+    "date": "2026-02-20",
+    "pickedTeamId": "2",
+    "timestamp": 1771455856073,
+    "result": "pending",
+    "pointsEarned": 0
+  },
+  {
+    "id": "Krish_Purewal2-401810651",
+    "username": "Krish_Purewal2",
+    "gameId": "401810651",
+    "date": "2026-02-20",
+    "pickedTeamId": "18",
+    "timestamp": 1771511215330,
+    "result": "pending",
+    "pointsEarned": 0
+  },
+  {
+    "id": "Krish_Purewal2-401810650",
+    "username": "Krish_Purewal2",
+    "gameId": "401810650",
+    "date": "2026-02-20",
+    "pickedTeamId": "11",
+    "timestamp": 1771511502213,
+    "result": "pending",
+    "pointsEarned": 0
+  },
+  {
+    "id": "Krish_Purewal2-401810654",
+    "username": "Krish_Purewal2",
+    "gameId": "401810654",
+    "date": "2026-02-20",
+    "pickedTeamId": "2",
+    "timestamp": 1771511517215,
+    "result": "pending",
+    "pointsEarned": 0
+  }
+]

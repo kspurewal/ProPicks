@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803034-4233880",
+    "type": "player_performance",
+    "timestamp": 1767916800000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Alexandre Texier",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/4233880.png",
+      "teamAbbreviation": "MTL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 0,
+        "HT": 1,
+        "TK": 0,
+        "+/-": 2,
+        "TOI": 17,
+        "PPTOI": 2,
+        "SHTOI": 1,
+        "ESTOI": 13,
+        "SHFT": 19,
+        "G": 3,
+        "YTDG": 7,
+        "A": 0,
+        "S": 6,
+        "SM": 1,
+        "SOG": 0,
+        "FW": 0,
+        "FL": 0,
+        "FO%": 0,
+        "GV": 0,
+        "PN": 0,
+        "PIM": 0
+      },
+      "headline": "3 G",
+      "gameId": "401803034",
+      "opponentAbbreviation": "FLA",
+      "gameDate": "2026-01-09",
+      "isWin": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810609-3059318",
+    "type": "player_performance",
+    "timestamp": 1770516000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Joel Embiid",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
+      "teamAbbreviation": "PHI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 33,
+        "FG": 9,
+        "3PT": 4,
+        "FT": 11,
+        "REB": 9,
+        "AST": 3,
+        "TO": 2,
+        "STL": 0,
+        "BLK": 1,
+        "OREB": 1,
+        "DREB": 8,
+        "PF": 3,
+        "+/-": -10
+      },
+      "headline": "33 PTS | 9 REB | 3 AST",
+      "gameId": "401810609",
+      "opponentAbbreviation": "PHX",
+      "gameDate": "2026-02-08",
+      "isWin": true
+    }
+  }
+]

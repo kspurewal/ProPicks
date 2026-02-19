@@ -1,0 +1,152 @@
+[
+  {
+    "id": "401810365",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "11",
+      "name": "Pacers",
+      "displayName": "Indiana Pacers",
+      "abbreviation": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "record": "6-31"
+    },
+    "awayTeam": {
+      "id": "5",
+      "name": "Cavaliers",
+      "displayName": "Cleveland Cavaliers",
+      "abbreviation": "CLE",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "record": "21-17"
+    },
+    "homeScore": 116,
+    "awayScore": 120,
+    "status": "final",
+    "startTime": "2026-01-07T00:00Z"
+  },
+  {
+    "id": "401810366",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "27",
+      "name": "Wizards",
+      "displayName": "Washington Wizards",
+      "abbreviation": "WSH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+      "record": "10-25"
+    },
+    "awayTeam": {
+      "id": "19",
+      "name": "Magic",
+      "displayName": "Orlando Magic",
+      "abbreviation": "ORL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "record": "20-17"
+    },
+    "homeScore": 120,
+    "awayScore": 112,
+    "status": "final",
+    "startTime": "2026-01-07T00:00Z"
+  },
+  {
+    "id": "401810367",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "29",
+      "name": "Grizzlies",
+      "displayName": "Memphis Grizzlies",
+      "abbreviation": "MEM",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "record": "16-20"
+    },
+    "awayTeam": {
+      "id": "24",
+      "name": "Spurs",
+      "displayName": "San Antonio Spurs",
+      "abbreviation": "SA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "record": "25-11"
+    },
+    "homeScore": 106,
+    "awayScore": 105,
+    "status": "final",
+    "startTime": "2026-01-07T01:00Z"
+  },
+  {
+    "id": "401810368",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "16",
+      "name": "Timberwolves",
+      "displayName": "Minnesota Timberwolves",
+      "abbreviation": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "record": "24-13"
+    },
+    "awayTeam": {
+      "id": "14",
+      "name": "Heat",
+      "displayName": "Miami Heat",
+      "abbreviation": "MIA",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "record": "20-17"
+    },
+    "homeScore": 122,
+    "awayScore": 94,
+    "status": "final",
+    "startTime": "2026-01-07T01:00Z"
+  },
+  {
+    "id": "401810369",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "3",
+      "name": "Pelicans",
+      "displayName": "New Orleans Pelicans",
+      "abbreviation": "NO",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "record": "8-30"
+    },
+    "awayTeam": {
+      "id": "13",
+      "name": "Lakers",
+      "displayName": "Los Angeles Lakers",
+      "abbreviation": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "record": "23-11"
+    },
+    "homeScore": 103,
+    "awayScore": 111,
+    "status": "final",
+    "startTime": "2026-01-07T01:00Z"
+  },
+  {
+    "id": "401810370",
+    "sport": "nba",
+    "date": "2026-01-07",
+    "homeTeam": {
+      "id": "23",
+      "name": "Kings",
+      "displayName": "Sacramento Kings",
+      "abbreviation": "SAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "record": "8-29"
+    },
+    "awayTeam": {
+      "id": "6",
+      "name": "Mavericks",
+      "displayName": "Dallas Mavericks",
+      "abbreviation": "DAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "record": "14-23"
+    },
+    "homeScore": 98,
+    "awayScore": 100,
+    "status": "final",
+    "startTime": "2026-01-07T04:00Z"
+  }
+]

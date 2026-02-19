@@ -1,0 +1,43 @@
+[
+  {
+    "id": "perf-401803165-4272192",
+    "type": "player_performance",
+    "timestamp": 1769299200000,
+    "sport": "nhl",
+    "data": {
+      "playerName": "Mason Marchment",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nhl/players/full/4272192.png",
+      "teamAbbreviation": "CBJ",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cbj.png",
+      "sport": "nhl",
+      "stats": {
+        "BS": 0,
+        "HT": 1,
+        "TK": 0,
+        "+/-": 2,
+        "TOI": 17,
+        "PPTOI": 1,
+        "SHTOI": 0,
+        "ESTOI": 15,
+        "SHFT": 23,
+        "G": 3,
+        "YTDG": 12,
+        "A": 1,
+        "S": 3,
+        "SM": 2,
+        "SOG": 0,
+        "FW": 0,
+        "FL": 0,
+        "FO%": 0,
+        "GV": 1,
+        "PN": 1,
+        "PIM": 2
+      },
+      "headline": "3 G | 1 A",
+      "gameId": "401803165",
+      "opponentAbbreviation": "TB",
+      "gameDate": "2026-01-25",
+      "isWin": true
+    }
+  }
+]

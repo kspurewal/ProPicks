@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810628-4278594",
+    "type": "player_performance",
+    "timestamp": 1770775200000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Naji Marshall",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png",
+      "teamAbbreviation": "DAL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 36,
+        "PTS": 31,
+        "FG": 12,
+        "3PT": 2,
+        "FT": 5,
+        "REB": 4,
+        "AST": 2,
+        "TO": 2,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 1,
+        "DREB": 3,
+        "PF": 0,
+        "+/-": 5
+      },
+      "headline": "31 PTS | 4 REB | 2 AST",
+      "gameId": "401810628",
+      "opponentAbbreviation": "PHX",
+      "gameDate": "2026-02-11",
+      "isWin": false
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "perf-401810638-3064514",
+    "type": "player_performance",
+    "timestamp": 1770858000000,
+    "sport": "nba",
+    "data": {
+      "playerName": "Julius Randle",
+      "playerImageUrl": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
+      "teamAbbreviation": "MIN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "sport": "nba",
+      "stats": {
+        "MIN": 33,
+        "PTS": 41,
+        "FG": 14,
+        "3PT": 3,
+        "FT": 10,
+        "REB": 7,
+        "AST": 2,
+        "TO": 3,
+        "STL": 1,
+        "BLK": 0,
+        "OREB": 2,
+        "DREB": 5,
+        "PF": 5,
+        "+/-": 11
+      },
+      "headline": "41 PTS | 7 REB | 2 AST",
+      "gameId": "401810638",
+      "opponentAbbreviation": "POR",
+      "gameDate": "2026-02-12",
+      "isWin": true
+    }
+  }
+]
