@@ -379,7 +379,7 @@ function isPostForTeam(post: FeedPost, teamId: string, teamAbbr: string): boolea
   }
   if (post.type === 'player_performance') {
     const d = post.data as PlayerPerformanceData;
-    return d.teamAbbreviation === teamAbbr;
+    return d.teamId ? d.teamId === teamId : d.teamAbbreviation === teamAbbr;
   }
   if (post.type === 'news') {
     const d = post.data as NewsData;

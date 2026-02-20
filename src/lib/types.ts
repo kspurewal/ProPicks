@@ -143,6 +143,7 @@ export interface BigGameData {
 export interface PlayerPerformanceData {
   playerName: string;
   playerImageUrl: string;
+  teamId: string;
   teamAbbreviation: string;
   teamLogo: string;
   sport: Sport;

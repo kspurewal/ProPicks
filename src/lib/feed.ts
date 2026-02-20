@@ -297,6 +297,7 @@ async function buildPlayerPerformances(allGames: Game[], maxPosts = 20): Promise
 
         if (isStandout(game.sport, statMap)) {
           const isHomeTeam = teamStats.team.abbreviation === game.homeTeam.abbreviation;
+          const thisTeam = isHomeTeam ? game.homeTeam : game.awayTeam;
           const opponent = isHomeTeam ? game.awayTeam : game.homeTeam;
           const isWin = isHomeTeam
             ? (game.homeScore || 0) > (game.awayScore || 0)
@@ -309,8 +310,9 @@ async function buildPlayerPerformances(allGames: Game[], maxPosts = 20): Promise
           const data: PlayerPerformanceData = {
             playerName: athlete.athlete.displayName,
             playerImageUrl,
-            teamAbbreviation: teamStats.team.abbreviation,
-            teamLogo: teamStats.team.logo,
+            teamId: thisTeam.id,
+            teamAbbreviation: thisTeam.abbreviation,
+            teamLogo: thisTeam.logo,
             sport: game.sport,
             stats: statMap,
             headline: buildStatHeadline(game.sport, statMap),
