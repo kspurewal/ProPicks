@@ -69,7 +69,7 @@ export default function GameCard({ game, pick }: Props) {
   }
 
   return (
-    <Link href={`/game/${game.id}?sport=${game.sport}&date=${game.date}`} className={cardClass}>
+    <Link href={`/game?id=${game.id}&sport=${game.sport}&date=${game.date}`} className={cardClass}>
       <div className="flex items-center justify-between mb-2 px-2">
         <span className="text-xs text-text-secondary">
           {isFinal ? 'FINAL' : isLive ? 'LIVE' : formatTime(game.startTime)}

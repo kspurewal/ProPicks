@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+// Client-side feed builder — replaces the /api/feed server route
 import {
   FeedPost,
   TrendingPickData,
@@ -11,22 +11,26 @@ import {
   GameResultPickEntry,
   Sport,
   Game,
-} from '@/lib/types';
-
-export const dynamic = 'force-dynamic';
-import { fetchGames, fetchGameSummary, fetchSportNews, fetchTeamNews, fetchTeams, SPORT_CONFIGS, getPlayerHeadshotUrl } from '@/lib/espn';
-import { getPicksByDate } from '@/lib/storage';
-import { todayString, addDays, parseRecord } from '@/lib/utils';
-import { readGameCache, writeGameCache } from '@/lib/storage';
+} from './types';
+import {
+  fetchGames,
+  fetchGameSummary,
+  fetchSportNews,
+  fetchTeams,
+  SPORT_CONFIGS,
+  getPlayerHeadshotUrl,
+  getCachedPerf,
+  setCachedPerf,
+} from './espn';
+import { getPicksByDate } from './storage';
+import { todayString, addDays, parseRecord } from './utils';
 
 // --- Trending Pick ---
 
-async function buildTrendingPick(games: Game[]): Promise<FeedPost | null> {
-  const today = todayString();
-  const picks = getPicksByDate(today);
+async function buildTrendingPick(games: Game[], date: string): Promise<FeedPost | null> {
+  const picks = await getPicksByDate(date);
   if (picks.length === 0) return null;
 
-  // Count picks per team
   const teamCounts: Record<string, number> = {};
   const gameCounts: Record<string, number> = {};
   for (const pick of picks) {
@@ -34,22 +38,15 @@ async function buildTrendingPick(games: Game[]): Promise<FeedPost | null> {
     gameCounts[pick.gameId] = (gameCounts[pick.gameId] || 0) + 1;
   }
 
-  // Find team with most picks
   let topTeamId = '';
   let topCount = 0;
   for (const [teamId, count] of Object.entries(teamCounts)) {
-    if (count > topCount) {
-      topTeamId = teamId;
-      topCount = count;
-    }
+    if (count > topCount) { topTeamId = teamId; topCount = count; }
   }
 
   if (!topTeamId) return null;
 
-  // Find the game for this team
-  const game = games.find(
-    (g) => g.homeTeam.id === topTeamId || g.awayTeam.id === topTeamId
-  );
+  const game = games.find((g) => g.homeTeam.id === topTeamId || g.awayTeam.id === topTeamId);
   if (!game) return null;
 
   const isHome = game.homeTeam.id === topTeamId;
@@ -73,7 +70,7 @@ async function buildTrendingPick(games: Game[]): Promise<FeedPost | null> {
   };
 
   return {
-    id: `trending-${today}`,
+    id: `trending-${date}`,
     type: 'trending_pick',
     timestamp: Date.now(),
     sport: game.sport,
@@ -82,18 +79,12 @@ async function buildTrendingPick(games: Game[]): Promise<FeedPost | null> {
 }
 
 // --- Hot Picks ---
-// Shows who picked what today — one post per day, only on daysOffset=0.
-// Surfaces up to 5 picks across all users, preferring variety (one per user).
 
-async function buildHotPicks(games: Game[]): Promise<FeedPost | null> {
-  const today = todayString();
-  const picks = getPicksByDate(today);
+async function buildHotPicks(games: Game[], date: string): Promise<FeedPost | null> {
+  const picks = await getPicksByDate(date);
   if (picks.length === 0) return null;
 
-  // Build a lookup map: gameId → Game
   const gameMap = new Map(games.map((g) => [g.id, g]));
-
-  // Collect one pick per user (first pick for variety), resolved to team info
   const seenUsers = new Set<string>();
   const entries: HotPickEntry[] = [];
 
@@ -129,65 +120,43 @@ async function buildHotPicks(games: Game[]): Promise<FeedPost | null> {
       ? `${entries[0].username} is locked in today`
       : `${entries.length} picks are in — see who's riding who`;
 
-  const data: HotPicksData = {
-    date: today,
-    picks: entries,
-    headline,
-  };
+  const data: HotPicksData = { date, picks: entries, headline };
 
   return {
-    id: `hotpicks-${today}`,
+    id: `hotpicks-${date}`,
     type: 'hot_picks',
-    timestamp: Date.now() - 30000, // between trending and big game
+    timestamp: Date.now() - 30000,
     sport: entries[0].sport,
     data,
   };
 }
 
-// --- Big Game Tracker ---
+// --- Big Game ---
 
 function scoreBigGame(game: Game): number {
   let score = 0;
-
   const homeRec = parseRecord(game.homeTeam.record);
   const awayRec = parseRecord(game.awayTeam.record);
   const homeGames = homeRec.wins + homeRec.losses || 1;
   const awayGames = awayRec.wins + awayRec.losses || 1;
   const homeWinPct = homeRec.wins / homeGames;
   const awayWinPct = awayRec.wins / awayGames;
-
-  // Penalize lopsided matchups — big win% gap means boring game
   const winPctDiff = Math.abs(homeWinPct - awayWinPct);
-  if (winPctDiff > 0.25) return 0; // Skip games with 25%+ win rate gap
-  if (winPctDiff > 0.15) score -= 1; // Minor penalty for moderate gap
-
-  // Both teams have winning records
-  if (homeRec.wins > homeRec.losses && awayRec.wins > awayRec.losses) {
-    score += 2;
-  }
-
-  // Close game (in progress or final)
+  if (winPctDiff > 0.25) return 0;
+  if (winPctDiff > 0.15) score -= 1;
+  if (homeRec.wins > homeRec.losses && awayRec.wins > awayRec.losses) score += 2;
   if (game.homeScore !== null && game.awayScore !== null) {
     const diff = Math.abs(game.homeScore - game.awayScore);
     if (diff <= 5) score += 3;
     else if (diff <= 10) score += 1;
-    // Penalize blowouts
     if (diff >= 20) return 0;
     if (diff >= 15) score -= 2;
   }
-
-  // Both teams have strong records (combined wins > 60)
-  if (homeRec.wins + awayRec.wins > 60) {
-    score += 1;
-  }
-
-  // Scheduled games between evenly-matched top teams get a bump
+  if (homeRec.wins + awayRec.wins > 60) score += 1;
   if (game.status === 'scheduled') {
     if (homeWinPct > 0.6 && awayWinPct > 0.6) score += 2;
-    // Bonus for very close matchups
     if (winPctDiff < 0.05 && homeWinPct > 0.5 && awayWinPct > 0.5) score += 1;
   }
-
   return score;
 }
 
@@ -199,18 +168,15 @@ function getBigGameHeadline(game: Game): string {
   const homeWinPct = homeRec.wins / homeGames;
   const awayWinPct = awayRec.wins / awayGames;
   const winPctDiff = Math.abs(homeWinPct - awayWinPct);
-
   if (game.homeScore !== null && game.awayScore !== null) {
     const diff = Math.abs(game.homeScore - game.awayScore);
     if (diff <= 3 && game.status === 'final') return 'Nail-Biter Finish';
     if (diff <= 5 && game.status === 'in_progress') return 'Close Game Alert';
     if (diff <= 8 && game.status === 'final') return 'Down-to-the-Wire';
   }
-
   if (homeWinPct > 0.65 && awayWinPct > 0.65) return 'Elite Matchup';
   if (winPctDiff < 0.05 && homeWinPct > 0.5) return 'Dead-Even Clash';
   if (homeRec.wins > homeRec.losses && awayRec.wins > awayRec.losses) return 'Playoff-Caliber Clash';
-
   return 'Must-Watch Game';
 }
 
@@ -234,11 +200,10 @@ function buildBigGames(games: Game[]): FeedPost[] {
       awayScore: game.awayScore,
       status: game.status,
     };
-
     return {
       id: `biggame-${game.id}`,
       type: 'big_game' as const,
-      timestamp: Date.now() - 60000, // slightly older than trending
+      timestamp: Date.now() - 60000,
       sport: game.sport,
       data,
     };
@@ -247,9 +212,7 @@ function buildBigGames(games: Game[]): FeedPost[] {
 
 // --- Player Performance ---
 
-interface StandoutThresholds {
-  [key: string]: number;
-}
+interface StandoutThresholds { [key: string]: number }
 
 const SPORT_THRESHOLDS: Record<Sport, { labelKey: string; thresholds: StandoutThresholds }[]> = {
   nba: [
@@ -257,41 +220,27 @@ const SPORT_THRESHOLDS: Record<Sport, { labelKey: string; thresholds: StandoutTh
     { labelKey: 'REB', thresholds: { REB: 15 } },
     { labelKey: 'AST', thresholds: { AST: 12 } },
   ],
-  nfl: [
-    { labelKey: 'YDS', thresholds: { YDS: 300 } },
-    { labelKey: 'TD', thresholds: { TD: 3 } },
-  ],
-  nhl: [
-    { labelKey: 'G', thresholds: { G: 3 } },
-  ],
-  mlb: [
-    { labelKey: 'HR', thresholds: { HR: 3 } },
-    { labelKey: 'RBI', thresholds: { RBI: 5 } },
-  ],
+  nfl: [{ labelKey: 'YDS', thresholds: { YDS: 300 } }, { labelKey: 'TD', thresholds: { TD: 3 } }],
+  nhl: [{ labelKey: 'G', thresholds: { G: 3 } }],
+  mlb: [{ labelKey: 'HR', thresholds: { HR: 3 } }, { labelKey: 'RBI', thresholds: { RBI: 5 } }],
 };
 
 function isStandout(sport: Sport, statMap: Record<string, number>): boolean {
   const thresholdSets = SPORT_THRESHOLDS[sport] || [];
   for (const { labelKey, thresholds } of thresholdSets) {
-    const val = statMap[labelKey] || 0;
-    const threshold = thresholds[labelKey] || Infinity;
-    if (val >= threshold) return true;
+    if ((statMap[labelKey] || 0) >= (thresholds[labelKey] || Infinity)) return true;
   }
-
-  // NBA double-double with 25+ pts
   if (sport === 'nba') {
     const pts = statMap['PTS'] || 0;
     const reb = statMap['REB'] || 0;
     const ast = statMap['AST'] || 0;
     if (pts >= 25 && (reb >= 10 || ast >= 10)) return true;
   }
-
   return false;
 }
 
 function buildStatHeadline(sport: Sport, statMap: Record<string, number>): string {
   const parts: string[] = [];
-
   if (sport === 'nba') {
     if (statMap['PTS']) parts.push(`${statMap['PTS']} PTS`);
     if (statMap['REB']) parts.push(`${statMap['REB']} REB`);
@@ -309,37 +258,26 @@ function buildStatHeadline(sport: Sport, statMap: Record<string, number>): strin
     if (statMap['RBI']) parts.push(`${statMap['RBI']} RBI`);
     if (statMap['H']) parts.push(`${statMap['H']} H`);
   }
-
   return parts.join(' | ') || 'Great Game';
 }
 
-async function buildPlayerPerformances(
-  dates: string[],
-  allGames: Game[],
-  maxPosts = 20
-): Promise<FeedPost[]> {
+async function buildPlayerPerformances(allGames: Game[], maxPosts = 20): Promise<FeedPost[]> {
   const finalGames = allGames.filter((g) => g.status === 'final');
   const posts: FeedPost[] = [];
 
   for (const game of finalGames) {
     if (posts.length >= maxPosts) break;
 
-    // Check cache first
     const cacheKey = `perf-${game.id}`;
-    const cached = readGameCache(cacheKey);
+    const cached = getCachedPerf(cacheKey);
     if (cached) {
-      const { data } = cached as { data: FeedPost[] };
-      if (data && data.length > 0) {
-        posts.push(...data);
-        continue;
-      }
-      // Cached as empty = no standouts
-      if (data && data.length === 0) continue;
+      posts.push(...(cached.data as FeedPost[]));
+      continue;
     }
 
     const summary = await fetchGameSummary(game.sport, game.id);
     if (!summary?.boxscore?.players) {
-      writeGameCache(cacheKey, []);
+      setCachedPerf(cacheKey, []);
       continue;
     }
 
@@ -347,7 +285,6 @@ async function buildPlayerPerformances(
 
     for (const teamStats of summary.boxscore.players) {
       if (!teamStats.statistics?.[0]) continue;
-
       const labels = teamStats.statistics[0].labels;
       const athletes = teamStats.statistics[0].athletes;
 
@@ -359,15 +296,15 @@ async function buildPlayerPerformances(
         });
 
         if (isStandout(game.sport, statMap)) {
-          // Determine opponent
           const isHomeTeam = teamStats.team.abbreviation === game.homeTeam.abbreviation;
           const opponent = isHomeTeam ? game.awayTeam : game.homeTeam;
           const isWin = isHomeTeam
             ? (game.homeScore || 0) > (game.awayScore || 0)
             : (game.awayScore || 0) > (game.homeScore || 0);
 
-          const playerImageUrl = athlete.athlete.headshot?.href
-            || getPlayerHeadshotUrl(game.sport, athlete.athlete.id);
+          const playerImageUrl =
+            athlete.athlete.headshot?.href ||
+            getPlayerHeadshotUrl(game.sport, athlete.athlete.id);
 
           const data: PlayerPerformanceData = {
             playerName: athlete.athlete.displayName,
@@ -394,7 +331,7 @@ async function buildPlayerPerformances(
       }
     }
 
-    writeGameCache(cacheKey, gamePosts);
+    setCachedPerf(cacheKey, gamePosts);
     posts.push(...gamePosts);
   }
 
@@ -403,7 +340,7 @@ async function buildPlayerPerformances(
 
 // --- Game Results ---
 
-function buildGameResults(games: Game[], dates: string[]): FeedPost[] {
+async function buildGameResults(games: Game[]): Promise<FeedPost[]> {
   const posts: FeedPost[] = [];
 
   for (const game of games) {
@@ -413,11 +350,11 @@ function buildGameResults(games: Game[], dates: string[]): FeedPost[] {
     const winnerId = game.homeScore > game.awayScore ? game.homeTeam.id : game.awayTeam.id;
     const winner = game.homeScore > game.awayScore ? game.homeTeam : game.awayTeam;
 
-    // Get picks for this game's date
-    const gamePicks = getPicksByDate(game.date).filter((p) => p.gameId === game.id);
-    if (gamePicks.length === 0) continue;
+    const gamePicks = await getPicksByDate(game.date);
+    const filtered = gamePicks.filter((p) => p.gameId === game.id);
+    if (filtered.length === 0) continue;
 
-    const entries: GameResultPickEntry[] = gamePicks.slice(0, 5).map((p) => {
+    const entries: GameResultPickEntry[] = filtered.slice(0, 5).map((p) => {
       const isHome = p.pickedTeamId === game.homeTeam.id;
       const pickedTeam = isHome ? game.homeTeam : game.awayTeam;
       return {
@@ -439,13 +376,13 @@ function buildGameResults(games: Game[], dates: string[]): FeedPost[] {
       gameDate: game.date,
       winnerAbbreviation: winner.abbreviation,
       correctPickers: entries.filter((e) => e.correct),
-      totalPickers: gamePicks.length,
+      totalPickers: filtered.length,
     };
 
     posts.push({
       id: `gameresult-${game.id}`,
       type: 'game_result',
-      timestamp: new Date(game.startTime).getTime() + 3 * 3600000, // ~3h after start (approx final time)
+      timestamp: new Date(game.startTime).getTime() + 3 * 3600000,
       sport: game.sport,
       data,
     });
@@ -467,49 +404,26 @@ async function buildNewsPosts(): Promise<FeedPost[]> {
 
   await Promise.all(
     SPORT_CONFIGS.map(async ({ sport }) => {
-      // General league news (no team tag)
       const leagueArticles = await fetchSportNews(sport);
       for (const article of leagueArticles.slice(0, 5)) {
         allArticles.push({ article, sport, teamAbbreviations: [] });
       }
-
-      // Per-team news — fetch all teams for this sport in batches of 8
-      const teams = await fetchTeams(sport);
-      const BATCH = 8;
-      for (let i = 0; i < teams.length; i += BATCH) {
-        const batch = teams.slice(i, i + BATCH);
-        await Promise.all(
-          batch.map(async (team) => {
-            const teamArticles = await fetchTeamNews(sport, team.id);
-            for (const article of teamArticles.slice(0, 2)) {
-              allArticles.push({ article, sport, teamAbbreviations: [team.abbreviation] });
-            }
-          })
-        );
-      }
     })
   );
 
-  // Deduplicate by link URL — same article can appear for multiple teams; merge their abbreviations
   const byLink = new Map<string, RawArticle>();
   for (const item of allArticles) {
     const key = item.article.links?.web?.href || item.article.headline;
     const existing = byLink.get(key);
     if (existing) {
-      existing.teamAbbreviations = Array.from(
-        new Set([...existing.teamAbbreviations, ...item.teamAbbreviations])
-      );
+      existing.teamAbbreviations = Array.from(new Set([...existing.teamAbbreviations, ...item.teamAbbreviations]));
     } else {
       byLink.set(key, { ...item, teamAbbreviations: [...item.teamAbbreviations] });
     }
   }
 
   const deduped = Array.from(byLink.values());
-
-  // Sort by published date descending
-  deduped.sort(
-    (a, b) => new Date(b.article.published).getTime() - new Date(a.article.published).getTime()
-  );
+  deduped.sort((a, b) => new Date(b.article.published).getTime() - new Date(a.article.published).getTime());
 
   return deduped.map(({ article, sport, teamAbbreviations }) => {
     const data: NewsData = {
@@ -521,7 +435,6 @@ async function buildNewsPosts(): Promise<FeedPost[]> {
       published: article.published,
       teamAbbreviations,
     };
-
     return {
       id: `news-${sport}-${new Date(article.published).getTime()}-${teamAbbreviations.join('-')}`,
       type: 'news' as const,
@@ -532,76 +445,45 @@ async function buildNewsPosts(): Promise<FeedPost[]> {
   });
 }
 
-// --- Main handler ---
-// Pagination is date-based: each page covers a window of DAYS_PER_PAGE days.
-// daysOffset=0 → today..4 days ago, daysOffset=5 → 5..9 days ago, etc.
-// Max lookback is 50 days.
+// --- Main feed builder ---
 
 const DAYS_PER_PAGE = 5;
 const MAX_DAYS = 50;
 
-export async function GET(request: Request) {
-  try {
-    const { searchParams } = new URL(request.url);
-    const daysOffset = Math.max(0, parseInt(searchParams.get('daysOffset') || '0', 10));
+export async function buildFeedPage(daysOffset: number): Promise<{ posts: FeedPost[]; hasMore: boolean }> {
+  const today = todayString();
+  const windowStart = daysOffset;
+  const windowEnd = Math.min(daysOffset + DAYS_PER_PAGE - 1, MAX_DAYS - 1);
+  const hasMore = windowEnd < MAX_DAYS - 1;
 
-    const today = todayString();
-
-    // Clamp so we never go beyond 50 days back
-    const windowStart = daysOffset;
-    const windowEnd = Math.min(daysOffset + DAYS_PER_PAGE - 1, MAX_DAYS - 1);
-    const hasMore = windowEnd < MAX_DAYS - 1;
-
-    // Build the list of dates for this window
-    const dates: string[] = [];
-    for (let i = windowStart; i <= windowEnd; i++) {
-      dates.push(addDays(today, -i));
-    }
-
-    // Check per-window cache (10 min TTL for recent pages, permanent for old ones)
-    const cacheKey = `feed-window-${daysOffset}`;
-    const cached = readGameCache(cacheKey);
-    if (cached) {
-      const { data, ageMinutes } = cached as { data: FeedPost[]; ageMinutes: number };
-      // Old windows (>5 days ago) are effectively immutable — cache forever
-      const ttl = daysOffset >= 5 ? Infinity : 10;
-      if (ageMinutes < ttl) {
-        return NextResponse.json({ posts: data, hasMore });
-      }
-    }
-
-    // Fetch games for all dates in this window in parallel
-    const gamesByDate = await Promise.all(dates.map((d) => fetchGames(d)));
-    const windowGames = gamesByDate.flat();
-    const todayGames = daysOffset === 0 ? gamesByDate[0] : [];
-
-    // Build post types
-    const [trendingPick, hotPicksPost, newsPosts, playerPosts] = await Promise.all([
-      daysOffset === 0 ? buildTrendingPick(todayGames) : Promise.resolve(null),
-      daysOffset === 0 ? buildHotPicks(todayGames) : Promise.resolve(null),
-      daysOffset === 0 ? buildNewsPosts() : Promise.resolve([]),
-      buildPlayerPerformances(dates, windowGames, 20),
-    ]);
-
-    const bigGamePosts = buildBigGames(windowGames);
-    const gameResultPosts = buildGameResults(windowGames, dates);
-
-    const posts: FeedPost[] = [];
-    if (trendingPick) posts.push(trendingPick);
-    if (hotPicksPost) posts.push(hotPicksPost);
-    posts.push(...bigGamePosts);
-    posts.push(...gameResultPosts);
-    posts.push(...playerPosts);
-    posts.push(...newsPosts);
-
-    // Sort newest first within this window
-    posts.sort((a, b) => b.timestamp - a.timestamp);
-
-    writeGameCache(cacheKey, posts);
-
-    return NextResponse.json({ posts, hasMore });
-  } catch (error) {
-    console.error('Feed error:', error);
-    return NextResponse.json({ posts: [], hasMore: false });
+  const dates: string[] = [];
+  for (let i = windowStart; i <= windowEnd; i++) {
+    dates.push(addDays(today, -i));
   }
+
+  const gamesByDate = await Promise.all(dates.map((d) => fetchGames(d)));
+  const windowGames = gamesByDate.flat();
+  const todayGames = daysOffset === 0 ? gamesByDate[0] : [];
+
+  const [trendingPick, hotPicksPost, newsPosts, playerPosts, gameResultPosts] = await Promise.all([
+    daysOffset === 0 ? buildTrendingPick(todayGames, today) : Promise.resolve(null),
+    daysOffset === 0 ? buildHotPicks(todayGames, today) : Promise.resolve(null),
+    daysOffset === 0 ? buildNewsPosts() : Promise.resolve([]),
+    buildPlayerPerformances(windowGames, 20),
+    buildGameResults(windowGames),
+  ]);
+
+  const bigGamePosts = buildBigGames(windowGames);
+
+  const posts: FeedPost[] = [];
+  if (trendingPick) posts.push(trendingPick);
+  if (hotPicksPost) posts.push(hotPicksPost);
+  posts.push(...bigGamePosts);
+  posts.push(...gameResultPosts);
+  posts.push(...playerPosts);
+  posts.push(...newsPosts);
+
+  posts.sort((a, b) => b.timestamp - a.timestamp);
+
+  return { posts, hasMore };
 }

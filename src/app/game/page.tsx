@@ -1,14 +1,16 @@
 'use client';
 
 import { Suspense, useState, useEffect, useMemo } from 'react';
-import { useParams, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Game, Sport } from '@/lib/types';
-import { EPTPlayerBase, EPTGroupedResponse } from '@/lib/ept';
+import { EPTPlayerBase, EPTGroupedResponse, fetchNBAEPT, fetchMLBEPT, fetchNFLEPT, fetchNHLEPT } from '@/lib/ept';
 import { useUser } from '@/components/UserProvider';
 import { usePicks } from '@/hooks/usePicks';
 import { formatTime, addDays } from '@/lib/utils';
+import { fetchGames } from '@/lib/espn';
+import { getPicksByDate } from '@/lib/storage';
 
 function useCountdown(startTime: string | undefined, status: string | undefined) {
   const [timeLeft, setTimeLeft] = useState<string | null>(null);
@@ -38,7 +40,7 @@ function useCountdown(startTime: string | undefined, status: string | undefined)
   return timeLeft;
 }
 
-export default function GameDetailPage() {
+export default function GamePage() {
   return (
     <Suspense fallback={<LoadingSkeleton />}>
       <GameDetailContent />
@@ -62,9 +64,8 @@ function LoadingSkeleton() {
 }
 
 function GameDetailContent() {
-  const params = useParams();
   const searchParams = useSearchParams();
-  const gameId = params.id as string;
+  const gameId = searchParams.get('id') || '';
   const sport = (searchParams.get('sport') || 'nba') as Sport;
   const date = searchParams.get('date') || new Date().toISOString().split('T')[0];
 
@@ -83,16 +84,15 @@ function GameDetailContent() {
   const countdown = useCountdown(game?.startTime, game?.status);
 
   useEffect(() => {
+    if (!gameId) return;
     let cancelled = false;
     let gameTimer: ReturnType<typeof setTimeout> | null = null;
     let eptInterval: ReturnType<typeof setInterval> | null = null;
 
     async function findGame(d: string): Promise<Game | null> {
       try {
-        const res = await fetch(`/api/games?date=${d}`);
-        if (!res.ok) return null;
-        const data = await res.json();
-        return (data.games as Game[]).find((g) => g.id === gameId) || null;
+        const games = await fetchGames(d);
+        return games.find((g) => g.id === gameId) || null;
       } catch {
         return null;
       }
@@ -109,7 +109,6 @@ function GameDetailContent() {
       }
       if (cancelled) return;
       setGame(found);
-      // Re-schedule: 30s if live, 2 min if scheduled, stop if final
       const delay = found?.status === 'in_progress' ? 30 * 1000 : found?.status === 'final' ? null : 2 * 60 * 1000;
       if (delay !== null) {
         gameTimer = setTimeout(refreshGame, delay);
@@ -117,12 +116,19 @@ function GameDetailContent() {
     }
 
     async function loadEpt() {
-      const eptRes = await fetch(`/api/ept?sport=${sport}`);
-      if (eptRes.ok && !cancelled) {
-        const ept: EPTGroupedResponse = await eptRes.json();
-        setEptData(ept);
-        setRosterGroup((prev) => prev || Object.keys(ept.groups)[0] || 'all');
-      }
+      try {
+        let ept: EPTGroupedResponse;
+        switch (sport) {
+          case 'mlb': ept = await fetchMLBEPT(); break;
+          case 'nfl': ept = await fetchNFLEPT(); break;
+          case 'nhl': ept = await fetchNHLEPT(); break;
+          default: ept = await fetchNBAEPT(); break;
+        }
+        if (!cancelled) {
+          setEptData(ept);
+          setRosterGroup((prev) => prev || Object.keys(ept.groups)[0] || 'all');
+        }
+      } catch { /* EPT data is optional */ }
     }
 
     async function initialLoad() {
@@ -137,18 +143,20 @@ function GameDetailContent() {
       if (cancelled) return;
       setGame(found);
 
-      // Load pick distribution for the game's date
       if (found) {
         try {
-          const res = await fetch(`/api/picks?date=${found.date}`);
-          if (res.ok && !cancelled) {
-            const data = await res.json();
-            const gamePicks = (data.picks as { gameId: string; pickedTeamId: string }[]).filter((p) => p.gameId === gameId);
-            if (gamePicks.length > 0) {
-              const awayCount = gamePicks.filter((p) => p.pickedTeamId === found!.awayTeam.id).length;
-              const homeCount = gamePicks.filter((p) => p.pickedTeamId === found!.homeTeam.id).length;
-              const total = awayCount + homeCount;
-              setPickDist({ awayPct: Math.round((awayCount / total) * 100), homePct: Math.round((homeCount / total) * 100), total });
+          const allPicks = await getPicksByDate(found.date);
+          const gamePicks = allPicks.filter((p) => p.gameId === gameId);
+          if (gamePicks.length > 0) {
+            const awayCount = gamePicks.filter((p) => p.pickedTeamId === found!.awayTeam.id).length;
+            const homeCount = gamePicks.filter((p) => p.pickedTeamId === found!.homeTeam.id).length;
+            const total = awayCount + homeCount;
+            if (!cancelled) {
+              setPickDist({
+                awayPct: Math.round((awayCount / total) * 100),
+                homePct: Math.round((homeCount / total) * 100),
+                total,
+              });
             }
           }
         } catch { /* ignore */ }
@@ -157,7 +165,6 @@ function GameDetailContent() {
       await loadEpt();
       if (!cancelled) setLoading(false);
 
-      // Schedule recurring refreshes
       const delay = found?.status === 'in_progress' ? 30 * 1000 : found?.status === 'final' ? null : 2 * 60 * 1000;
       if (delay !== null) gameTimer = setTimeout(refreshGame, delay);
       eptInterval = setInterval(loadEpt, 5 * 60 * 1000);
@@ -251,7 +258,6 @@ function GameDetailContent() {
         &larr; Back to Games
       </Link>
 
-      {/* Game Header */}
       <div className="mt-4 bg-bg-card border border-white/5 rounded-xl p-6">
         <div className="flex items-center justify-between mb-1">
           <span className="text-xs text-text-secondary uppercase font-semibold">
@@ -275,7 +281,6 @@ function GameDetailContent() {
         </div>
 
         <div className="flex items-center justify-between mt-4">
-          {/* Away Team */}
           <div className="flex-1 flex flex-col items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={game.awayTeam.logo} alt={game.awayTeam.abbreviation} className="w-16 h-16 object-contain" />
@@ -291,7 +296,6 @@ function GameDetailContent() {
             <span className="text-text-secondary text-sm font-bold">VS</span>
           </div>
 
-          {/* Home Team */}
           <div className="flex-1 flex flex-col items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={game.homeTeam.logo} alt={game.homeTeam.abbreviation} className="w-16 h-16 object-contain" />
@@ -305,7 +309,6 @@ function GameDetailContent() {
         </div>
       </div>
 
-      {/* Pick Section */}
       <div className="mt-4 bg-bg-card border border-white/5 rounded-xl p-4">
         <h3 className="text-sm font-bold text-text-primary mb-3 text-center">
           {pickedTeamId ? 'Your Pick' : isLocked ? 'Picks Locked' : dailyLimitReached ? 'Daily Limit Reached' : 'Make Your Pick'}
@@ -373,7 +376,6 @@ function GameDetailContent() {
         )}
       </div>
 
-      {/* Pick Distribution */}
       {pickDist && pickDist.total > 0 && (
         <div className="mt-4 bg-bg-card border border-white/5 rounded-xl p-4">
           <h3 className="text-sm font-bold text-text-primary mb-3 text-center">
@@ -396,7 +398,6 @@ function GameDetailContent() {
         </div>
       )}
 
-      {/* Team EPT Comparison */}
       <div className="mt-4 bg-bg-card border border-white/5 rounded-xl p-4">
         <h3 className="text-sm font-bold text-text-primary mb-3 text-center">Team EPT Comparison</h3>
         <div className="flex gap-3 mb-4">
@@ -415,7 +416,6 @@ function GameDetailContent() {
 
         {(awayPlayers.length > 0 || homePlayers.length > 0) && (
           <div className="border-t border-white/10 pt-4">
-            {/* Group dropdown — only shown when there are multiple groups (MLB, NHL, NFL) */}
             {eptGroups.length > 1 && (
               <div className="flex justify-center mb-3">
                 <select
@@ -432,7 +432,6 @@ function GameDetailContent() {
               </div>
             )}
             <div className="grid grid-cols-2 gap-4">
-              {/* Away Players */}
               <div>
                 <h4 className="text-xs font-bold text-text-secondary mb-2 text-center">{game.awayTeam.abbreviation} Roster ({awayPlayers.length})</h4>
                 <div className="space-y-2">
@@ -444,7 +443,6 @@ function GameDetailContent() {
                   )}
                 </div>
               </div>
-              {/* Home Players */}
               <div>
                 <h4 className="text-xs font-bold text-text-secondary mb-2 text-center">{game.homeTeam.abbreviation} Roster ({homePlayers.length})</h4>
                 <div className="space-y-2">
@@ -477,7 +475,6 @@ function PickButton({
   isCorrect,
   isIncorrect,
   points,
-  pickConfidence,
   disabled,
   onClick,
 }: {
@@ -487,7 +484,6 @@ function PickButton({
   isCorrect: boolean;
   isIncorrect: boolean;
   points?: number;
-  pickConfidence?: 1 | 2 | 3;
   disabled: boolean;
   onClick: () => void;
 }) {
@@ -530,7 +526,6 @@ function PlayerCard({ player }: { player: EPTPlayerBase }) {
       onClick={() => setExpanded((v) => !v)}
     >
       <div className="flex items-center gap-2.5">
-        {/* Headshot */}
         <div className="w-9 h-9 rounded-full overflow-hidden bg-white/10 shrink-0">
           {player.imageUrl ? (
             <Image
@@ -548,7 +543,6 @@ function PlayerCard({ player }: { player: EPTPlayerBase }) {
           )}
         </div>
 
-        {/* Info */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 min-w-0">
@@ -572,7 +566,6 @@ function PlayerCard({ player }: { player: EPTPlayerBase }) {
         </div>
       </div>
 
-      {/* Expanded full stats */}
       {expanded && (
         <div className="mt-2.5 pt-2.5 border-t border-white/10 ml-11">
           <div className="grid grid-cols-3 gap-x-3 gap-y-2">

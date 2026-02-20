@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Sport } from '@/lib/types';
 import { getInappropriateReason } from '@/lib/profanity';
+import { fetchTeams } from '@/lib/espn';
 
 interface TeamOption {
   id: string;
@@ -42,9 +43,9 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
   useEffect(() => {
     if (step === 'teams' && allTeams.length === 0) {
       setTeamsLoading(true);
-      fetch('/api/teams')
-        .then((res) => res.json())
-        .then((data) => setAllTeams(data.teams || []))
+      const leagues: Sport[] = ['nba', 'nfl', 'mlb', 'nhl'];
+      Promise.all(leagues.map((s) => fetchTeams(s)))
+        .then((results) => setAllTeams(results.flat()))
         .catch(() => {})
         .finally(() => setTeamsLoading(false));
     }

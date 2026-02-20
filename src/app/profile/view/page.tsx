@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useState, useEffect, useMemo, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useUser } from '@/components/UserProvider';
 import BadgeDisplay from '@/components/BadgeDisplay';
+import { getUser, getPicksByUser } from '@/lib/storage';
 import { User, Pick, Sport } from '@/lib/types';
 
 const SPORT_LABELS: Record<Sport, string> = { nba: 'NBA', mlb: 'MLB', nfl: 'NFL', nhl: 'NHL' };
@@ -16,8 +17,16 @@ const SPORT_COLORS: Record<Sport, string> = {
 };
 
 export default function PublicProfilePage() {
-  const params = useParams();
-  const profileUsername = params.username as string;
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center py-20"><div className="w-8 h-8 border-2 border-accent-green border-t-transparent rounded-full animate-spin" /></div>}>
+      <ProfileContent />
+    </Suspense>
+  );
+}
+
+function ProfileContent() {
+  const searchParams = useSearchParams();
+  const profileUsername = searchParams.get('username') || '';
   const { username: currentUser } = useUser();
 
   const [profileUser, setProfileUser] = useState<User | null>(null);
@@ -26,21 +35,18 @@ export default function PublicProfilePage() {
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
+    if (!profileUsername) { setLoading(false); setNotFound(true); return; }
     async function load() {
       setLoading(true);
       setNotFound(false);
       try {
-        const [userRes, picksRes] = await Promise.all([
-          fetch(`/api/users?username=${profileUsername}`),
-          fetch(`/api/picks?username=${profileUsername}`),
+        const [userData, picksData] = await Promise.all([
+          getUser(profileUsername),
+          getPicksByUser(profileUsername),
         ]);
-        if (!userRes.ok) { setNotFound(true); return; }
-        const userData = await userRes.json();
-        setProfileUser(userData.user);
-        if (picksRes.ok) {
-          const picksData = await picksRes.json();
-          setPicks(picksData.picks);
-        }
+        if (!userData) { setNotFound(true); return; }
+        setProfileUser(userData);
+        setPicks(picksData);
       } finally {
         setLoading(false);
       }
@@ -64,7 +70,6 @@ export default function PublicProfilePage() {
     return map;
   }, [picks]);
 
-  // Last 30 days calendar
   const calendarDays = useMemo(() => {
     const byDate: Record<string, Pick[]> = {};
     for (const pick of picks) {
@@ -106,12 +111,10 @@ export default function PublicProfilePage() {
     );
   }
 
-  // If viewing your own profile, redirect hint
   const isOwnProfile = currentUser === profileUsername;
   const accuracy = profileUser.totalPicks > 0
     ? Math.round((profileUser.correctPicks / profileUser.totalPicks) * 100)
     : 0;
-
   const sportBreakdown = Object.entries(sportStats) as [Sport, { correct: number; total: number }][];
 
   return (
@@ -151,7 +154,6 @@ export default function PublicProfilePage() {
         </div>
       )}
 
-      {/* Last 30 Days Calendar */}
       <div className="mb-8">
         <h2 className="text-lg font-bold text-text-primary mb-3">Last 30 Days</h2>
         <div className="bg-bg-card border border-white/5 rounded-xl p-4">
@@ -173,7 +175,6 @@ export default function PublicProfilePage() {
         </div>
       </div>
 
-      {/* Sport Accuracy */}
       {sportBreakdown.length > 0 && (
         <div className="mb-8">
           <h2 className="text-lg font-bold text-text-primary mb-3">Accuracy by Sport</h2>
@@ -198,13 +199,11 @@ export default function PublicProfilePage() {
         </div>
       )}
 
-      {/* Badges */}
       <div className="mb-8">
         <h2 className="text-lg font-bold text-text-primary mb-4">Badges</h2>
         <BadgeDisplay badges={profileUser.badges || []} />
       </div>
 
-      {/* Recent Picks */}
       <div className="mb-8">
         <h2 className="text-lg font-bold text-text-primary mb-4">Recent Picks</h2>
         {recentPicks.length === 0 ? (

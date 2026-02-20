@@ -5,6 +5,8 @@ import { FeedPost, BigGameData, TrendingPickData, PlayerPerformanceData, NewsDat
 import FeedPostCard from '@/components/feed/FeedPostCard';
 import Image from 'next/image';
 import { useUser } from '@/components/UserProvider';
+import { buildFeedPage } from '@/lib/feed';
+import { fetchTeams, SPORT_CONFIGS } from '@/lib/espn';
 
 const DAYS_PER_PAGE = 5;
 
@@ -33,9 +35,7 @@ export default function FeedPage() {
   const [activeLeague, setActiveLeague] = useState<LeagueTab>('all');
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  // Per-league selected team (view filter only, not follow)
   const [leagueTeamPicker, setLeagueTeamPicker] = useState<Partial<Record<Sport, string>>>({});
-  // All teams loaded from API, keyed by sport
   const [teamsBySport, setTeamsBySport] = useState<Partial<Record<Sport, Team[]>>>({});
   const [teamsLoading, setTeamsLoading] = useState(false);
   const [followSaving, setFollowSaving] = useState(false);
@@ -47,20 +47,23 @@ export default function FeedPage() {
   const followedTeamIds = new Set(user?.followedTeams || []);
   const followedLeagueIds = new Set(user?.followedLeagues || []);
 
-  // Load all teams once
   useEffect(() => {
     setTeamsLoading(true);
-    fetch('/api/teams')
-      .then((r) => r.json())
-      .then((data: { teams: (Team & { sport: Sport })[] }) => {
+    Promise.all(SPORT_CONFIGS.map(({ sport }) => fetchTeams(sport)))
+      .then((results) => {
         const grouped: Partial<Record<Sport, Team[]>> = {};
-        for (const team of data.teams) {
-          if (!grouped[team.sport]) grouped[team.sport] = [];
-          grouped[team.sport]!.push(team);
-        }
-        // Sort each sport's teams by name
-        for (const sport of Object.keys(grouped) as Sport[]) {
-          grouped[sport]!.sort((a, b) => (a.displayName || a.name).localeCompare(b.displayName || b.name));
+        for (let i = 0; i < SPORT_CONFIGS.length; i++) {
+          const sport = SPORT_CONFIGS[i].sport;
+          const teams = results[i].map((t) => ({
+            id: t.id,
+            name: t.name,
+            displayName: t.name,
+            abbreviation: t.abbreviation,
+            logo: t.logo,
+            record: '',
+          }));
+          teams.sort((a, b) => (a.displayName || a.name).localeCompare(b.displayName || b.name));
+          grouped[sport] = teams;
         }
         setTeamsBySport(grouped);
       })
@@ -68,7 +71,6 @@ export default function FeedPage() {
       .finally(() => setTeamsLoading(false));
   }, []);
 
-  // Toggle follow for a team — persists to account, auto-follows the league
   const toggleFollowTeam = useCallback(async (teamId: string, sport: Sport) => {
     if (!user || followSaving) return;
     setFollowSaving(true);
@@ -100,11 +102,9 @@ export default function FeedPage() {
 
   const fetchPosts = useCallback(async (daysOffset: number, replace: boolean) => {
     try {
-      const res = await fetch(`/api/feed?daysOffset=${daysOffset}`);
-      const json = await res.json();
-      const newPosts: FeedPost[] = json.posts || [];
+      const { posts: newPosts, hasMore: more } = await buildFeedPage(daysOffset);
       setPosts((prev) => replace ? newPosts : [...prev, ...newPosts]);
-      setHasMore(json.hasMore ?? false);
+      setHasMore(more);
       daysOffsetRef.current = daysOffset + DAYS_PER_PAGE;
     } catch {
       if (replace) setPosts([]);
@@ -114,7 +114,6 @@ export default function FeedPage() {
     }
   }, []);
 
-  // Initial load + refresh interval
   useEffect(() => {
     daysOffsetRef.current = 0;
     setLoading(true);
@@ -129,19 +128,15 @@ export default function FeedPage() {
     return () => clearInterval(interval);
   }, [fetchPosts]);
 
-  // Back-to-top button
   useEffect(() => {
     const onScroll = () => setShowBackToTop(window.scrollY > 400);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // ── "All" tab: apply followed leagues/teams ───────────────────────────────
   const prefFilteredPosts = useMemo(() => {
     if (activeLeague !== 'all') return posts;
-
     if (followedLeagueIds.size === 0 && followedTeamIds.size === 0) return posts;
-
     return posts
       .filter((post) => {
         if (followedLeagueIds.size > 0 && !followedLeagueIds.has(post.sport)) return false;
@@ -158,26 +153,19 @@ export default function FeedPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [posts, activeLeague, user?.followedLeagues, user?.followedTeams]);
 
-  // ── League tab: filter by sport + optional selected team ──────────────────
   const leagueFilteredPosts = useMemo(() => {
     if (activeLeague === 'all') return prefFilteredPosts;
-
     const selectedTeamId = leagueTeamPicker[activeLeague];
     const sportPosts = posts.filter((p) => p.sport === activeLeague);
-
     if (!selectedTeamId) return sportPosts;
-
-    // Find the team to get its abbreviation (needed for player perf posts)
     const teamList = teamsBySport[activeLeague] || [];
     const selectedTeam = teamList.find((t) => t.id === selectedTeamId);
     const selectedAbbr = selectedTeam?.abbreviation ?? '';
-
     return sportPosts.filter((post) => isPostForTeam(post, selectedTeamId, selectedAbbr));
   }, [posts, activeLeague, prefFilteredPosts, leagueTeamPicker, teamsBySport]);
 
   const visiblePosts = activeLeague === 'all' ? prefFilteredPosts : leagueFilteredPosts;
 
-  // Auto-fetch when visible posts are empty but more exist
   useEffect(() => {
     if (!loading && !loadingMore && hasMore && visiblePosts.length === 0) {
       setLoadingMore(true);
@@ -185,11 +173,9 @@ export default function FeedPage() {
     }
   }, [loading, loadingMore, hasMore, visiblePosts.length, fetchPosts]);
 
-  // Infinite scroll sentinel
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting && hasMore && !loadingMore && !loading) {
@@ -199,7 +185,6 @@ export default function FeedPage() {
       },
       { rootMargin: '400px' }
     );
-
     observer.observe(sentinel);
     return () => observer.disconnect();
   }, [hasMore, loadingMore, loading, fetchPosts]);
@@ -209,7 +194,6 @@ export default function FeedPage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Header */}
       <div className="mb-4">
         <h1 className="text-xl font-bold text-text-primary">Feed</h1>
         <p className="text-xs text-text-secondary mt-0.5">
@@ -220,7 +204,6 @@ export default function FeedPage() {
         </p>
       </div>
 
-      {/* League tabs */}
       <div className="flex gap-1 mb-3 overflow-x-auto no-scrollbar">
         {LEAGUE_TABS.map((tab) => {
           const isActive = activeLeague === tab.id;
@@ -243,18 +226,14 @@ export default function FeedPage() {
         })}
       </div>
 
-      {/* Per-league team picker (only shown when a league tab is active) */}
       {activeLeague !== 'all' && (
         <div className="mb-4">
           {teamsLoading ? (
             <div className="h-9 bg-bg-card rounded-xl animate-pulse" />
           ) : (
             <div className="flex gap-1.5 overflow-x-auto no-scrollbar pb-1">
-              {/* "All teams" pill */}
               <button
-                onClick={() =>
-                  setLeagueTeamPicker((prev) => ({ ...prev, [activeLeague]: undefined }))
-                }
+                onClick={() => setLeagueTeamPicker((prev) => ({ ...prev, [activeLeague]: undefined }))}
                 className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors whitespace-nowrap ${
                   !selectedTeamForLeague
                     ? `${LEAGUE_ACTIVE_BG[activeLeague as Sport]}`
@@ -269,7 +248,6 @@ export default function FeedPage() {
                 const isFollowed = followedTeamIds.has(team.id);
                 return (
                   <div key={team.id} className="flex-shrink-0 flex items-center">
-                    {/* Team pill — click to filter feed view */}
                     <button
                       onClick={() =>
                         setLeagueTeamPicker((prev) => ({
@@ -292,12 +270,11 @@ export default function FeedPage() {
                       />
                       {team.abbreviation}
                     </button>
-                    {/* Follow button — persists to account */}
                     {user ? (
                       <button
                         onClick={() => toggleFollowTeam(team.id, activeLeague as Sport)}
                         disabled={followSaving}
-                        title={isFollowed ? 'Unfollow (remove from All tab)' : 'Follow (add to All tab)'}
+                        title={isFollowed ? 'Unfollow' : 'Follow'}
                         className={`flex items-center justify-center w-7 h-[30px] rounded-r-full text-sm transition-colors disabled:opacity-40 ${
                           isSelected ? 'bg-white/20' : 'bg-white/8 hover:bg-white/12'
                         } ${isFollowed ? 'text-red-400' : 'text-white/30 hover:text-red-400'}`}
@@ -320,7 +297,6 @@ export default function FeedPage() {
         </div>
       )}
 
-      {/* Feed content */}
       {loading ? (
         <div className="space-y-3">
           {[1, 2, 3, 4].map((i) => (
@@ -347,7 +323,6 @@ export default function FeedPage() {
             ))}
           </div>
 
-          {/* Infinite scroll sentinel */}
           <div ref={sentinelRef} className="h-1" />
 
           {loadingMore && (
@@ -366,7 +341,6 @@ export default function FeedPage() {
         </>
       )}
 
-      {/* Back to top */}
       {showBackToTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -381,8 +355,6 @@ export default function FeedPage() {
     </div>
   );
 }
-
-// ── Helpers ──────────────────────────────────────────────────────────────────
 
 function isTeamRelevant(post: FeedPost, followedTeams: Set<string>): boolean {
   if (post.type === 'big_game') {
@@ -411,7 +383,6 @@ function isPostForTeam(post: FeedPost, teamId: string, teamAbbr: string): boolea
   }
   if (post.type === 'news') {
     const d = post.data as NewsData;
-    // No team tags = general league news, always include
     if (!d.teamAbbreviations || d.teamAbbreviations.length === 0) return true;
     return d.teamAbbreviations.includes(teamAbbr);
   }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { EPTPlayerBase, EPTGroupedResponse } from '@/lib/ept';
+import { EPTPlayerBase, EPTGroupedResponse, fetchNBAEPT, fetchMLBEPT, fetchNFLEPT, fetchNHLEPT } from '@/lib/ept';
 
 type Sport = 'nba' | 'mlb' | 'nfl' | 'nhl';
 
@@ -128,9 +128,13 @@ export default function EPTPage() {
 
     async function load() {
       try {
-        const res = await fetch(`/api/ept?sport=${sport}`);
-        if (!res.ok) throw new Error('Failed to fetch');
-        const json: EPTGroupedResponse = await res.json();
+        let json: EPTGroupedResponse;
+        switch (sport) {
+          case 'mlb': json = await fetchMLBEPT(); break;
+          case 'nfl': json = await fetchNFLEPT(); break;
+          case 'nhl': json = await fetchNHLEPT(); break;
+          default: json = await fetchNBAEPT(); break;
+        }
         if (cancelled) return;
         setData(json);
         setActiveGroup((prev) => prev || Object.keys(json.groups)[0] || '');

@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useUser } from '@/components/UserProvider';
 import BadgeDisplay from '@/components/BadgeDisplay';
+import { getPicksByUser } from '@/lib/storage';
 import { Pick, Sport } from '@/lib/types';
 
 const SPORT_LABELS: Record<Sport, string> = {
@@ -33,11 +34,8 @@ export default function ProfilePage() {
 
     async function fetchPicks() {
       try {
-        const res = await fetch(`/api/picks?username=${username}`);
-        if (res.ok && !cancelled) {
-          const data = await res.json();
-          setAllPicks(data.picks);
-        }
+        const data = await getPicksByUser(username!);
+        if (!cancelled) setAllPicks(data);
       } finally {
         if (!cancelled) setPicksLoading(false);
       }

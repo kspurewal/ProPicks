@@ -45,7 +45,7 @@ function LeaderboardRow({
         <td className="py-3 px-3">
           <div className="flex items-center gap-1.5">
             <Link
-              href={`/profile/${entry.username}`}
+              href={`/profile/view?username=${entry.username}`}
               onClick={(e) => e.stopPropagation()}
               className={`font-medium text-sm hover:underline ${isMe ? 'text-accent-green' : 'text-text-primary'}`}
             >

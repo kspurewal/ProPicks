@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useUser } from '@/components/UserProvider';
 import LeaderboardTable from '@/components/LeaderboardTable';
 import { LeaderboardEntry } from '@/lib/types';
+import { getUsers } from '@/lib/storage';
+import { getWeekNumber } from '@/lib/utils';
 
 export default function LeaderboardPage() {
   const { username } = useUser();
@@ -17,13 +19,52 @@ export default function LeaderboardPage() {
     async function fetchLeaderboard() {
       setLoading(true);
       try {
-        const params = new URLSearchParams({ type });
-        if (username) params.set('username', username);
-        const res = await fetch(`/api/leaderboard?${params}`);
-        if (res.ok) {
-          const data = await res.json();
-          setEntries(data.entries);
-          setMyRank(data.myRank || null);
+        const users = await getUsers();
+
+        // Weekly reset check
+        const currentWeek = getWeekNumber();
+        const currentYear = new Date().getFullYear();
+        const weekKey = `${currentYear}-W${currentWeek}`;
+        // Note: weekly reset is now handled server-side when picks are scored
+        // For display we just sort by whatever points are stored
+
+        const sorted = [...users].sort((a, b) => {
+          if (type === 'weekly') return b.weeklyPoints - a.weeklyPoints;
+          return b.totalPoints - a.totalPoints;
+        });
+
+        const top100: LeaderboardEntry[] = sorted.slice(0, 100).map((u, i) => ({
+          rank: i + 1,
+          username: u.username,
+          totalPoints: u.totalPoints,
+          weeklyPoints: u.weeklyPoints,
+          currentStreak: u.currentStreak,
+          accuracy: u.totalPicks > 0 ? Math.round((u.correctPicks / u.totalPicks) * 100) : 0,
+        }));
+
+        setEntries(top100);
+
+        if (username) {
+          const isInTop100 = top100.some((e) => e.username === username);
+          if (!isInTop100) {
+            const idx = sorted.findIndex((u) => u.username === username);
+            if (idx !== -1) {
+              const u = sorted[idx];
+              setMyRank({
+                rank: idx + 1,
+                entry: {
+                  rank: idx + 1,
+                  username: u.username,
+                  totalPoints: u.totalPoints,
+                  weeklyPoints: u.weeklyPoints,
+                  currentStreak: u.currentStreak,
+                  accuracy: u.totalPicks > 0 ? Math.round((u.correctPicks / u.totalPicks) * 100) : 0,
+                },
+              });
+            }
+          } else {
+            setMyRank(null);
+          }
         }
       } finally {
         setLoading(false);

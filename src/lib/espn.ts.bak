@@ -1,5 +1,6 @@
 import { Game, Sport, Team } from './types';
 import { toESPNDate } from './utils';
+import { readGameCache, writeGameCache } from './storage';
 
 const ESPN_BASE = 'https://site.api.espn.com/apis/site/v2/sports';
 
@@ -9,32 +10,6 @@ const SPORT_CONFIGS: { sport: Sport; path: string }[] = [
   { sport: 'nfl', path: 'football/nfl' },
   { sport: 'nhl', path: 'hockey/nhl' },
 ];
-
-// In-memory cache (replaces file-based cache)
-interface GameCacheEntry { data: Game[]; timestamp: number }
-interface PerfCacheEntry { data: unknown[]; timestamp: number }
-const gameCache = new Map<string, GameCacheEntry>();
-const perfCache = new Map<string, PerfCacheEntry>();
-
-export function getCachedGames(key: string): { data: Game[]; ageMinutes: number } | null {
-  const entry = gameCache.get(key);
-  if (!entry) return null;
-  return { data: entry.data, ageMinutes: (Date.now() - entry.timestamp) / 60000 };
-}
-
-export function setCachedGames(key: string, data: Game[]): void {
-  gameCache.set(key, { data, timestamp: Date.now() });
-}
-
-export function getCachedPerf(key: string): { data: unknown[]; ageMinutes: number } | null {
-  const entry = perfCache.get(key);
-  if (!entry) return null;
-  return { data: entry.data, ageMinutes: (Date.now() - entry.timestamp) / 60000 };
-}
-
-export function setCachedPerf(key: string, data: unknown[]): void {
-  perfCache.set(key, { data, timestamp: Date.now() });
-}
 
 interface ESPNCompetitor {
   homeAway: 'home' | 'away';
@@ -100,11 +75,12 @@ function parseGame(event: ESPNEvent, sport: Sport): Game {
 
 async function fetchSportGames(sport: Sport, path: string, date: string): Promise<Game[]> {
   const cacheKey = `${sport}-${date}`;
-  const cached = getCachedGames(cacheKey);
+  const cached = readGameCache(cacheKey);
   if (cached) {
-    const allFinal = cached.data.length > 0 && cached.data.every((g: Game) => g.status === 'final');
-    if (allFinal || cached.ageMinutes < 5) {
-      return cached.data;
+    const { data, ageMinutes } = cached as { data: Game[]; ageMinutes: number };
+    const allFinal = data.length > 0 && data.every((g: Game) => g.status === 'final');
+    if (allFinal || ageMinutes < 5) {
+      return data;
     }
   }
 
@@ -114,7 +90,7 @@ async function fetchSportGames(sport: Sport, path: string, date: string): Promis
   try {
     const res = await fetch(url);
     if (!res.ok) {
-      if (cached) return cached.data;
+      if (cached) return (cached as { data: Game[] }).data;
       return [];
     }
 
@@ -122,10 +98,10 @@ async function fetchSportGames(sport: Sport, path: string, date: string): Promis
     const events: ESPNEvent[] = json.events || [];
     const games = events.map((e) => parseGame(e, sport));
 
-    setCachedGames(cacheKey, games);
+    writeGameCache(cacheKey, games);
     return games;
   } catch {
-    if (cached) return cached.data;
+    if (cached) return (cached as { data: Game[] }).data;
     return [];
   }
 }

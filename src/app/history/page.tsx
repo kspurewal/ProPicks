@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useUser } from '@/components/UserProvider';
+import { getPicksByUser } from '@/lib/storage';
 import { Pick, Sport } from '@/lib/types';
 
 const SPORT_LABELS: Record<Sport, string> = { nba: 'NBA', mlb: 'MLB', nfl: 'NFL', nhl: 'NHL' };
@@ -31,11 +32,8 @@ export default function HistoryPage() {
     async function load() {
       setLoading(true);
       try {
-        const res = await fetch(`/api/picks?username=${username}`);
-        if (res.ok && !cancelled) {
-          const data = await res.json();
-          setPicks(data.picks.sort((a: Pick, b: Pick) => b.timestamp - a.timestamp));
-        }
+        const data = await getPicksByUser(username!);
+        if (!cancelled) setPicks(data.sort((a, b) => b.timestamp - a.timestamp));
       } finally {
         if (!cancelled) setLoading(false);
       }

@@ -2,6 +2,8 @@
 
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 import { User, Sport } from '@/lib/types';
+import { getUser, upsertUser } from '@/lib/storage';
+import { getInappropriateReason } from '@/lib/profanity';
 
 const STORAGE_KEY = 'propicks_username';
 
@@ -34,11 +36,8 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   async function fetchUser(name: string) {
     try {
-      const res = await fetch(`/api/users?username=${name}`);
-      if (res.ok) {
-        const data = await res.json();
-        setUser(data.user);
-      }
+      const u = await getUser(name);
+      if (u) setUser(u);
     } finally {
       setLoading(false);
     }
@@ -55,17 +54,48 @@ export function UserProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = useCallback(async (name: string) => {
-    const res = await fetch('/api/users', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username: name }),
-    });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error);
-    localStorage.setItem(STORAGE_KEY, name);
-    setUsername(name);
-    setUser(data.user);
-    return data.user;
+    const clean = name.trim();
+
+    if (clean.length < 3 || clean.length > 20) {
+      throw new Error('Username must be 3-20 characters');
+    }
+
+    if (!/^[a-zA-Z0-9_]+$/.test(clean)) {
+      throw new Error('Username can only contain letters, numbers, and underscores');
+    }
+
+    const inappropriateReason = getInappropriateReason(clean);
+    if (inappropriateReason) {
+      throw new Error(inappropriateReason);
+    }
+
+    const existing = await getUser(clean);
+    if (existing) {
+      localStorage.setItem(STORAGE_KEY, clean);
+      setUsername(clean);
+      setUser(existing);
+      return existing;
+    }
+
+    const newUser: User = {
+      username: clean,
+      createdAt: Date.now(),
+      totalPoints: 0,
+      weeklyPoints: 0,
+      currentStreak: 0,
+      longestStreak: 0,
+      totalPicks: 0,
+      correctPicks: 0,
+      badges: [],
+      followedLeagues: [],
+      followedTeams: [],
+    };
+
+    await upsertUser(newUser);
+    localStorage.setItem(STORAGE_KEY, clean);
+    setUsername(clean);
+    setUser(newUser);
+    return newUser;
   }, []);
 
   const logout = useCallback(() => {
@@ -79,17 +109,16 @@ export function UserProvider({ children }: { children: ReactNode }) {
   }, [username]);
 
   const savePreferences = useCallback(async (leagues: Sport[], teams: string[]) => {
-    if (!username) return;
-    const res = await fetch('/api/preferences', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, followedLeagues: leagues, followedTeams: teams }),
-    });
-    if (res.ok) {
-      const data = await res.json();
-      setUser(data.user);
-    }
-  }, [username]);
+    if (!username || !user) return;
+    const VALID_SPORTS: Sport[] = ['nba', 'mlb', 'nfl', 'nhl'];
+    const updated: User = {
+      ...user,
+      followedLeagues: leagues.filter((l) => VALID_SPORTS.includes(l)),
+      followedTeams: teams.filter((t) => typeof t === 'string'),
+    };
+    await upsertUser(updated);
+    setUser(updated);
+  }, [username, user]);
 
   return (
     <UserContext.Provider value={{ username, user, loading, isLoggedIn: !!username, login, logout, refresh, savePreferences }}>
