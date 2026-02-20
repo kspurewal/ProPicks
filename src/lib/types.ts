@@ -46,6 +46,7 @@ export interface User {
   badges: Badge[];
   followedLeagues: Sport[];
   followedTeams: string[]; // team IDs
+  isBanned?: boolean;
 }
 
 export interface Badge {

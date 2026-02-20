@@ -37,7 +37,15 @@ export function UserProvider({ children }: { children: ReactNode }) {
   async function fetchUser(name: string) {
     try {
       const u = await getUser(name);
-      if (u) setUser(u);
+      if (u) {
+        if (u.isBanned) {
+          localStorage.removeItem(STORAGE_KEY);
+          setUsername(null);
+          setUser(null);
+        } else {
+          setUser(u);
+        }
+      }
     } finally {
       setLoading(false);
     }
@@ -71,6 +79,12 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
     const existing = await getUser(clean);
     if (existing) {
+      if (existing.isBanned) {
+        throw new Error('This account has been banned');
+      }
+      if (localStorage.getItem(STORAGE_KEY) !== clean) {
+        throw new Error('Username already taken');
+      }
       localStorage.setItem(STORAGE_KEY, clean);
       setUsername(clean);
       setUser(existing);

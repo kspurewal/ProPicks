@@ -5,6 +5,7 @@ import {
   getDoc,
   getDocs,
   setDoc,
+  updateDoc,
   query,
   where,
   DocumentData,
@@ -37,6 +38,16 @@ export async function getUsers(): Promise<User[]> {
     if (!data.followedTeams) data.followedTeams = [];
     return data;
   });
+}
+
+export async function banUser(username: string): Promise<void> {
+  const ref = doc(db, 'users', username);
+  await updateDoc(ref, { isBanned: true });
+}
+
+export async function unbanUser(username: string): Promise<void> {
+  const ref = doc(db, 'users', username);
+  await updateDoc(ref, { isBanned: false });
 }
 
 // ---- Picks ----
