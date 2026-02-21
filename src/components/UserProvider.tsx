@@ -92,6 +92,15 @@ export function UserProvider({ children }: { children: ReactNode }) {
       if (!pin) {
         throw new Error('PIN_REQUIRED');
       }
+      // Legacy account with no PIN yet — accept any valid PIN and save it
+      if (!existing.pin) {
+        const updated = { ...existing, pin };
+        await upsertUser(updated);
+        localStorage.setItem(STORAGE_KEY, clean);
+        setUsername(clean);
+        setUser(updated);
+        return updated;
+      }
       if (existing.pin !== pin) {
         throw new Error('Incorrect PIN');
       }

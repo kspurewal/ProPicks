@@ -36,6 +36,7 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [isReturningUser, setIsReturningUser] = useState(false);
+  const [isLegacyAccount, setIsLegacyAccount] = useState(false);
 
   // Preferences
   const [selectedLeagues, setSelectedLeagues] = useState<Sport[]>([]);
@@ -76,8 +77,9 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
           await onSubmit(trimmed, existing.pin || '');
           setStep('leagues');
         } else {
-          // New device — need to verify PIN
+          // New device — need to verify PIN (or set one if legacy account)
           setIsReturningUser(true);
+          setIsLegacyAccount(!existing.pin);
           setStep('pin_verify');
         }
       } else {
@@ -296,10 +298,14 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
           <>
             <div className="text-center mb-6">
               <div className="text-4xl mb-3">🔐</div>
-              <h2 className="text-2xl font-bold text-text-primary">Enter Your PIN</h2>
+              <h2 className="text-2xl font-bold text-text-primary">
+                {isLegacyAccount ? 'Set a New PIN' : 'Enter Your PIN'}
+              </h2>
               <p className="text-text-secondary text-sm mt-2">
-                Welcome back, <span className="text-text-primary font-semibold">{name}</span>!
-                Enter your 4-digit PIN to log in.
+                Welcome back, <span className="text-text-primary font-semibold">{name}</span>!{' '}
+                {isLegacyAccount
+                  ? "Your account was created before PINs were added. Choose a 4-digit PIN to secure it."
+                  : "Enter your 4-digit PIN to log in."}
               </p>
             </div>
 
@@ -322,7 +328,7 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
                 disabled={submitting || pin.length !== 4}
                 className="w-full mt-4 bg-accent-green hover:bg-accent-green-hover disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition"
               >
-                {submitting ? 'Verifying...' : 'Log In'}
+                {submitting ? (isLegacyAccount ? 'Saving...' : 'Verifying...') : (isLegacyAccount ? 'Set PIN & Log In' : 'Log In')}
               </button>
             </form>
 
