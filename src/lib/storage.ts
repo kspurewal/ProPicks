@@ -8,6 +8,8 @@ import {
   updateDoc,
   query,
   where,
+  arrayUnion,
+  arrayRemove,
   DocumentData,
 } from 'firebase/firestore';
 import { db } from './firebase';
@@ -40,43 +42,72 @@ export async function getUsers(): Promise<User[]> {
   });
 }
 
-export async function followUser(currentUsername: string, targetUsername: string): Promise<void> {
-  const currentRef = doc(db, 'users', currentUsername);
-  const targetRef = doc(db, 'users', targetUsername);
-  const [currentSnap, targetSnap] = await Promise.all([getDoc(currentRef), getDoc(targetRef)]);
-  if (!currentSnap.exists() || !targetSnap.exists()) return;
-  const current = currentSnap.data() as User;
-  const target = targetSnap.data() as User;
-  const currentFollowing = current.following || [];
-  const targetFollowers = target.followers || [];
-  if (!currentFollowing.includes(targetUsername)) {
-    await Promise.all([
-      updateDoc(currentRef, { following: [...currentFollowing, targetUsername] }),
-      updateDoc(targetRef, { followers: [...targetFollowers, currentUsername] }),
-    ]);
-  }
-}
-
-export async function unfollowUser(currentUsername: string, targetUsername: string): Promise<void> {
-  const currentRef = doc(db, 'users', currentUsername);
-  const targetRef = doc(db, 'users', targetUsername);
-  const [currentSnap, targetSnap] = await Promise.all([getDoc(currentRef), getDoc(targetRef)]);
-  if (!currentSnap.exists() || !targetSnap.exists()) return;
-  const current = currentSnap.data() as User;
-  const target = targetSnap.data() as User;
+export async function sendFriendRequest(senderUsername: string, receiverUsername: string): Promise<void> {
+  if (senderUsername === receiverUsername) return;
+  const senderRef = doc(db, 'users', senderUsername);
+  const receiverRef = doc(db, 'users', receiverUsername);
+  const [senderSnap, receiverSnap] = await Promise.all([getDoc(senderRef), getDoc(receiverRef)]);
+  if (!senderSnap.exists() || !receiverSnap.exists()) return;
+  const sender = senderSnap.data() as User;
+  if (
+    (sender.friends || []).includes(receiverUsername) ||
+    (sender.friendRequestsSent || []).includes(receiverUsername)
+  ) return;
   await Promise.all([
-    updateDoc(currentRef, { following: (current.following || []).filter((u) => u !== targetUsername) }),
-    updateDoc(targetRef, { followers: (target.followers || []).filter((u) => u !== currentUsername) }),
+    updateDoc(senderRef, { friendRequestsSent: arrayUnion(receiverUsername) }),
+    updateDoc(receiverRef, { friendRequestsReceived: arrayUnion(senderUsername) }),
   ]);
 }
 
-export async function getFollowing(username: string): Promise<User[]> {
+export async function cancelFriendRequest(senderUsername: string, receiverUsername: string): Promise<void> {
+  const senderRef = doc(db, 'users', senderUsername);
+  const receiverRef = doc(db, 'users', receiverUsername);
+  await Promise.all([
+    updateDoc(senderRef, { friendRequestsSent: arrayRemove(receiverUsername) }),
+    updateDoc(receiverRef, { friendRequestsReceived: arrayRemove(senderUsername) }),
+  ]);
+}
+
+export async function acceptFriendRequest(acceptorUsername: string, requesterUsername: string): Promise<void> {
+  const acceptorRef = doc(db, 'users', acceptorUsername);
+  const requesterRef = doc(db, 'users', requesterUsername);
+  await Promise.all([
+    updateDoc(acceptorRef, {
+      friendRequestsReceived: arrayRemove(requesterUsername),
+      friends: arrayUnion(requesterUsername),
+    }),
+    updateDoc(requesterRef, {
+      friendRequestsSent: arrayRemove(acceptorUsername),
+      friends: arrayUnion(acceptorUsername),
+    }),
+  ]);
+}
+
+export async function rejectFriendRequest(rejectorUsername: string, requesterUsername: string): Promise<void> {
+  const rejectorRef = doc(db, 'users', rejectorUsername);
+  const requesterRef = doc(db, 'users', requesterUsername);
+  await Promise.all([
+    updateDoc(rejectorRef, { friendRequestsReceived: arrayRemove(requesterUsername) }),
+    updateDoc(requesterRef, { friendRequestsSent: arrayRemove(rejectorUsername) }),
+  ]);
+}
+
+export async function removeFriend(currentUsername: string, otherUsername: string): Promise<void> {
+  const currentRef = doc(db, 'users', currentUsername);
+  const otherRef = doc(db, 'users', otherUsername);
+  await Promise.all([
+    updateDoc(currentRef, { friends: arrayRemove(otherUsername) }),
+    updateDoc(otherRef, { friends: arrayRemove(currentUsername) }),
+  ]);
+}
+
+export async function getFriends(username: string): Promise<User[]> {
   const snap = await getDoc(doc(db, 'users', username));
   if (!snap.exists()) return [];
   const user = snap.data() as User;
-  const following = user.following || [];
-  if (following.length === 0) return [];
-  const users = await Promise.all(following.map((u) => getDoc(doc(db, 'users', u))));
+  const friends = user.friends || [];
+  if (friends.length === 0) return [];
+  const users = await Promise.all(friends.map((u) => getDoc(doc(db, 'users', u))));
   return users.filter((s) => s.exists()).map((s) => s.data() as User);
 }
 

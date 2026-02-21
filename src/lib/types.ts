@@ -47,8 +47,9 @@ export interface User {
   followedLeagues: Sport[];
   followedTeams: string[]; // team IDs
   isBanned?: boolean;
-  following?: string[]; // usernames this user follows
-  followers?: string[]; // usernames following this user
+  friends?: string[]; // accepted mutual connections
+  friendRequestsSent?: string[]; // pending outgoing requests
+  friendRequestsReceived?: string[]; // pending incoming requests
   pin?: string; // 4-digit recovery PIN
 }
 

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useUser } from '@/components/UserProvider';
-import { getUsers, followUser, unfollowUser } from '@/lib/storage';
+import { getUsers, sendFriendRequest, cancelFriendRequest, acceptFriendRequest, rejectFriendRequest, removeFriend } from '@/lib/storage';
 import { User } from '@/lib/types';
 
 export default function FriendsPage() {
@@ -20,8 +20,9 @@ export default function FriendsPage() {
     });
   }, []);
 
-  const following = user?.following || [];
-  const followers = user?.followers || [];
+  const friends = user?.friends || [];
+  const requestsReceived = user?.friendRequestsReceived || [];
+  const requestsSent = user?.friendRequestsSent || [];
 
   const searchResults = search.trim().length >= 2
     ? allUsers.filter(
@@ -30,19 +31,21 @@ export default function FriendsPage() {
       ).slice(0, 10)
     : [];
 
-  const followingUsers = allUsers
-    .filter((u) => following.includes(u.username))
+  const friendUsers = allUsers
+    .filter((u) => friends.includes(u.username))
     .sort((a, b) => b.totalPoints - a.totalPoints);
 
-  async function handleFollow(target: string) {
+  const pendingRequesters = allUsers.filter((u) => requestsReceived.includes(u.username));
+
+  async function handleSendRequest(target: string) {
     if (!username) return;
     setActionLoading(target);
     try {
-      await followUser(username, target);
+      await sendFriendRequest(username, target);
       setAllUsers((prev) =>
         prev.map((u) => {
-          if (u.username === username) return { ...u, following: [...(u.following || []), target] };
-          if (u.username === target) return { ...u, followers: [...(u.followers || []), username] };
+          if (u.username === username) return { ...u, friendRequestsSent: [...(u.friendRequestsSent || []), target] };
+          if (u.username === target) return { ...u, friendRequestsReceived: [...(u.friendRequestsReceived || []), username] };
           return u;
         })
       );
@@ -52,15 +55,15 @@ export default function FriendsPage() {
     }
   }
 
-  async function handleUnfollow(target: string) {
+  async function handleCancelRequest(target: string) {
     if (!username) return;
     setActionLoading(target);
     try {
-      await unfollowUser(username, target);
+      await cancelFriendRequest(username, target);
       setAllUsers((prev) =>
         prev.map((u) => {
-          if (u.username === username) return { ...u, following: (u.following || []).filter((f) => f !== target) };
-          if (u.username === target) return { ...u, followers: (u.followers || []).filter((f) => f !== username) };
+          if (u.username === username) return { ...u, friendRequestsSent: (u.friendRequestsSent || []).filter((f) => f !== target) };
+          if (u.username === target) return { ...u, friendRequestsReceived: (u.friendRequestsReceived || []).filter((f) => f !== username) };
           return u;
         })
       );
@@ -68,6 +71,75 @@ export default function FriendsPage() {
     } finally {
       setActionLoading(null);
     }
+  }
+
+  async function handleAccept(requester: string) {
+    if (!username) return;
+    setActionLoading(requester);
+    try {
+      await acceptFriendRequest(username, requester);
+      setAllUsers((prev) =>
+        prev.map((u) => {
+          if (u.username === username) return {
+            ...u,
+            friendRequestsReceived: (u.friendRequestsReceived || []).filter((f) => f !== requester),
+            friends: [...(u.friends || []), requester],
+          };
+          if (u.username === requester) return {
+            ...u,
+            friendRequestsSent: (u.friendRequestsSent || []).filter((f) => f !== username),
+            friends: [...(u.friends || []), username],
+          };
+          return u;
+        })
+      );
+      refresh();
+    } finally {
+      setActionLoading(null);
+    }
+  }
+
+  async function handleReject(requester: string) {
+    if (!username) return;
+    setActionLoading(requester);
+    try {
+      await rejectFriendRequest(username, requester);
+      setAllUsers((prev) =>
+        prev.map((u) => {
+          if (u.username === username) return { ...u, friendRequestsReceived: (u.friendRequestsReceived || []).filter((f) => f !== requester) };
+          if (u.username === requester) return { ...u, friendRequestsSent: (u.friendRequestsSent || []).filter((f) => f !== username) };
+          return u;
+        })
+      );
+      refresh();
+    } finally {
+      setActionLoading(null);
+    }
+  }
+
+  async function handleRemoveFriend(target: string) {
+    if (!username) return;
+    setActionLoading(target);
+    try {
+      await removeFriend(username, target);
+      setAllUsers((prev) =>
+        prev.map((u) => {
+          if (u.username === username) return { ...u, friends: (u.friends || []).filter((f) => f !== target) };
+          if (u.username === target) return { ...u, friends: (u.friends || []).filter((f) => f !== username) };
+          return u;
+        })
+      );
+      refresh();
+    } finally {
+      setActionLoading(null);
+    }
+  }
+
+  function getButtonState(targetUsername: string): 'friend' | 'pending_sent' | 'pending_received' | 'none' {
+    if (friends.includes(targetUsername)) return 'friend';
+    if (requestsSent.includes(targetUsername)) return 'pending_sent';
+    if (requestsReceived.includes(targetUsername)) return 'pending_received';
+    return 'none';
   }
 
   if (!username) {
@@ -93,14 +165,56 @@ export default function FriendsPage() {
       {/* Stats */}
       <div className="flex gap-6">
         <div className="text-center">
-          <p className="text-2xl font-bold text-accent-green">{following.length}</p>
-          <p className="text-sm text-text-secondary">Following</p>
+          <p className="text-2xl font-bold text-accent-green">{friends.length}</p>
+          <p className="text-sm text-text-secondary">Friends</p>
         </div>
-        <div className="text-center">
-          <p className="text-2xl font-bold text-accent-green">{followers.length}</p>
-          <p className="text-sm text-text-secondary">Followers</p>
-        </div>
+        {requestsReceived.length > 0 && (
+          <div className="text-center">
+            <p className="text-2xl font-bold text-accent-green">{requestsReceived.length}</p>
+            <p className="text-sm text-text-secondary">Pending Requests</p>
+          </div>
+        )}
       </div>
+
+      {/* Friend Requests */}
+      {pendingRequesters.length > 0 && (
+        <div>
+          <h2 className="text-lg font-semibold text-text-primary mb-3">
+            Friend Requests
+            <span className="ml-2 text-xs bg-accent-green text-white font-bold rounded-full px-2 py-0.5">
+              {pendingRequesters.length}
+            </span>
+          </h2>
+          <div className="space-y-2">
+            {pendingRequesters.map((u) => (
+              <div key={u.username} className="flex items-center justify-between bg-bg-card border border-white/5 rounded-lg px-4 py-3">
+                <div>
+                  <Link href={`/profile/view?username=${u.username}`} className="font-medium text-text-primary hover:text-accent-green transition">
+                    {u.username}
+                  </Link>
+                  <p className="text-xs text-text-secondary">{u.totalPoints} pts</p>
+                </div>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => handleAccept(u.username)}
+                    disabled={actionLoading === u.username}
+                    className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-accent-green text-white hover:bg-accent-green-hover"
+                  >
+                    {actionLoading === u.username ? '...' : 'Accept'}
+                  </button>
+                  <button
+                    onClick={() => handleReject(u.username)}
+                    disabled={actionLoading === u.username}
+                    className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400"
+                  >
+                    Decline
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Search */}
       <div>
@@ -118,7 +232,8 @@ export default function FriendsPage() {
               <p className="text-text-secondary text-sm px-1">No users found</p>
             ) : (
               searchResults.map((u) => {
-                const isFollowing = following.includes(u.username);
+                const state = getButtonState(u.username);
+                const isLoading = actionLoading === u.username;
                 return (
                   <div key={u.username} className="flex items-center justify-between bg-bg-card border border-white/5 rounded-lg px-4 py-3">
                     <div>
@@ -127,17 +242,42 @@ export default function FriendsPage() {
                       </Link>
                       <p className="text-xs text-text-secondary">{u.totalPoints} pts</p>
                     </div>
-                    <button
-                      onClick={() => isFollowing ? handleUnfollow(u.username) : handleFollow(u.username)}
-                      disabled={actionLoading === u.username}
-                      className={`px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 ${
-                        isFollowing
-                          ? 'bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
-                          : 'bg-accent-green text-white hover:bg-accent-green-hover'
-                      }`}
-                    >
-                      {actionLoading === u.username ? '...' : isFollowing ? 'Unfollow' : 'Follow'}
-                    </button>
+                    {state === 'friend' && (
+                      <button
+                        onClick={() => handleRemoveFriend(u.username)}
+                        disabled={isLoading}
+                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400"
+                      >
+                        {isLoading ? '...' : 'Friends'}
+                      </button>
+                    )}
+                    {state === 'pending_sent' && (
+                      <button
+                        onClick={() => handleCancelRequest(u.username)}
+                        disabled={isLoading}
+                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400"
+                      >
+                        {isLoading ? '...' : 'Pending'}
+                      </button>
+                    )}
+                    {state === 'pending_received' && (
+                      <button
+                        onClick={() => handleAccept(u.username)}
+                        disabled={isLoading}
+                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-accent-green text-white hover:bg-accent-green-hover"
+                      >
+                        {isLoading ? '...' : 'Accept'}
+                      </button>
+                    )}
+                    {state === 'none' && (
+                      <button
+                        onClick={() => handleSendRequest(u.username)}
+                        disabled={isLoading}
+                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-accent-green text-white hover:bg-accent-green-hover"
+                      >
+                        {isLoading ? '...' : 'Add Friend'}
+                      </button>
+                    )}
                   </div>
                 );
               })
@@ -149,8 +289,8 @@ export default function FriendsPage() {
       {/* Friends Leaderboard */}
       <div>
         <h2 className="text-lg font-semibold text-text-primary mb-3">Friends Leaderboard</h2>
-        {followingUsers.length === 0 ? (
-          <p className="text-text-secondary text-sm">Follow some users to see them here.</p>
+        {friendUsers.length === 0 ? (
+          <p className="text-text-secondary text-sm">Add friends to see them here.</p>
         ) : (
           <div className="bg-bg-card border border-white/5 rounded-xl overflow-hidden">
             <table className="w-full text-sm">
@@ -163,7 +303,7 @@ export default function FriendsPage() {
                 </tr>
               </thead>
               <tbody>
-                {followingUsers.map((u, i) => (
+                {friendUsers.map((u, i) => (
                   <tr key={u.username} className="border-b border-white/5 last:border-0">
                     <td className="px-4 py-3 text-text-secondary">{i + 1}</td>
                     <td className="px-4 py-3">

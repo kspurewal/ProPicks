@@ -40,8 +40,13 @@ export default function Navbar() {
             </Link>
             {isLoggedIn && (
               <>
-                <Link href="/friends" className="text-sm text-text-secondary hover:text-text-primary transition">
+                <Link href="/friends" className="relative text-sm text-text-secondary hover:text-text-primary transition">
                   Friends
+                  {(user?.friendRequestsReceived?.length ?? 0) > 0 && (
+                    <span className="absolute -top-2 -right-3.5 bg-accent-green text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                      {user!.friendRequestsReceived!.length}
+                    </span>
+                  )}
                 </Link>
                 <Link href="/profile" className="text-sm text-text-secondary hover:text-text-primary transition">
                   Profile
@@ -83,7 +88,7 @@ export default function Navbar() {
                 onClick={() => setShowModal(true)}
                 className="text-sm font-semibold bg-accent-green hover:bg-accent-green-hover text-white px-4 py-1.5 rounded-lg transition"
               >
-                Sign Up
+                Sign Up / Log In
               </button>
             )}
 
@@ -118,8 +123,13 @@ export default function Navbar() {
             </Link>
             {isLoggedIn && (
               <>
-                <Link href="/friends" onClick={() => setMobileOpen(false)} className="text-sm text-text-secondary">
+                <Link href="/friends" onClick={() => setMobileOpen(false)} className="relative text-sm text-text-secondary inline-flex items-center gap-1.5">
                   Friends
+                  {(user?.friendRequestsReceived?.length ?? 0) > 0 && (
+                    <span className="bg-accent-green text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                      {user!.friendRequestsReceived!.length}
+                    </span>
+                  )}
                 </Link>
                 <Link href="/profile" onClick={() => setMobileOpen(false)} className="text-sm text-text-secondary">
                   Profile

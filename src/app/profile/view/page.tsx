@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useUser } from '@/components/UserProvider';
 import BadgeDisplay from '@/components/BadgeDisplay';
-import { getUser, getPicksByUser, followUser, unfollowUser } from '@/lib/storage';
+import { getUser, getPicksByUser, sendFriendRequest, cancelFriendRequest, acceptFriendRequest, removeFriend } from '@/lib/storage';
 import { User, Pick, Sport } from '@/lib/types';
 
 const NICKNAMES_KEY = 'propicks_nicknames';
@@ -135,24 +135,38 @@ function ProfileContent() {
   }
 
   const isOwnProfile = currentUser === profileUsername;
-  const isFollowing = currentUserData?.following?.includes(profileUsername) ?? false;
+  const isFriend = currentUserData?.friends?.includes(profileUsername) ?? false;
+  const isPendingSent = currentUserData?.friendRequestsSent?.includes(profileUsername) ?? false;
+  const isPendingReceived = currentUserData?.friendRequestsReceived?.includes(profileUsername) ?? false;
 
-  async function handleFollow() {
+  async function handleFriendAction() {
     if (!currentUser) return;
     setFollowLoading(true);
     try {
-      if (isFollowing) {
-        await unfollowUser(currentUser, profileUsername);
-        setProfileUser((prev) => prev ? { ...prev, followers: (prev.followers || []).filter((f) => f !== currentUser) } : prev);
+      if (isFriend) {
+        await removeFriend(currentUser, profileUsername);
+      } else if (isPendingSent) {
+        await cancelFriendRequest(currentUser, profileUsername);
+      } else if (isPendingReceived) {
+        await acceptFriendRequest(currentUser, profileUsername);
       } else {
-        await followUser(currentUser, profileUsername);
-        setProfileUser((prev) => prev ? { ...prev, followers: [...(prev.followers || []), currentUser] } : prev);
+        await sendFriendRequest(currentUser, profileUsername);
       }
       refresh();
     } finally {
       setFollowLoading(false);
     }
   }
+
+  const friendButtonLabel = followLoading ? '...'
+    : isFriend ? 'Friends'
+    : isPendingSent ? 'Pending'
+    : isPendingReceived ? 'Accept'
+    : 'Add Friend';
+
+  const friendButtonClass = isFriend || isPendingSent
+    ? 'bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
+    : 'bg-accent-green text-white hover:bg-accent-green-hover';
 
   const accuracy = profileUser.totalPicks > 0
     ? Math.round((profileUser.correctPicks / profileUser.totalPicks) * 100)
@@ -237,25 +251,17 @@ function ProfileContent() {
         </p>
         <div className="flex justify-center gap-6 mt-2">
           <div className="text-center">
-            <p className="text-sm font-bold text-text-primary">{profileUser.followers?.length || 0}</p>
-            <p className="text-xs text-text-secondary">Followers</p>
-          </div>
-          <div className="text-center">
-            <p className="text-sm font-bold text-text-primary">{profileUser.following?.length || 0}</p>
-            <p className="text-xs text-text-secondary">Following</p>
+            <p className="text-sm font-bold text-text-primary">{profileUser.friends?.length || 0}</p>
+            <p className="text-xs text-text-secondary">Friends</p>
           </div>
         </div>
         {!isOwnProfile && currentUser && (
           <button
-            onClick={handleFollow}
+            onClick={handleFriendAction}
             disabled={followLoading}
-            className={`mt-3 px-5 py-1.5 text-sm rounded-lg font-semibold transition disabled:opacity-50 ${
-              isFollowing
-                ? 'bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
-                : 'bg-accent-green text-white hover:bg-accent-green-hover'
-            }`}
+            className={`mt-3 px-5 py-1.5 text-sm rounded-lg font-semibold transition disabled:opacity-50 ${friendButtonClass}`}
           >
-            {followLoading ? '...' : isFollowing ? 'Unfollow' : 'Follow'}
+            {friendButtonLabel}
           </button>
         )}
         {isOwnProfile && (
