@@ -8,6 +8,17 @@ import BadgeDisplay from '@/components/BadgeDisplay';
 import { getUser, getPicksByUser, followUser, unfollowUser } from '@/lib/storage';
 import { User, Pick, Sport } from '@/lib/types';
 
+const NICKNAMES_KEY = 'propicks_nicknames';
+function getNicknames(): Record<string, string> {
+  try { return JSON.parse(localStorage.getItem(NICKNAMES_KEY) || '{}'); } catch { return {}; }
+}
+function saveNickname(username: string, nickname: string) {
+  const all = getNicknames();
+  if (nickname.trim()) all[username] = nickname.trim();
+  else delete all[username];
+  localStorage.setItem(NICKNAMES_KEY, JSON.stringify(all));
+}
+
 const SPORT_LABELS: Record<Sport, string> = { nba: 'NBA', mlb: 'MLB', nfl: 'NFL', nhl: 'NHL' };
 const SPORT_COLORS: Record<Sport, string> = {
   nba: 'text-orange-400',
@@ -34,6 +45,17 @@ function ProfileContent() {
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [followLoading, setFollowLoading] = useState(false);
+  const [nickname, setNickname] = useState('');
+  const [editingNickname, setEditingNickname] = useState(false);
+  const [nicknameInput, setNicknameInput] = useState('');
+
+  useEffect(() => {
+    if (profileUsername) {
+      const stored = getNicknames()[profileUsername] || '';
+      setNickname(stored);
+      setNicknameInput(stored);
+    }
+  }, [profileUsername]);
 
   useEffect(() => {
     if (!profileUsername) { setLoading(false); setNotFound(true); return; }
@@ -150,6 +172,66 @@ function ProfileContent() {
           </span>
         </div>
         <h1 className="text-2xl font-bold text-text-primary">{profileUsername}</h1>
+        {/* Private nickname — only visible to you, stored in localStorage */}
+        {!isOwnProfile && currentUser && (
+          <div className="flex items-center justify-center gap-1.5 mt-1">
+            {editingNickname ? (
+              <>
+                <input
+                  autoFocus
+                  value={nicknameInput}
+                  onChange={(e) => setNicknameInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      saveNickname(profileUsername, nicknameInput);
+                      setNickname(nicknameInput.trim());
+                      setEditingNickname(false);
+                    }
+                    if (e.key === 'Escape') setEditingNickname(false);
+                  }}
+                  placeholder="Add a nickname..."
+                  className="text-xs bg-white/10 border border-white/20 rounded px-2 py-0.5 text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-accent-green w-36"
+                />
+                <button
+                  onClick={() => {
+                    saveNickname(profileUsername, nicknameInput);
+                    setNickname(nicknameInput.trim());
+                    setEditingNickname(false);
+                  }}
+                  className="text-accent-green hover:text-accent-green-hover"
+                  title="Save"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                </button>
+                <button onClick={() => setEditingNickname(false)} className="text-text-secondary hover:text-text-primary" title="Cancel">
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+              </>
+            ) : nickname ? (
+              <>
+                <span className="text-xs text-text-secondary">aka <span className="text-text-primary font-medium">{nickname}</span></span>
+                <button onClick={() => { setNicknameInput(nickname); setEditingNickname(true); }} className="text-text-secondary hover:text-text-primary" title="Edit nickname">
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 112.828 2.828L11.828 15.828a2 2 0 01-1.414.586H9v-2a2 2 0 01.586-1.414z" /></svg>
+                </button>
+                <button
+                  onClick={() => { saveNickname(profileUsername, ''); setNickname(''); setNicknameInput(''); }}
+                  className="text-text-secondary hover:text-red-400"
+                  title="Remove nickname"
+                >
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => setEditingNickname(true)}
+                className="text-xs text-text-secondary hover:text-text-primary flex items-center gap-1 transition"
+              >
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                Add nickname
+              </button>
+            )}
+          </div>
+        )}
         <p className="text-text-secondary text-sm mt-1">
           Member since {new Date(profileUser.createdAt).toLocaleDateString()}
         </p>
