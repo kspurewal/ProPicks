@@ -246,9 +246,9 @@ export default function FriendsPage() {
                       <button
                         onClick={() => handleRemoveFriend(u.username)}
                         disabled={isLoading}
-                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400"
+                        className="px-3 py-1 text-xs rounded font-semibold transition disabled:opacity-50 group bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400"
                       >
-                        {isLoading ? '...' : 'Friends'}
+                        {isLoading ? '...' : <><span className="group-hover:hidden">Friends</span><span className="hidden group-hover:inline">Unfriend</span></>}
                       </button>
                     )}
                     {state === 'pending_sent' && (
@@ -300,6 +300,7 @@ export default function FriendsPage() {
                   <th className="text-left text-text-secondary px-4 py-2">User</th>
                   <th className="text-left text-text-secondary px-4 py-2">Points</th>
                   <th className="text-left text-text-secondary px-4 py-2">Streak</th>
+                  <th className="px-4 py-2"></th>
                 </tr>
               </thead>
               <tbody>
@@ -313,6 +314,15 @@ export default function FriendsPage() {
                     </td>
                     <td className="px-4 py-3 text-accent-gold font-semibold">{u.totalPoints}</td>
                     <td className="px-4 py-3 text-streak-fire">{u.currentStreak > 0 ? `${u.currentStreak}🔥` : '—'}</td>
+                    <td className="px-4 py-3">
+                      <button
+                        onClick={() => handleRemoveFriend(u.username)}
+                        disabled={actionLoading === u.username}
+                        className="px-2 py-1 text-xs rounded font-semibold transition disabled:opacity-50 text-text-secondary hover:text-red-400"
+                      >
+                        {actionLoading === u.username ? '...' : 'Unfriend'}
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
