@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/ProPicks',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
