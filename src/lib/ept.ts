@@ -36,20 +36,16 @@ interface NBALeadersResponse {
   resultSet: { headers: string[]; rowSet: (string | number)[][] };
 }
 
+const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
+
 export async function fetchNBAEPT(): Promise<EPTGroupedResponse> {
   const season = getNBASeason();
-  const url =
+  const nbaUrl =
     `https://stats.nba.com/stats/leagueLeaders?` +
     `ActiveFlag=&LeagueID=00&PerMode=Totals&Scope=S` +
     `&Season=${season}&SeasonType=Regular+Season&StatCategory=PTS`;
 
-  const res = await fetch(url, {
-    headers: {
-      Referer: 'https://www.nba.com',
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-      Accept: 'application/json',
-    },
-  });
+  const res = await fetch(CORS_PROXY + encodeURIComponent(nbaUrl));
   if (!res.ok) throw new Error(`NBA API returned ${res.status}`);
 
   const data: NBALeadersResponse = await res.json();
@@ -224,8 +220,8 @@ export async function fetchNHLEPT(): Promise<EPTGroupedResponse> {
   const displaySeason = `${seasonId.slice(0, 4)}-${seasonId.slice(6)}`;
 
   const [skatersRes, goaliesRes] = await Promise.all([
-    fetch(`https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22points%22,%22direction%22:%22DESC%22%7D%5D&start=0&limit=200&cayenneExp=seasonId%3C=${seasonId}%20and%20seasonId%3E=${seasonId}%20and%20gameTypeId=2`),
-    fetch(`https://api.nhle.com/stats/rest/en/goalie/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22wins%22,%22direction%22:%22DESC%22%7D%5D&start=0&limit=100&cayenneExp=seasonId%3C=${seasonId}%20and%20seasonId%3E=${seasonId}%20and%20gameTypeId=2`),
+    fetch(CORS_PROXY + encodeURIComponent(`https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22points%22,%22direction%22:%22DESC%22%7D%5D&start=0&limit=200&cayenneExp=seasonId%3C=${seasonId}%20and%20seasonId%3E=${seasonId}%20and%20gameTypeId=2`)),
+    fetch(CORS_PROXY + encodeURIComponent(`https://api.nhle.com/stats/rest/en/goalie/summary?isAggregate=false&isGame=false&sort=%5B%7B%22property%22:%22wins%22,%22direction%22:%22DESC%22%7D%5D&start=0&limit=100&cayenneExp=seasonId%3C=${seasonId}%20and%20seasonId%3E=${seasonId}%20and%20gameTypeId=2`)),
   ]);
 
   interface NHLSkaterRow {
