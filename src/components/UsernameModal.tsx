@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Sport } from '@/lib/types';
 import { getInappropriateReason } from '@/lib/profanity';
 import { fetchTeams } from '@/lib/espn';
+import { getUser } from '@/lib/storage';
 
 interface TeamOption {
   id: string;
@@ -21,16 +22,20 @@ const LEAGUES: { key: Sport; label: string; icon: string }[] = [
 ];
 
 interface Props {
-  onSubmit: (username: string) => Promise<void>;
+  onSubmit: (username: string, pin: string) => Promise<void>;
   onClose: () => void;
   onPreferences?: (leagues: Sport[], teams: string[]) => Promise<void>;
 }
 
+type Step = 'username' | 'pin_set' | 'pin_verify' | 'leagues' | 'teams';
+
 export default function UsernameModal({ onSubmit, onClose, onPreferences }: Props) {
-  const [step, setStep] = useState<'username' | 'leagues' | 'teams'>('username');
+  const [step, setStep] = useState<Step>('username');
   const [name, setName] = useState('');
+  const [pin, setPin] = useState('');
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [isReturningUser, setIsReturningUser] = useState(false);
 
   // Preferences
   const [selectedLeagues, setSelectedLeagues] = useState<Sport[]>([]);
@@ -62,9 +67,47 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
     }
     setSubmitting(true);
     try {
-      await onSubmit(trimmed);
-      // Move to league selection
-      setStep('leagues');
+      // Check if username exists and whether it's this device
+      const existing = await getUser(trimmed);
+      if (existing) {
+        const localStored = localStorage.getItem('propicks_username');
+        if (localStored === trimmed) {
+          // Same device — log in directly without PIN
+          await onSubmit(trimmed, existing.pin || '');
+          setStep('leagues');
+        } else {
+          // New device — need to verify PIN
+          setIsReturningUser(true);
+          setStep('pin_verify');
+        }
+      } else {
+        // New user — need to set a PIN
+        setIsReturningUser(false);
+        setStep('pin_set');
+      }
+    } catch {
+      setError('Something went wrong, please try again');
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  async function handlePinSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setError('');
+    if (pin.length !== 4 || !/^\d{4}$/.test(pin)) {
+      setError('PIN must be exactly 4 digits');
+      return;
+    }
+    setSubmitting(true);
+    try {
+      await onSubmit(name.trim(), pin);
+      if (isReturningUser) {
+        // Returning user verified — go straight to close (no league setup needed)
+        onClose();
+      } else {
+        setStep('leagues');
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
     } finally {
@@ -114,36 +157,42 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
     teams: filteredTeams.filter((t) => t.sport === league),
   }));
 
+  // Step indicator — only show for new user full flow
+  const newUserSteps: Step[] = ['username', 'pin_set', 'leagues', 'teams'];
+  const returningSteps: Step[] = ['username', 'pin_verify'];
+  const stepsToShow = isReturningUser ? returningSteps : newUserSteps;
+  const currentStepIndex = stepsToShow.indexOf(step);
+
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm">
       <div className="bg-bg-card border border-white/10 rounded-2xl p-8 w-full max-w-md mx-4 shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Step indicator */}
-        <div className="flex items-center justify-center gap-2 mb-6">
-          {['username', 'leagues', 'teams'].map((s, i) => (
-            <div key={s} className="flex items-center gap-2">
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all ${
-                  step === s
-                    ? 'bg-accent-green text-white'
-                    : ['username', 'leagues', 'teams'].indexOf(step) > i
-                    ? 'bg-accent-green/30 text-accent-green'
-                    : 'bg-white/10 text-text-secondary'
-                }`}
-              >
-                {i + 1}
-              </div>
-              {i < 2 && (
+        {currentStepIndex >= 0 && (
+          <div className="flex items-center justify-center gap-2 mb-6">
+            {stepsToShow.map((s, i) => (
+              <div key={s} className="flex items-center gap-2">
                 <div
-                  className={`w-8 h-0.5 ${
-                    ['username', 'leagues', 'teams'].indexOf(step) > i
-                      ? 'bg-accent-green/30'
-                      : 'bg-white/10'
+                  className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all ${
+                    step === s
+                      ? 'bg-accent-green text-white'
+                      : stepsToShow.indexOf(step) > i
+                      ? 'bg-accent-green/30 text-accent-green'
+                      : 'bg-white/10 text-text-secondary'
                   }`}
-                />
-              )}
-            </div>
-          ))}
-        </div>
+                >
+                  {i + 1}
+                </div>
+                {i < stepsToShow.length - 1 && (
+                  <div
+                    className={`w-8 h-0.5 ${
+                      stepsToShow.indexOf(step) > i ? 'bg-accent-green/30' : 'bg-white/10'
+                    }`}
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* STEP 1: Username */}
         {step === 'username' && (
@@ -183,7 +232,7 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
                 disabled={submitting || name.trim().length < 3}
                 className="w-full mt-4 bg-accent-green hover:bg-accent-green-hover disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition"
               >
-                {submitting ? 'Joining...' : 'Next'}
+                {submitting ? 'Checking...' : 'Next'}
               </button>
             </form>
 
@@ -196,7 +245,97 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
           </>
         )}
 
-        {/* STEP 2: League Selection */}
+        {/* STEP 2a: Set PIN (new user) */}
+        {step === 'pin_set' && (
+          <>
+            <div className="text-center mb-6">
+              <div className="text-4xl mb-3">🔐</div>
+              <h2 className="text-2xl font-bold text-text-primary">Set Your PIN</h2>
+              <p className="text-text-secondary text-sm mt-2">
+                Choose a 4-digit PIN. You&apos;ll need it to log back in on a new device.
+              </p>
+              <p className="text-xs text-text-secondary/60 mt-1">
+                Your PIN will be visible on your profile page so you don&apos;t forget it.
+              </p>
+            </div>
+
+            <form onSubmit={handlePinSubmit}>
+              <input
+                type="text"
+                inputMode="numeric"
+                value={pin}
+                onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                placeholder="1234"
+                className="w-full text-center text-3xl tracking-[0.5em] px-4 py-4 bg-bg-primary border border-white/10 rounded-lg text-text-primary placeholder-text-secondary/30 focus:outline-none focus:border-accent-green transition font-bold"
+                maxLength={4}
+                autoFocus
+              />
+
+              {error && <p className="text-incorrect text-sm mt-2 text-center">{error}</p>}
+
+              <button
+                type="submit"
+                disabled={submitting || pin.length !== 4}
+                className="w-full mt-4 bg-accent-green hover:bg-accent-green-hover disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition"
+              >
+                {submitting ? 'Creating account...' : 'Set PIN & Continue'}
+              </button>
+            </form>
+
+            <button
+              onClick={() => { setStep('username'); setPin(''); setError(''); }}
+              className="w-full mt-3 text-text-secondary text-sm hover:text-text-primary transition"
+            >
+              Back
+            </button>
+          </>
+        )}
+
+        {/* STEP 2b: Verify PIN (returning user, new device) */}
+        {step === 'pin_verify' && (
+          <>
+            <div className="text-center mb-6">
+              <div className="text-4xl mb-3">🔐</div>
+              <h2 className="text-2xl font-bold text-text-primary">Enter Your PIN</h2>
+              <p className="text-text-secondary text-sm mt-2">
+                Welcome back, <span className="text-text-primary font-semibold">{name}</span>!
+                Enter your 4-digit PIN to log in.
+              </p>
+            </div>
+
+            <form onSubmit={handlePinSubmit}>
+              <input
+                type="text"
+                inputMode="numeric"
+                value={pin}
+                onChange={(e) => setPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                placeholder="1234"
+                className="w-full text-center text-3xl tracking-[0.5em] px-4 py-4 bg-bg-primary border border-white/10 rounded-lg text-text-primary placeholder-text-secondary/30 focus:outline-none focus:border-accent-green transition font-bold"
+                maxLength={4}
+                autoFocus
+              />
+
+              {error && <p className="text-incorrect text-sm mt-2 text-center">{error}</p>}
+
+              <button
+                type="submit"
+                disabled={submitting || pin.length !== 4}
+                className="w-full mt-4 bg-accent-green hover:bg-accent-green-hover disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition"
+              >
+                {submitting ? 'Verifying...' : 'Log In'}
+              </button>
+            </form>
+
+            <button
+              onClick={() => { setStep('username'); setPin(''); setError(''); }}
+              className="w-full mt-3 text-text-secondary text-sm hover:text-text-primary transition"
+            >
+              Back
+            </button>
+          </>
+        )}
+
+        {/* STEP 3: League Selection */}
         {step === 'leagues' && (
           <>
             <div className="text-center mb-6">
@@ -256,7 +395,7 @@ export default function UsernameModal({ onSubmit, onClose, onPreferences }: Prop
           </>
         )}
 
-        {/* STEP 3: Team Selection */}
+        {/* STEP 4: Team Selection */}
         {step === 'teams' && (
           <>
             <div className="text-center mb-4">

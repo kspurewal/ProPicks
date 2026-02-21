@@ -139,8 +139,8 @@ export default function Navbar() {
 
       {showModal && (
         <UsernameModal
-          onSubmit={async (name) => {
-            await login(name);
+          onSubmit={async (name, pin) => {
+            await login(name, pin);
           }}
           onClose={() => setShowModal(false)}
           onPreferences={async (leagues, teams) => {

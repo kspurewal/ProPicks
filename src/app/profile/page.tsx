@@ -127,6 +127,12 @@ export default function ProfilePage() {
         <p className="text-text-secondary text-sm mt-1">
           Member since {user ? new Date(user.createdAt).toLocaleDateString() : ''}
         </p>
+        {user?.pin && (
+          <div className="inline-flex items-center gap-2 mt-3 bg-bg-card border border-white/10 rounded-lg px-4 py-2">
+            <span className="text-xs text-text-secondary">Recovery PIN</span>
+            <span className="text-lg font-bold tracking-widest text-accent-green">{user.pin}</span>
+          </div>
+        )}
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">

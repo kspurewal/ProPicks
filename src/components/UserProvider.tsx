@@ -12,7 +12,7 @@ interface UserContextType {
   user: User | null;
   loading: boolean;
   isLoggedIn: boolean;
-  login: (name: string) => Promise<User>;
+  login: (name: string, pin?: string) => Promise<User>;
   logout: () => void;
   refresh: () => void;
   savePreferences: (leagues: Sport[], teams: string[]) => Promise<void>;
@@ -23,7 +23,7 @@ const UserContext = createContext<UserContextType>({
   user: null,
   loading: true,
   isLoggedIn: false,
-  login: async () => { throw new Error('No provider'); },
+  login: async () => { throw new Error('No provider'); }, // eslint-disable-line @typescript-eslint/no-unused-vars
   logout: () => {},
   refresh: () => {},
   savePreferences: async () => {},
@@ -61,7 +61,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const login = useCallback(async (name: string) => {
+  const login = useCallback(async (name: string, pin?: string) => {
     const clean = name.trim();
 
     if (clean.length < 3 || clean.length > 20) {
@@ -82,13 +82,28 @@ export function UserProvider({ children }: { children: ReactNode }) {
       if (existing.isBanned) {
         throw new Error('This account has been banned');
       }
-      if (localStorage.getItem(STORAGE_KEY) !== clean) {
-        throw new Error('Username already taken');
+      // Same device — log in directly
+      if (localStorage.getItem(STORAGE_KEY) === clean) {
+        setUsername(clean);
+        setUser(existing);
+        return existing;
+      }
+      // New device — require PIN
+      if (!pin) {
+        throw new Error('PIN_REQUIRED');
+      }
+      if (existing.pin !== pin) {
+        throw new Error('Incorrect PIN');
       }
       localStorage.setItem(STORAGE_KEY, clean);
       setUsername(clean);
       setUser(existing);
       return existing;
+    }
+
+    // New user — PIN is required and gets saved
+    if (!pin) {
+      throw new Error('PIN_REQUIRED');
     }
 
     const newUser: User = {
@@ -103,6 +118,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
       badges: [],
       followedLeagues: [],
       followedTeams: [],
+      pin,
     };
 
     await upsertUser(newUser);

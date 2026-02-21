@@ -49,6 +49,7 @@ export interface User {
   isBanned?: boolean;
   following?: string[]; // usernames this user follows
   followers?: string[]; // usernames following this user
+  pin?: string; // 4-digit recovery PIN
 }
 
 export interface Badge {
