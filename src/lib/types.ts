@@ -47,6 +47,8 @@ export interface User {
   followedLeagues: Sport[];
   followedTeams: string[]; // team IDs
   isBanned?: boolean;
+  following?: string[]; // usernames this user follows
+  followers?: string[]; // usernames following this user
 }
 
 export interface Badge {

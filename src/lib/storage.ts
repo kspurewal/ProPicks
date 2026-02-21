@@ -40,6 +40,46 @@ export async function getUsers(): Promise<User[]> {
   });
 }
 
+export async function followUser(currentUsername: string, targetUsername: string): Promise<void> {
+  const currentRef = doc(db, 'users', currentUsername);
+  const targetRef = doc(db, 'users', targetUsername);
+  const [currentSnap, targetSnap] = await Promise.all([getDoc(currentRef), getDoc(targetRef)]);
+  if (!currentSnap.exists() || !targetSnap.exists()) return;
+  const current = currentSnap.data() as User;
+  const target = targetSnap.data() as User;
+  const currentFollowing = current.following || [];
+  const targetFollowers = target.followers || [];
+  if (!currentFollowing.includes(targetUsername)) {
+    await Promise.all([
+      updateDoc(currentRef, { following: [...currentFollowing, targetUsername] }),
+      updateDoc(targetRef, { followers: [...targetFollowers, currentUsername] }),
+    ]);
+  }
+}
+
+export async function unfollowUser(currentUsername: string, targetUsername: string): Promise<void> {
+  const currentRef = doc(db, 'users', currentUsername);
+  const targetRef = doc(db, 'users', targetUsername);
+  const [currentSnap, targetSnap] = await Promise.all([getDoc(currentRef), getDoc(targetRef)]);
+  if (!currentSnap.exists() || !targetSnap.exists()) return;
+  const current = currentSnap.data() as User;
+  const target = targetSnap.data() as User;
+  await Promise.all([
+    updateDoc(currentRef, { following: (current.following || []).filter((u) => u !== targetUsername) }),
+    updateDoc(targetRef, { followers: (target.followers || []).filter((u) => u !== currentUsername) }),
+  ]);
+}
+
+export async function getFollowing(username: string): Promise<User[]> {
+  const snap = await getDoc(doc(db, 'users', username));
+  if (!snap.exists()) return [];
+  const user = snap.data() as User;
+  const following = user.following || [];
+  if (following.length === 0) return [];
+  const users = await Promise.all(following.map((u) => getDoc(doc(db, 'users', u))));
+  return users.filter((s) => s.exists()).map((s) => s.data() as User);
+}
+
 export async function banUser(username: string): Promise<void> {
   const ref = doc(db, 'users', username);
   await updateDoc(ref, { isBanned: true });

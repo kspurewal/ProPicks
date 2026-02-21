@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useUser } from '@/components/UserProvider';
 import BadgeDisplay from '@/components/BadgeDisplay';
-import { getUser, getPicksByUser } from '@/lib/storage';
+import { getUser, getPicksByUser, followUser, unfollowUser } from '@/lib/storage';
 import { User, Pick, Sport } from '@/lib/types';
 
 const SPORT_LABELS: Record<Sport, string> = { nba: 'NBA', mlb: 'MLB', nfl: 'NFL', nhl: 'NHL' };
@@ -27,12 +27,13 @@ export default function PublicProfilePage() {
 function ProfileContent() {
   const searchParams = useSearchParams();
   const profileUsername = searchParams.get('username') || '';
-  const { username: currentUser } = useUser();
+  const { username: currentUser, user: currentUserData, refresh } = useUser();
 
   const [profileUser, setProfileUser] = useState<User | null>(null);
   const [picks, setPicks] = useState<Pick[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
+  const [followLoading, setFollowLoading] = useState(false);
 
   useEffect(() => {
     if (!profileUsername) { setLoading(false); setNotFound(true); return; }
@@ -112,6 +113,25 @@ function ProfileContent() {
   }
 
   const isOwnProfile = currentUser === profileUsername;
+  const isFollowing = currentUserData?.following?.includes(profileUsername) ?? false;
+
+  async function handleFollow() {
+    if (!currentUser) return;
+    setFollowLoading(true);
+    try {
+      if (isFollowing) {
+        await unfollowUser(currentUser, profileUsername);
+        setProfileUser((prev) => prev ? { ...prev, followers: (prev.followers || []).filter((f) => f !== currentUser) } : prev);
+      } else {
+        await followUser(currentUser, profileUsername);
+        setProfileUser((prev) => prev ? { ...prev, followers: [...(prev.followers || []), currentUser] } : prev);
+      }
+      refresh();
+    } finally {
+      setFollowLoading(false);
+    }
+  }
+
   const accuracy = profileUser.totalPicks > 0
     ? Math.round((profileUser.correctPicks / profileUser.totalPicks) * 100)
     : 0;
@@ -133,6 +153,29 @@ function ProfileContent() {
         <p className="text-text-secondary text-sm mt-1">
           Member since {new Date(profileUser.createdAt).toLocaleDateString()}
         </p>
+        <div className="flex justify-center gap-6 mt-2">
+          <div className="text-center">
+            <p className="text-sm font-bold text-text-primary">{profileUser.followers?.length || 0}</p>
+            <p className="text-xs text-text-secondary">Followers</p>
+          </div>
+          <div className="text-center">
+            <p className="text-sm font-bold text-text-primary">{profileUser.following?.length || 0}</p>
+            <p className="text-xs text-text-secondary">Following</p>
+          </div>
+        </div>
+        {!isOwnProfile && currentUser && (
+          <button
+            onClick={handleFollow}
+            disabled={followLoading}
+            className={`mt-3 px-5 py-1.5 text-sm rounded-lg font-semibold transition disabled:opacity-50 ${
+              isFollowing
+                ? 'bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
+                : 'bg-accent-green text-white hover:bg-accent-green-hover'
+            }`}
+          >
+            {followLoading ? '...' : isFollowing ? 'Unfollow' : 'Follow'}
+          </button>
+        )}
         {isOwnProfile && (
           <Link href="/profile" className="text-xs text-accent-green hover:underline mt-1 inline-block">
             Edit your profile

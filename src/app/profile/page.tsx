@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useUser } from '@/components/UserProvider';
 import BadgeDisplay from '@/components/BadgeDisplay';
+import SharePickModal from '@/components/SharePickModal';
 import { getPicksByUser } from '@/lib/storage';
 import { Pick, Sport } from '@/lib/types';
 
@@ -24,6 +25,7 @@ export default function ProfilePage() {
   const { user, username, isLoggedIn, logout, loading: userLoading } = useUser();
   const [allPicks, setAllPicks] = useState<Pick[]>([]);
   const [picksLoading, setPicksLoading] = useState(true);
+  const [sharepick, setSharePick] = useState<Pick | null>(null);
 
   useEffect(() => {
     if (!username) {
@@ -243,6 +245,15 @@ export default function ProfilePage() {
                   {pick.result === 'pending' && (
                     <span className="text-text-secondary text-sm">Pending</span>
                   )}
+                  <button
+                    onClick={() => setSharePick(pick)}
+                    className="text-text-secondary hover:text-accent-green transition"
+                    title="Share pick"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             ))}
@@ -258,6 +269,10 @@ export default function ProfilePage() {
           Log Out
         </button>
       </div>
+
+      {sharepick && username && (
+        <SharePickModal pick={sharepick} username={username} onClose={() => setSharePick(null)} />
+      )}
     </div>
   );
 }

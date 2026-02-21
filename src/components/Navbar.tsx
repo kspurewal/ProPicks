@@ -3,12 +3,16 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useUser } from '@/components/UserProvider';
+import { useTheme } from '@/components/ThemeProvider';
 import UsernameModal from './UsernameModal';
+import OnboardingTutorial, { useShouldShowTutorial } from './OnboardingTutorial';
 
 export default function Navbar() {
   const { username, user, isLoggedIn, login, logout, savePreferences } = useUser();
+  const { theme, toggleTheme } = useTheme();
   const [showModal, setShowModal] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { show: showTutorial, setShow: setShowTutorial } = useShouldShowTutorial();
 
   return (
     <>
@@ -35,13 +39,33 @@ export default function Navbar() {
               Leaderboard
             </Link>
             {isLoggedIn && (
-              <Link href="/profile" className="text-sm text-text-secondary hover:text-text-primary transition">
-                Profile
-              </Link>
+              <>
+                <Link href="/friends" className="text-sm text-text-secondary hover:text-text-primary transition">
+                  Friends
+                </Link>
+                <Link href="/profile" className="text-sm text-text-secondary hover:text-text-primary transition">
+                  Profile
+                </Link>
+              </>
             )}
           </div>
 
           <div className="flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="text-text-secondary hover:text-text-primary transition p-1"
+              title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {theme === 'dark' ? (
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              )}
+            </button>
             {isLoggedIn ? (
               <div className="flex items-center gap-2">
                 {user && user.currentStreak > 0 && (
@@ -94,6 +118,9 @@ export default function Navbar() {
             </Link>
             {isLoggedIn && (
               <>
+                <Link href="/friends" onClick={() => setMobileOpen(false)} className="text-sm text-text-secondary">
+                  Friends
+                </Link>
                 <Link href="/profile" onClick={() => setMobileOpen(false)} className="text-sm text-text-secondary">
                   Profile
                 </Link>
@@ -105,6 +132,10 @@ export default function Navbar() {
           </div>
         )}
       </nav>
+
+      {showTutorial && isLoggedIn && (
+        <OnboardingTutorial onDone={() => setShowTutorial(false)} />
+      )}
 
       {showModal && (
         <UsernameModal
