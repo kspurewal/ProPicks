@@ -158,14 +158,8 @@ function ProfileContent() {
     }
   }
 
-  const friendButtonLabel = followLoading ? '...'
-    : isFriend ? 'Friends'
-    : isPendingSent ? 'Pending'
-    : isPendingReceived ? 'Accept'
-    : 'Add Friend';
-
   const friendButtonClass = isFriend || isPendingSent
-    ? 'bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
+    ? 'group bg-white/10 text-text-secondary hover:bg-red-500/20 hover:text-red-400'
     : 'bg-accent-green text-white hover:bg-accent-green-hover';
 
   const accuracy = profileUser.totalPicks > 0
@@ -261,7 +255,11 @@ function ProfileContent() {
             disabled={followLoading}
             className={`mt-3 px-5 py-1.5 text-sm rounded-lg font-semibold transition disabled:opacity-50 ${friendButtonClass}`}
           >
-            {friendButtonLabel}
+            {followLoading ? '...' : isFriend ? (
+              <><span className="group-hover:hidden">Friends</span><span className="hidden group-hover:inline">Unfriend</span></>
+            ) : isPendingSent ? (
+              <><span className="group-hover:hidden">Pending</span><span className="hidden group-hover:inline">Cancel</span></>
+            ) : isPendingReceived ? 'Accept' : 'Add Friend'}
           </button>
         )}
         {isOwnProfile && (
